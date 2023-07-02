@@ -84,25 +84,29 @@ public:
         return cornerLastBuf.empty() || surfLastBuf.empty() || fullResBuf.empty();
     }
 
-    void init(){
-        if(!isEmpty()){
-            mBuf.lock();
-
-            laserCloudCornerLast = cornerLastBuf.front();
-            cornerLastBuf.pop();
-
-            laserCloudSurfLast = surfLastBuf.front();
-            surfLastBuf.pop();
-
-            laserCloudFullRes = fullResBuf.front();
-            fullResBuf.pop();
-
-            mBuf.unlock();
+    bool init(){
+        if(isEmpty()){
+            return false;
         }
+        mBuf.lock();
+
+        laserCloudCornerLast = cornerLastBuf.front();
+        cornerLastBuf.pop();
+
+        laserCloudSurfLast = surfLastBuf.front();
+        surfLastBuf.pop();
+
+        laserCloudFullRes = fullResBuf.front();
+        fullResBuf.pop();
+
+        mBuf.unlock();
+        return true;
     }
 
     void process(){
-        init();
+        if(!init()){
+            return;
+        }
 
         int centerCubeI = int((t_w_curr.x() + 25.0) / 50.0) + laserCloudCenWidth;
         int centerCubeJ = int((t_w_curr.y() + 25.0) / 50.0) + laserCloudCenHeight;
