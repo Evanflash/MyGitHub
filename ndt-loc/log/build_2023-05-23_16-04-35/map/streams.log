@@ -1,0 +1,88 @@
+[0.021s] Invoking command in '/home/evan/code/ndt-loc/build/map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4
+[0.050s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.203s] -- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)
+[0.239s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.242s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.248s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.261s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.281s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.352s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.354s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.492s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.686s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.850s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.884s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.205s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.213s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.213s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.379s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.386s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.393s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.564s] -- Found Qhull version 8.0.2
+[1.729s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.893s] -- looking for PCL_COMMON
+[1.893s] -- looking for PCL_KDTREE
+[1.894s] -- looking for PCL_OCTREE
+[1.894s] -- looking for PCL_SEARCH
+[1.894s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.895s] -- looking for PCL_FILTERS
+[1.895s] -- looking for PCL_2D
+[1.896s] -- looking for PCL_GEOMETRY
+[1.896s] -- looking for PCL_IO
+[1.897s] -- looking for PCL_FEATURES
+[1.897s] -- looking for PCL_ML
+[1.898s] -- looking for PCL_SEGMENTATION
+[1.898s] -- looking for PCL_VISUALIZATION
+[1.899s] -- looking for PCL_SURFACE
+[1.900s] -- looking for PCL_REGISTRATION
+[1.900s] -- looking for PCL_KEYPOINTS
+[1.901s] -- looking for PCL_TRACKING
+[1.901s] -- looking for PCL_RECOGNITION
+[1.902s] -- looking for PCL_STEREO
+[1.903s] -- looking for PCL_APPS
+[1.903s] -- looking for PCL_IN_HAND_SCANNER
+[1.904s] -- looking for PCL_MODELER
+[1.904s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.905s] -- looking for PCL_OUTOFCORE
+[1.905s] -- looking for PCL_PEOPLE
+[1.908s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.550s] -- Configuring done
+[2.705s] -- Generating done
+[2.708s] -- Build files have been written to: /home/evan/code/ndt-loc/build/map
+[2.749s] [35m[1mConsolidate compiler generated dependencies of target mapping_image[0m
+[2.750s] [35m[1mConsolidate compiler generated dependencies of target show_map_node[0m
+[2.750s] [35m[1mConsolidate compiler generated dependencies of target lidar_data_node[0m
+[2.764s] [35m[1mConsolidate compiler generated dependencies of target front_end_node[0m
+[2.799s] [ 20%] Built target show_map_node
+[2.804s] [ 40%] Built target mapping_image
+[2.807s] [ 60%] Built target lidar_data_node
+[2.820s] [ 80%] Built target front_end_node
+[2.821s] [35m[1mConsolidate compiler generated dependencies of target mapping_node[0m
+[2.863s] [ 90%] [32m[1mLinking CXX executable mapping_node[0m
+[2.944s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0x0): multiple definition of `ndtloc::_left_lidar_path[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0x0): first defined here
+[2.945s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0x20): multiple definition of `ndtloc::_right_lidar_path[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0x20): first defined here
+[2.946s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0x40): multiple definition of `ndtloc::_left_lidar_time[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0x40): first defined here
+[2.947s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0x60): multiple definition of `ndtloc::_right_lidar_time[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0x60): first defined here
+[2.948s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb4c): multiple definition of `ndtloc::_x_offset'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x62c): first defined here
+[2.949s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb50): multiple definition of `ndtloc::_y_offset'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x630): first defined here
+[2.951s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb54): multiple definition of `ndtloc::_z_offset'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x634): first defined here
+[2.952s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0x80): multiple definition of `ndtloc::key_frame_path[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0x80): first defined here
+[2.953s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0xa0): multiple definition of `ndtloc::map_file_path[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0xa0): first defined here
+[2.954s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb58): multiple definition of `ndtloc::max_local_map_frames'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x638): first defined here
+[2.955s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb5c): multiple definition of `ndtloc::local_map_filter_frames_num'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x63c): first defined here
+[2.956s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb60): multiple definition of `ndtloc::key_frame_distance'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x640): first defined here
+[2.957s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb64): multiple definition of `ndtloc::_vertical_scans'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x644): first defined here
+[2.958s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb68): multiple definition of `ndtloc::_horizontal_scans'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x648): first defined here
+[2.959s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb6c): multiple definition of `ndtloc::_vertical_ang_start'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x64c): first defined here
+[2.960s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb70): multiple definition of `ndtloc::_vertical_ang_end'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x650): first defined here
+[2.961s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb74): multiple definition of `ndtloc::_segment_valid_num'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x654): first defined here
+[2.962s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb78): multiple definition of `ndtloc::_segment_valid_point_num'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x658): first defined here
+[2.963s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb7c): multiple definition of `ndtloc::_segment_valid_line_num'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x65c): first defined here
+[2.964s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb80): multiple definition of `ndtloc::_ground_scan_index'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x660): first defined here
+[2.965s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.rodata+0xb84): multiple definition of `ndtloc::_segment_theta'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.rodata+0x664): first defined here
+[2.966s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0xc0): multiple definition of `ndtloc::radar_timestamping[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0xc0): first defined here
+[4.102s] collect2: error: ld returned 1 exit status
+[4.103s] gmake[2]: *** [CMakeFiles/mapping_node.dir/build.make:297: mapping_node] Error 1
+[4.104s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/mapping_node.dir/all] Error 2
+[4.104s] gmake: *** [Makefile:146: all] Error 2
+[4.106s] Invoked command in '/home/evan/code/ndt-loc/build/map' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4

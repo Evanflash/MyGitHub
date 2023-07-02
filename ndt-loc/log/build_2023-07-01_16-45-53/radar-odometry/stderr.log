@@ -1,0 +1,22 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+In file included from [01m[K/home/evan/code/ndt-loc/src/radar-odometry/include/radar-odometry/RadarFeatures.hpp:4[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/radar-odometry/src/RadarFeaturesNode.cpp:1[m[K:
+[01m[K/home/evan/code/ndt-loc/src/radar-odometry/include/radar-odometry/RadarConfig.h:27:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksigma_gauss[m[K’ initialized and declared ‘[01m[Kextern[m[K’
+   27 | extern int [01;35m[Ksigma_gauss[m[K = 17;
+      |            [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/radar-odometry/include/radar-odometry/RadarConfig.h:28:14:[m[K [01;35m[Kwarning: [m[K‘[01m[Kzq[m[K’ initialized and declared ‘[01m[Kextern[m[K’
+   28 | extern float [01;35m[Kzq[m[K = 3.0;
+      |              [01;35m[K^~[m[K
+[01m[K/home/evan/code/ndt-loc/src/radar-odometry/include/radar-odometry/RadarConfig.h:29:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmin_range[m[K’ initialized and declared ‘[01m[Kextern[m[K’
+   29 | extern int [01;35m[Kmin_range[m[K = 58;
+      |            [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/radar-odometry/src/RadarFeaturesNode.cpp:[m[K In member function ‘[01m[Kvoid radar::RadarFeaturesNode::radarImageHandler(const Image&)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/radar-odometry/src/RadarFeaturesNode.cpp:54:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::pair<int, int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   54 |         for(int i = 0; [01;35m[Ki < keyPoints.size()[m[K; ++i){
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+/usr/bin/ld: CMakeFiles/radar_feature_node.dir/src/RadarFeaturesNode.cpp.o: in function `radar::RadarFeatures::Cen2019Features(cv::Mat)':
+RadarFeaturesNode.cpp:(.text._ZN5radar13RadarFeatures15Cen2019FeaturesEN2cv3MatE[_ZN5radar13RadarFeatures15Cen2019FeaturesEN2cv3MatE]+0x8cd): undefined reference to `radar::max_points'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/radar_feature_node.dir/build.make:351: radar_feature_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/radar_feature_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,258 @@
+[0.000000] (-) TimerEvent: {}
+[0.000219] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.000317] (-) JobUnselected: {'identifier': 'data-publisher'}
+[0.001570] (-) JobUnselected: {'identifier': 'map'}
+[0.001644] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.001699] (-) JobUnselected: {'identifier': 'radar-data'}
+[0.001722] (a-loam) JobQueued: {'identifier': 'a-loam', 'dependencies': OrderedDict()}
+[0.001778] (a-loam) JobStarted: {'identifier': 'a-loam'}
+[0.016275] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'cmake'}
+[0.017494] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'build'}
+[0.018425] (a-loam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/a-loam', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/a-loam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2262'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2078,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2078'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dc5f1ab5_4feb_45b9_afe1_315ba9349bdf'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LG2261'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.147'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/a-loam'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble')]), 'shell': False}
+[0.083416] (a-loam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scan_registration_node\x1b[0m\n'}
+[0.100438] (-) TimerEvent: {}
+[0.129680] (a-loam) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o\x1b[0m\n'}
+[0.200520] (-) TimerEvent: {}
+[0.302372] (-) TimerEvent: {}
+[0.402645] (-) TimerEvent: {}
+[0.502909] (-) TimerEvent: {}
+[0.603212] (-) TimerEvent: {}
+[0.703515] (-) TimerEvent: {}
+[0.803793] (-) TimerEvent: {}
+[0.904050] (-) TimerEvent: {}
+[1.004313] (-) TimerEvent: {}
+[1.104624] (-) TimerEvent: {}
+[1.204905] (-) TimerEvent: {}
+[1.305216] (-) TimerEvent: {}
+[1.405471] (-) TimerEvent: {}
+[1.505754] (-) TimerEvent: {}
+[1.606020] (-) TimerEvent: {}
+[1.706309] (-) TimerEvent: {}
+[1.806581] (-) TimerEvent: {}
+[1.906858] (-) TimerEvent: {}
+[2.007178] (-) TimerEvent: {}
+[2.107516] (-) TimerEvent: {}
+[2.207797] (-) TimerEvent: {}
+[2.308078] (-) TimerEvent: {}
+[2.408395] (-) TimerEvent: {}
+[2.508687] (-) TimerEvent: {}
+[2.608973] (-) TimerEvent: {}
+[2.709250] (-) TimerEvent: {}
+[2.809567] (-) TimerEvent: {}
+[2.909847] (-) TimerEvent: {}
+[3.010144] (-) TimerEvent: {}
+[3.110402] (-) TimerEvent: {}
+[3.210689] (-) TimerEvent: {}
+[3.310988] (-) TimerEvent: {}
+[3.411250] (-) TimerEvent: {}
+[3.511529] (-) TimerEvent: {}
+[3.611813] (-) TimerEvent: {}
+[3.712084] (-) TimerEvent: {}
+[3.812375] (-) TimerEvent: {}
+[3.912639] (-) TimerEvent: {}
+[4.012913] (-) TimerEvent: {}
+[4.113189] (-) TimerEvent: {}
+[4.213470] (-) TimerEvent: {}
+[4.313793] (-) TimerEvent: {}
+[4.414071] (-) TimerEvent: {}
+[4.514342] (-) TimerEvent: {}
+[4.614614] (-) TimerEvent: {}
+[4.714941] (-) TimerEvent: {}
+[4.815295] (-) TimerEvent: {}
+[4.915576] (-) TimerEvent: {}
+[5.015915] (-) TimerEvent: {}
+[5.116257] (-) TimerEvent: {}
+[5.216550] (-) TimerEvent: {}
+[5.316826] (-) TimerEvent: {}
+[5.417120] (-) TimerEvent: {}
+[5.517501] (-) TimerEvent: {}
+[5.617958] (-) TimerEvent: {}
+[5.718410] (-) TimerEvent: {}
+[5.818767] (-) TimerEvent: {}
+[5.919173] (-) TimerEvent: {}
+[6.019481] (-) TimerEvent: {}
+[6.119782] (-) TimerEvent: {}
+[6.220078] (-) TimerEvent: {}
+[6.320402] (-) TimerEvent: {}
+[6.420702] (-) TimerEvent: {}
+[6.498004] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.498292] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:29:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kneed \xe2\x80\x98\x1b[01m\x1b[Ktypename\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<PointT>::Ptr\x1b[m\x1b[K\xe2\x80\x99 because \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<PointT>\x1b[m\x1b[K\xe2\x80\x99 is a dependent scope\n'}
+[6.498378] (a-loam) StderrLine: {'line': b'   29 | using CLOUDPTR = \x1b[01;31m\x1b[Kpcl\x1b[m\x1b[K::PointCloud<PointT>::Ptr;\n'}
+[6.498450] (a-loam) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.498518] (a-loam) StderrLine: {'line': b'      |                  \x1b[32m\x1b[Ktypename \x1b[m\x1b[K\n'}
+[6.498586] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:45:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCLOUDPTR\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.498655] (a-loam) StderrLine: {'line': b'   45 |     void removeClosedPointCloud(\x1b[01;31m\x1b[KCLOUDPTR\x1b[m\x1b[K cloud_in, CLOUDPTR cloud_out, float thres){\n'}
+[6.498721] (a-loam) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.498787] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:45:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCLOUDPTR\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.498855] (a-loam) StderrLine: {'line': b'   45 |     void removeClosedPointCloud(CLOUDPTR cloud_in, \x1b[01;31m\x1b[KCLOUDPTR\x1b[m\x1b[K cloud_out, float thres){\n'}
+[6.498921] (a-loam) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.498988] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:72:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCLOUDPTR\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.499054] (a-loam) StderrLine: {'line': b'   72 |     void extractFeatureFromPointCloud(\x1b[01;31m\x1b[KCLOUDPTR\x1b[m\x1b[K cloud_in){\n'}
+[6.499120] (a-loam) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.501183] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistration<PointT>::removeClosedPointCloud(int, int, float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.501417] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:47:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.501493] (a-loam) StderrLine: {'line': b'   47 |             cloud_out \x1b[01;31m\x1b[K->\x1b[m\x1b[K header = cloud_in -> header;\n'}
+[6.501563] (a-loam) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.501642] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:47:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.501708] (a-loam) StderrLine: {'line': b'   47 |             cloud_out -> header = cloud_in \x1b[01;31m\x1b[K->\x1b[m\x1b[K header;\n'}
+[6.501781] (a-loam) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.501846] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:48:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.501912] (a-loam) StderrLine: {'line': b'   48 |             cloud_out \x1b[01;31m\x1b[K->\x1b[m\x1b[K points.resize(cloud_int -> points.size());\n'}
+[6.501977] (a-loam) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.509453] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:48:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcloud_int\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcloud_in\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.509848] (a-loam) StderrLine: {'line': b'   48 |             cloud_out -> points.resize(\x1b[01;31m\x1b[Kcloud_int\x1b[m\x1b[K -> points.size());\n'}
+[6.509999] (a-loam) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.510074] (a-loam) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[Kcloud_in\x1b[m\x1b[K\n'}
+[6.510144] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:54:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.510215] (a-loam) StderrLine: {'line': b'   54 |         for(size_t i = 0; i < cloud_in \x1b[01;31m\x1b[K->\x1b[m\x1b[K size(); ++i){\n'}
+[6.510293] (a-loam) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.510362] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:55:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.510430] (a-loam) StderrLine: {'line': b'   55 |             PointT point = cloud_in \x1b[01;31m\x1b[K->\x1b[m\x1b[K points[i];\n'}
+[6.510498] (a-loam) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.510564] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:57:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.510638] (a-loam) StderrLine: {'line': b'   57 |                 cloud_out \x1b[01;31m\x1b[K->\x1b[m\x1b[K points[j] = point;\n'}
+[6.510705] (a-loam) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.510777] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:62:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.510844] (a-loam) StderrLine: {'line': b'   62 |         cloud_out \x1b[01;31m\x1b[K->\x1b[m\x1b[K points.resize(j);\n'}
+[6.510913] (a-loam) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.510989] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:63:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.511058] (a-loam) StderrLine: {'line': b'   63 |         cloud_out \x1b[01;31m\x1b[K->\x1b[m\x1b[K height = 1;\n'}
+[6.511125] (a-loam) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.511191] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:64:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.511263] (a-loam) StderrLine: {'line': b'   64 |         cloud_out \x1b[01;31m\x1b[K->\x1b[m\x1b[K width = static_cast<uint32_t>(j);\n'}
+[6.511330] (a-loam) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.511395] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:65:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.511462] (a-loam) StderrLine: {'line': b'   65 |         cloud_out \x1b[01;31m\x1b[K->\x1b[m\x1b[K is_dense = true;\n'}
+[6.511528] (a-loam) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.511594] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistration<PointT>::extractFeatureFromPointCloud(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.511666] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:76:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.511732] (a-loam) StderrLine: {'line': b'   76 |         int cloudSize = cloud_in \x1b[01;31m\x1b[K->\x1b[m\x1b[K size();\n'}
+[6.513176] (a-loam) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.513288] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:77:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.513367] (a-loam) StderrLine: {'line': b'   77 |         float strOri = -atan2(cloud_in \x1b[01;31m\x1b[K->\x1b[m\x1b[K points[0].y, cloud_in -> points[0].x);\n'}
+[6.513441] (a-loam) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.513605] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:77:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.513681] (a-loam) StderrLine: {'line': b'   77 |         float strOri = -atan2(cloud_in -> points[0].y, cloud_in \x1b[01;31m\x1b[K->\x1b[m\x1b[K points[0].x);\n'}
+[6.513751] (a-loam) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.513820] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:78:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.513888] (a-loam) StderrLine: {'line': b'   78 |         float endOri = -atan2(cloud_in \x1b[01;31m\x1b[K->\x1b[m\x1b[K points[cloudSize - 1].y,\n'}
+[6.513957] (a-loam) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.514025] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:79:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.514093] (a-loam) StderrLine: {'line': b'   79 |                               cloud_in \x1b[01;31m\x1b[K->\x1b[m\x1b[K points[cloudSize - 1].x) + 2 * M_PI;\n'}
+[6.514161] (a-loam) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.514229] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:95:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.514311] (a-loam) StderrLine: {'line': b'   95 |             point.x = cloud_in \x1b[01;31m\x1b[K->\x1b[m\x1b[K points[i].x;\n'}
+[6.514383] (a-loam) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.514450] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:96:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.514518] (a-loam) StderrLine: {'line': b'   96 |             point.y = cloud_in \x1b[01;31m\x1b[K->\x1b[m\x1b[K points[i].y;\n'}
+[6.514585] (a-loam) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.514652] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:97:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[6.514720] (a-loam) StderrLine: {'line': b'   97 |             point.z = cloud_in \x1b[01;31m\x1b[K->\x1b[m\x1b[K points[i].z;\n'}
+[6.514787] (a-loam) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.514860] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:197:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.514936] (a-loam) StderrLine: {'line': b'  197 |         auto comp(const int i, const int j)\x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[6.515004] (a-loam) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.520833] (-) TimerEvent: {}
+[6.522789] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:209:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcomp\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.522998] (a-loam) StderrLine: {'line': b'  209 |                 std::sort(cloudSortInd + sp, cloudSortInd + ep + 1, \x1b[01;31m\x1b[Kcomp\x1b[m\x1b[K);\n'}
+[6.523082] (a-loam) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.543732] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.544093] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator*\x1b[m\x1b[K\xe2\x80\x99 (operand type is \xe2\x80\x98\x1b[01m\x1b[Kconst PointCloud2\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst sensor_msgs::msg::PointCloud2_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[6.544233] (a-loam) StderrLine: {'line': b'   63 |         pcl::fromROSMsg(\x1b[01;31m\x1b[K*laserCloudMsg\x1b[m\x1b[K, *laserCloudIn);\n'}
+[6.544313] (a-loam) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.544413] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[6.544483] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/StdVector:14\x1b[m\x1b[K,\n'}
+[6.544550] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:45\x1b[m\x1b[K,\n'}
+[6.544617] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9\x1b[m\x1b[K,\n'}
+[6.544692] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.544775] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:392:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.544863] (a-loam) StderrLine: {'line': b'  392 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K*(const complex<_Tp>& __x, const complex<_Tp>& __y)\n'}
+[6.544940] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.545014] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:392:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.545089] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst PointCloud2\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst sensor_msgs::msg::PointCloud2_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.545179] (a-loam) StderrLine: {'line': b'   63 |         pcl::fromROSMsg(*\x1b[01;36m\x1b[KlaserCloudMsg\x1b[m\x1b[K, *laserCloudIn);\n'}
+[6.545249] (a-loam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.545318] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[6.545387] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/StdVector:14\x1b[m\x1b[K,\n'}
+[6.545456] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:45\x1b[m\x1b[K,\n'}
+[6.545524] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9\x1b[m\x1b[K,\n'}
+[6.545598] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.545668] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:401:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.545739] (a-loam) StderrLine: {'line': b'  401 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K*(const complex<_Tp>& __x, const _Tp& __y)\n'}
+[6.545808] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.545877] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:401:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.545945] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst PointCloud2\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst sensor_msgs::msg::PointCloud2_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.546018] (a-loam) StderrLine: {'line': b'   63 |         pcl::fromROSMsg(*\x1b[01;36m\x1b[KlaserCloudMsg\x1b[m\x1b[K, *laserCloudIn);\n'}
+[6.546087] (a-loam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.546157] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[6.546234] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/StdVector:14\x1b[m\x1b[K,\n'}
+[6.546311] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:45\x1b[m\x1b[K,\n'}
+[6.546381] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9\x1b[m\x1b[K,\n'}
+[6.546458] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.546531] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:410:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const _Tp&, const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.546609] (a-loam) StderrLine: {'line': b'  410 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K*(const _Tp& __x, const complex<_Tp>& __y)\n'}
+[6.546683] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.546756] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:410:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.546828] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[6.546904] (a-loam) StderrLine: {'line': b'   63 |         pcl::fromROSMsg(*\x1b[01;36m\x1b[KlaserCloudMsg\x1b[m\x1b[K, *laserCloudIn);\n'}
+[6.546989] (a-loam) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.555585] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:67:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMINIMUM_RANGE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KMINMUM_RANGE\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.555750] (a-loam) StderrLine: {'line': b'   67 |         sr.removeClosedPointCloud(*laserCloudIn, *laserCloudIn, \x1b[01;31m\x1b[KMINIMUM_RANGE\x1b[m\x1b[K);\n'}
+[6.555829] (a-loam) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.555899] (a-loam) StderrLine: {'line': b'      |                                                                 \x1b[32m\x1b[KMINMUM_RANGE\x1b[m\x1b[K\n'}
+[6.620998] (-) TimerEvent: {}
+[6.721446] (-) TimerEvent: {}
+[6.821769] (-) TimerEvent: {}
+[6.922071] (-) TimerEvent: {}
+[7.022392] (-) TimerEvent: {}
+[7.122711] (-) TimerEvent: {}
+[7.223078] (-) TimerEvent: {}
+[7.323403] (-) TimerEvent: {}
+[7.423750] (-) TimerEvent: {}
+[7.426699] (a-loam) StderrLine: {'line': b'/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[KALOAM::ScanRegistrationNode<PointT>::ScanRegistrationNode(std::string) [with PointT = pcl::PointXYZ; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.426922] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.427004] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.427090] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.427175] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.427249] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.427320] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.427394] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.427472] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.427549] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:94:52:\x1b[m\x1b[K   required from here\n'}
+[7.427618] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:31:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&) [with PointT = pcl::PointXYZ; sensor_msgs::msg::PointCloud2 = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.427689] (a-loam) StderrLine: {'line': b'   31 |             "/laser_cloud_ori", 1, \x1b[01;31m\x1b[KRun\x1b[m\x1b[K);\n'}
+[7.427757] (a-loam) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.427824] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:61:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.427892] (a-loam) StderrLine: {'line': b'   61 |     void \x1b[01;36m\x1b[KRun\x1b[m\x1b[K(const sensor_msgs::msg::PointCloud2 &laserCloudMsg){\n'}
+[7.427959] (a-loam) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.440018] (a-loam) StderrLine: {'line': b'/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&) [with PointT = pcl::PointXYZ; sensor_msgs::msg::PointCloud2 = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.440260] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:31:36:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KALOAM::ScanRegistrationNode<PointT>::ScanRegistrationNode(std::string) [with PointT = pcl::PointXYZ; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.440369] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.440453] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.440539] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.440621] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.440694] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.440779] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.440857] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.440935] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.441011] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:94:52:\x1b[m\x1b[K   required from here\n'}
+[7.441082] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:69:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZ>::Ptr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.441155] (a-loam) StderrLine: {'line': b'   69 |         sr.extractFeatureFromPointCloud(\x1b[01;31m\x1b[KlaserCloudIn\x1b[m\x1b[K);\n'}
+[7.441225] (a-loam) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.441295] (a-loam) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[7.441364] (a-loam) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[Kpcl::PointCloud<pcl::PointXYZ>::Ptr {aka std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >}\x1b[m\x1b[K\n'}
+[7.441434] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[7.441504] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:72:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistration<PointT>::extractFeatureFromPointCloud(int) [with PointT = pcl::PointXYZ]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.441576] (a-loam) StderrLine: {'line': b'   72 |     void extractFeatureFromPointCloud(\x1b[01;36m\x1b[KCLOUDPTR cloud_in\x1b[m\x1b[K){\n'}
+[7.441646] (a-loam) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[7.523890] (-) TimerEvent: {}
+[7.624222] (-) TimerEvent: {}
+[7.724493] (-) TimerEvent: {}
+[7.824768] (-) TimerEvent: {}
+[7.925056] (-) TimerEvent: {}
+[7.928717] (a-loam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/scan_registration_node.dir/build.make:76: CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o] Error 1\n'}
+[7.932978] (a-loam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scan_registration_node.dir/all] Error 2\n'}
+[7.933172] (a-loam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.935471] (a-loam) CommandEnded: {'returncode': 2}
+[7.989091] (a-loam) JobEnded: {'identifier': 'a-loam', 'rc': 2}
+[7.990915] (-) EventReactorShutdown: {}

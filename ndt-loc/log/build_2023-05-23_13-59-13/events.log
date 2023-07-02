@@ -1,0 +1,476 @@
+[0.000000] (-) TimerEvent: {}
+[0.000216] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.000262] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.000311] (-) JobUnselected: {'identifier': 'radar-data'}
+[0.000347] (map) JobQueued: {'identifier': 'map', 'dependencies': OrderedDict()}
+[0.000944] (map) JobStarted: {'identifier': 'map'}
+[0.018570] (map) JobProgress: {'identifier': 'map', 'progress': 'cmake'}
+[0.027514] (map) JobProgress: {'identifier': 'map', 'progress': 'build'}
+[0.029952] (map) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/map', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/map', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2236'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/test/install:/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:/usr/lib/java/jdk1.6.0_45/bin'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/1946,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/1946'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/37e47a58_f1fc_4f9b_86fe_3f28f2edd3c6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UHK841'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/test/install/demo:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/map'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/test/install/demo:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099818] (-) TimerEvent: {}
+[0.200162] (-) TimerEvent: {}
+[0.300520] (-) TimerEvent: {}
+[0.367678] (map) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400729] (-) TimerEvent: {}
+[0.501251] (-) TimerEvent: {}
+[0.601616] (-) TimerEvent: {}
+[0.701935] (-) TimerEvent: {}
+[0.802811] (-) TimerEvent: {}
+[0.903209] (-) TimerEvent: {}
+[1.003720] (-) TimerEvent: {}
+[1.104485] (-) TimerEvent: {}
+[1.196684] (map) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.204619] (-) TimerEvent: {}
+[1.304954] (-) TimerEvent: {}
+[1.405570] (-) TimerEvent: {}
+[1.506209] (-) TimerEvent: {}
+[1.606779] (-) TimerEvent: {}
+[1.639886] (map) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.672057] (map) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.706919] (-) TimerEvent: {}
+[1.712647] (map) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.803883] (map) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.807030] (-) TimerEvent: {}
+[1.907555] (-) TimerEvent: {}
+[1.950707] (map) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.007698] (-) TimerEvent: {}
+[2.108057] (-) TimerEvent: {}
+[2.208574] (-) TimerEvent: {}
+[2.300634] (map) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.308728] (-) TimerEvent: {}
+[2.325244] (map) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.408904] (-) TimerEvent: {}
+[2.509426] (-) TimerEvent: {}
+[2.609952] (-) TimerEvent: {}
+[2.710584] (-) TimerEvent: {}
+[2.811424] (-) TimerEvent: {}
+[2.911942] (-) TimerEvent: {}
+[3.012249] (-) TimerEvent: {}
+[3.112542] (-) TimerEvent: {}
+[3.200321] (map) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.212658] (-) TimerEvent: {}
+[3.312996] (-) TimerEvent: {}
+[3.413305] (-) TimerEvent: {}
+[3.513591] (-) TimerEvent: {}
+[3.586341] (map) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.613710] (-) TimerEvent: {}
+[3.714012] (-) TimerEvent: {}
+[3.814357] (-) TimerEvent: {}
+[3.914673] (-) TimerEvent: {}
+[3.988974] (map) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[4.014914] (-) TimerEvent: {}
+[4.115467] (-) TimerEvent: {}
+[4.216052] (-) TimerEvent: {}
+[4.278569] (map) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[4.316504] (-) TimerEvent: {}
+[4.416861] (-) TimerEvent: {}
+[4.517367] (-) TimerEvent: {}
+[4.617788] (-) TimerEvent: {}
+[4.718297] (-) TimerEvent: {}
+[4.818853] (-) TimerEvent: {}
+[4.919447] (-) TimerEvent: {}
+[5.019990] (-) TimerEvent: {}
+[5.120552] (-) TimerEvent: {}
+[5.221141] (-) TimerEvent: {}
+[5.321706] (-) TimerEvent: {}
+[5.422290] (-) TimerEvent: {}
+[5.522834] (-) TimerEvent: {}
+[5.623367] (-) TimerEvent: {}
+[5.723858] (-) TimerEvent: {}
+[5.824154] (-) TimerEvent: {}
+[5.924497] (-) TimerEvent: {}
+[6.024999] (-) TimerEvent: {}
+[6.125364] (-) TimerEvent: {}
+[6.225851] (-) TimerEvent: {}
+[6.326355] (-) TimerEvent: {}
+[6.426641] (-) TimerEvent: {}
+[6.526971] (-) TimerEvent: {}
+[6.627355] (-) TimerEvent: {}
+[6.727966] (-) TimerEvent: {}
+[6.828529] (-) TimerEvent: {}
+[6.929097] (-) TimerEvent: {}
+[7.029672] (-) TimerEvent: {}
+[7.130255] (-) TimerEvent: {}
+[7.230832] (-) TimerEvent: {}
+[7.331383] (-) TimerEvent: {}
+[7.431914] (-) TimerEvent: {}
+[7.532506] (-) TimerEvent: {}
+[7.633112] (-) TimerEvent: {}
+[7.733725] (-) TimerEvent: {}
+[7.834306] (-) TimerEvent: {}
+[7.934930] (-) TimerEvent: {}
+[8.035483] (-) TimerEvent: {}
+[8.136049] (-) TimerEvent: {}
+[8.236654] (-) TimerEvent: {}
+[8.337269] (-) TimerEvent: {}
+[8.437877] (-) TimerEvent: {}
+[8.538471] (-) TimerEvent: {}
+[8.638978] (-) TimerEvent: {}
+[8.739295] (-) TimerEvent: {}
+[8.839754] (-) TimerEvent: {}
+[8.940028] (-) TimerEvent: {}
+[9.040309] (-) TimerEvent: {}
+[9.140590] (-) TimerEvent: {}
+[9.241016] (-) TimerEvent: {}
+[9.341604] (-) TimerEvent: {}
+[9.442136] (-) TimerEvent: {}
+[9.542671] (-) TimerEvent: {}
+[9.643226] (-) TimerEvent: {}
+[9.743739] (-) TimerEvent: {}
+[9.844307] (-) TimerEvent: {}
+[9.944907] (-) TimerEvent: {}
+[10.045447] (-) TimerEvent: {}
+[10.146001] (-) TimerEvent: {}
+[10.246586] (-) TimerEvent: {}
+[10.347142] (-) TimerEvent: {}
+[10.447788] (-) TimerEvent: {}
+[10.548318] (-) TimerEvent: {}
+[10.648804] (-) TimerEvent: {}
+[10.749392] (-) TimerEvent: {}
+[10.849913] (-) TimerEvent: {}
+[10.950286] (-) TimerEvent: {}
+[11.050687] (-) TimerEvent: {}
+[11.151442] (-) TimerEvent: {}
+[11.251867] (-) TimerEvent: {}
+[11.352427] (-) TimerEvent: {}
+[11.453007] (-) TimerEvent: {}
+[11.553526] (-) TimerEvent: {}
+[11.654138] (-) TimerEvent: {}
+[11.754762] (-) TimerEvent: {}
+[11.855361] (-) TimerEvent: {}
+[11.955906] (-) TimerEvent: {}
+[12.056479] (-) TimerEvent: {}
+[12.157087] (-) TimerEvent: {}
+[12.258055] (-) TimerEvent: {}
+[12.358654] (-) TimerEvent: {}
+[12.459224] (-) TimerEvent: {}
+[12.559779] (-) TimerEvent: {}
+[12.660359] (-) TimerEvent: {}
+[12.760955] (-) TimerEvent: {}
+[12.861579] (-) TimerEvent: {}
+[12.962198] (-) TimerEvent: {}
+[13.062828] (-) TimerEvent: {}
+[13.163439] (-) TimerEvent: {}
+[13.264056] (-) TimerEvent: {}
+[13.364640] (-) TimerEvent: {}
+[13.465230] (-) TimerEvent: {}
+[13.565856] (-) TimerEvent: {}
+[13.666645] (-) TimerEvent: {}
+[13.767430] (-) TimerEvent: {}
+[13.868027] (-) TimerEvent: {}
+[13.968627] (-) TimerEvent: {}
+[14.069223] (-) TimerEvent: {}
+[14.169827] (-) TimerEvent: {}
+[14.270403] (-) TimerEvent: {}
+[14.371002] (-) TimerEvent: {}
+[14.471565] (-) TimerEvent: {}
+[14.572207] (-) TimerEvent: {}
+[14.672765] (-) TimerEvent: {}
+[14.773368] (-) TimerEvent: {}
+[14.874000] (-) TimerEvent: {}
+[14.974589] (-) TimerEvent: {}
+[15.058747] (map) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[15.074745] (-) TimerEvent: {}
+[15.114019] (map) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[15.114829] (map) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[15.174826] (-) TimerEvent: {}
+[15.275160] (-) TimerEvent: {}
+[15.301170] (map) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[15.308835] (map) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[15.316003] (map) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[15.375251] (-) TimerEvent: {}
+[15.475707] (-) TimerEvent: {}
+[15.575481] (map) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[15.576002] (-) TimerEvent: {}
+[15.676425] (-) TimerEvent: {}
+[15.762493] (map) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[15.776529] (-) TimerEvent: {}
+[15.876813] (-) TimerEvent: {}
+[15.920280] (map) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[15.920773] (map) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[15.921192] (map) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[15.921619] (map) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[15.922037] (map) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[15.922463] (map) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[15.922869] (map) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[15.923357] (map) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[15.923725] (map) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[15.924290] (map) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[15.924783] (map) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[15.925171] (map) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[15.925712] (map) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[15.926267] (map) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[15.926776] (map) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[15.927415] (map) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[15.927920] (map) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[15.928362] (map) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[15.928966] (map) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[15.929423] (map) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[15.930338] (map) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[15.930665] (map) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[15.931335] (map) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[15.931666] (map) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[15.932156] (map) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[15.977047] (-) TimerEvent: {}
+[16.033118] (map) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[16.077292] (-) TimerEvent: {}
+[16.177866] (-) TimerEvent: {}
+[16.278311] (-) TimerEvent: {}
+[16.378768] (-) TimerEvent: {}
+[16.479313] (-) TimerEvent: {}
+[16.579583] (-) TimerEvent: {}
+[16.679857] (-) TimerEvent: {}
+[16.780156] (-) TimerEvent: {}
+[16.880452] (-) TimerEvent: {}
+[16.980786] (-) TimerEvent: {}
+[17.081182] (-) TimerEvent: {}
+[17.181586] (-) TimerEvent: {}
+[17.282179] (-) TimerEvent: {}
+[17.382761] (-) TimerEvent: {}
+[17.483271] (-) TimerEvent: {}
+[17.525051] (map) StdoutLine: {'line': b'-- Configuring done\n'}
+[17.583488] (-) TimerEvent: {}
+[17.684036] (-) TimerEvent: {}
+[17.784623] (-) TimerEvent: {}
+[17.885198] (-) TimerEvent: {}
+[17.985614] (-) TimerEvent: {}
+[18.086035] (-) TimerEvent: {}
+[18.186992] (-) TimerEvent: {}
+[18.287555] (-) TimerEvent: {}
+[18.388128] (-) TimerEvent: {}
+[18.488720] (-) TimerEvent: {}
+[18.589242] (-) TimerEvent: {}
+[18.689593] (-) TimerEvent: {}
+[18.745979] (map) StdoutLine: {'line': b'-- Generating done\n'}
+[18.761424] (map) StdoutLine: {'line': b'-- Build files have been written to: /home/evan/code/ndt-loc/build/map\n'}
+[18.789742] (-) TimerEvent: {}
+[18.820059] (map) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lidar_data_node\x1b[0m\n'}
+[18.861634] (map) StdoutLine: {'line': b'[ 20%] Built target lidar_data_node\n'}
+[18.873840] (map) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target show_map_node\x1b[0m\n'}
+[18.889804] (-) TimerEvent: {}
+[18.917685] (map) StdoutLine: {'line': b'[ 40%] Built target show_map_node\n'}
+[18.939002] (map) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o\x1b[0m\n'}
+[18.989965] (-) TimerEvent: {}
+[19.090444] (-) TimerEvent: {}
+[19.190711] (-) TimerEvent: {}
+[19.290983] (-) TimerEvent: {}
+[19.391283] (-) TimerEvent: {}
+[19.491688] (-) TimerEvent: {}
+[19.592348] (-) TimerEvent: {}
+[19.692885] (-) TimerEvent: {}
+[19.793254] (-) TimerEvent: {}
+[19.893761] (-) TimerEvent: {}
+[19.994087] (-) TimerEvent: {}
+[20.094461] (-) TimerEvent: {}
+[20.195000] (-) TimerEvent: {}
+[20.295473] (-) TimerEvent: {}
+[20.396072] (-) TimerEvent: {}
+[20.496665] (-) TimerEvent: {}
+[20.597279] (-) TimerEvent: {}
+[20.697877] (-) TimerEvent: {}
+[20.798549] (-) TimerEvent: {}
+[20.899435] (-) TimerEvent: {}
+[21.000026] (-) TimerEvent: {}
+[21.100978] (-) TimerEvent: {}
+[21.201487] (-) TimerEvent: {}
+[21.301789] (-) TimerEvent: {}
+[21.402085] (-) TimerEvent: {}
+[21.502352] (-) TimerEvent: {}
+[21.602664] (-) TimerEvent: {}
+[21.702972] (-) TimerEvent: {}
+[21.803263] (-) TimerEvent: {}
+[21.903562] (-) TimerEvent: {}
+[22.003953] (-) TimerEvent: {}
+[22.104449] (-) TimerEvent: {}
+[22.205062] (-) TimerEvent: {}
+[22.305574] (-) TimerEvent: {}
+[22.405867] (-) TimerEvent: {}
+[22.506176] (-) TimerEvent: {}
+[22.606589] (-) TimerEvent: {}
+[22.707133] (-) TimerEvent: {}
+[22.807695] (-) TimerEvent: {}
+[22.908302] (-) TimerEvent: {}
+[23.008935] (-) TimerEvent: {}
+[23.109587] (-) TimerEvent: {}
+[23.210107] (-) TimerEvent: {}
+[23.310522] (-) TimerEvent: {}
+[23.411061] (-) TimerEvent: {}
+[23.511520] (-) TimerEvent: {}
+[23.612049] (-) TimerEvent: {}
+[23.712467] (-) TimerEvent: {}
+[23.812859] (-) TimerEvent: {}
+[23.913230] (-) TimerEvent: {}
+[24.013741] (-) TimerEvent: {}
+[24.114195] (-) TimerEvent: {}
+[24.214887] (-) TimerEvent: {}
+[24.315326] (-) TimerEvent: {}
+[24.415682] (-) TimerEvent: {}
+[24.516020] (-) TimerEvent: {}
+[24.616308] (-) TimerEvent: {}
+[24.716753] (-) TimerEvent: {}
+[24.817678] (-) TimerEvent: {}
+[24.918662] (-) TimerEvent: {}
+[25.018987] (-) TimerEvent: {}
+[25.119337] (-) TimerEvent: {}
+[25.219907] (-) TimerEvent: {}
+[25.320390] (-) TimerEvent: {}
+[25.420704] (-) TimerEvent: {}
+[25.521010] (-) TimerEvent: {}
+[25.621315] (-) TimerEvent: {}
+[25.721628] (-) TimerEvent: {}
+[25.821904] (-) TimerEvent: {}
+[25.922223] (-) TimerEvent: {}
+[26.022504] (-) TimerEvent: {}
+[26.122804] (-) TimerEvent: {}
+[26.223118] (-) TimerEvent: {}
+[26.323420] (-) TimerEvent: {}
+[26.423706] (-) TimerEvent: {}
+[26.524022] (-) TimerEvent: {}
+[26.624320] (-) TimerEvent: {}
+[26.724630] (-) TimerEvent: {}
+[26.824931] (-) TimerEvent: {}
+[26.925229] (-) TimerEvent: {}
+[27.025540] (-) TimerEvent: {}
+[27.125852] (-) TimerEvent: {}
+[27.226160] (-) TimerEvent: {}
+[27.326466] (-) TimerEvent: {}
+[27.426763] (-) TimerEvent: {}
+[27.527028] (-) TimerEvent: {}
+[27.627330] (-) TimerEvent: {}
+[27.727616] (-) TimerEvent: {}
+[27.827960] (-) TimerEvent: {}
+[27.928268] (-) TimerEvent: {}
+[28.028594] (-) TimerEvent: {}
+[28.128892] (-) TimerEvent: {}
+[28.229204] (-) TimerEvent: {}
+[28.329521] (-) TimerEvent: {}
+[28.429816] (-) TimerEvent: {}
+[28.530121] (-) TimerEvent: {}
+[28.630430] (-) TimerEvent: {}
+[28.730708] (-) TimerEvent: {}
+[28.831005] (-) TimerEvent: {}
+[28.931288] (-) TimerEvent: {}
+[29.031595] (-) TimerEvent: {}
+[29.131904] (-) TimerEvent: {}
+[29.232214] (-) TimerEvent: {}
+[29.332527] (-) TimerEvent: {}
+[29.432809] (-) TimerEvent: {}
+[29.533132] (-) TimerEvent: {}
+[29.633448] (-) TimerEvent: {}
+[29.733773] (-) TimerEvent: {}
+[29.834134] (-) TimerEvent: {}
+[29.934449] (-) TimerEvent: {}
+[30.034766] (-) TimerEvent: {}
+[30.135034] (-) TimerEvent: {}
+[30.235344] (-) TimerEvent: {}
+[30.335662] (-) TimerEvent: {}
+[30.435958] (-) TimerEvent: {}
+[30.536251] (-) TimerEvent: {}
+[30.636533] (-) TimerEvent: {}
+[30.736842] (-) TimerEvent: {}
+[30.837143] (-) TimerEvent: {}
+[30.937431] (-) TimerEvent: {}
+[31.037696] (-) TimerEvent: {}
+[31.138029] (-) TimerEvent: {}
+[31.238325] (-) TimerEvent: {}
+[31.338642] (-) TimerEvent: {}
+[31.438987] (-) TimerEvent: {}
+[31.539273] (-) TimerEvent: {}
+[31.639584] (-) TimerEvent: {}
+[31.739850] (-) TimerEvent: {}
+[31.840153] (-) TimerEvent: {}
+[31.940436] (-) TimerEvent: {}
+[32.019474] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kndtloc::pose::pose(std::string, std::string, std::string, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[32.019666] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:13:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kyaw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[32.019759] (map) StderrLine: {'line': b'   13 |     pose(std::string _dix, std::string _diy, \x1b[01;35m\x1b[Kstd::string yaw\x1b[m\x1b[K, std::string _timestamping){\n'}
+[32.019833] (map) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[32.029956] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix4f TransMatrix(ndtloc::pose&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[32.030468] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:83:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KEigen::AngleAxis<float>::AngleAxis(float&, const BasisReturnType (&)())\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.030559] (map) StderrLine: {'line': b'   83 |     Eigen::AngleAxisf rot_z(cur_pose.yaw, Eigen::Vector3f::UnitZ\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[32.030645] (map) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[32.030717] (map) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Geometry:43\x1b[m\x1b[K,\n'}
+[32.030788] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:46\x1b[m\x1b[K,\n'}
+[32.030858] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/include/map/utilty.h:9\x1b[m\x1b[K,\n'}
+[32.030936] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:3\x1b[m\x1b[K:\n'}
+[32.031005] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:139:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class OtherScalarType> Eigen::AngleAxis<Scalar>::AngleAxis(const Eigen::AngleAxis<NewScalarType>&) [with OtherScalarType = OtherScalarType; _Scalar = float]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.031077] (map) StderrLine: {'line': b'  139 |   EIGEN_DEVICE_FUNC inline explicit \x1b[01;36m\x1b[KAngleAxis\x1b[m\x1b[K(const AngleAxis<OtherScalarType>& other)\n'}
+[32.031146] (map) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[32.031213] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:139:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[32.031282] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:83:65:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst Eigen::AngleAxis<_Scalar>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.031359] (map) StderrLine: {'line': b'   83 |     Eigen::AngleAxisf rot_z(cur_pose.yaw, Eigen::Vector3f::UnitZ\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[32.031426] (map) StderrLine: {'line': b'      |                                                                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[32.031493] (map) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Geometry:43\x1b[m\x1b[K,\n'}
+[32.031561] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:46\x1b[m\x1b[K,\n'}
+[32.031628] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/include/map/utilty.h:9\x1b[m\x1b[K,\n'}
+[32.031695] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:3\x1b[m\x1b[K:\n'}
+[32.031762] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:88:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class Derived> Eigen::AngleAxis<Scalar>::AngleAxis(const Eigen::MatrixBase<OtherDerived>&) [with Derived = Derived; _Scalar = float]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.031833] (map) StderrLine: {'line': b'   88 |   EIGEN_DEVICE_FUNC inline explicit \x1b[01;36m\x1b[KAngleAxis\x1b[m\x1b[K(const MatrixBase<Derived>& m) { *this = m; }\n'}
+[32.031901] (map) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[32.031968] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:88:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[32.032036] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:83:65:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst Eigen::MatrixBase<Derived>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.032106] (map) StderrLine: {'line': b'   83 |     Eigen::AngleAxisf rot_z(cur_pose.yaw, Eigen::Vector3f::UnitZ\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[32.032173] (map) StderrLine: {'line': b'      |                                                                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[32.032240] (map) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Geometry:43\x1b[m\x1b[K,\n'}
+[32.032307] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:46\x1b[m\x1b[K,\n'}
+[32.032375] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/include/map/utilty.h:9\x1b[m\x1b[K,\n'}
+[32.032449] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:3\x1b[m\x1b[K:\n'}
+[32.032520] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:85:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class QuatDerived> Eigen::AngleAxis<Scalar>::AngleAxis(const Eigen::QuaternionBase<OtherDerived>&) [with QuatDerived = QuatDerived; _Scalar = float]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.032592] (map) StderrLine: {'line': b'   85 |   EIGEN_DEVICE_FUNC inline explicit \x1b[01;36m\x1b[KAngleAxis\x1b[m\x1b[K(const QuaternionBase<QuatDerived>& q) { *this = q; }\n'}
+[32.032659] (map) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[32.032726] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:85:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[32.032799] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:83:65:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst Eigen::QuaternionBase<Derived>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.032867] (map) StderrLine: {'line': b'   83 |     Eigen::AngleAxisf rot_z(cur_pose.yaw, Eigen::Vector3f::UnitZ\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[32.032935] (map) StderrLine: {'line': b'      |                                                                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[32.033006] (map) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Geometry:43\x1b[m\x1b[K,\n'}
+[32.033072] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:46\x1b[m\x1b[K,\n'}
+[32.033138] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/include/map/utilty.h:9\x1b[m\x1b[K,\n'}
+[32.033206] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:3\x1b[m\x1b[K:\n'}
+[32.033272] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:80:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class Derived> Eigen::AngleAxis<Scalar>::AngleAxis(const Scalar&, const Eigen::MatrixBase<OtherDerived>&) [with Derived = Derived; _Scalar = float]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.033343] (map) StderrLine: {'line': b'   80 |   inline \x1b[01;36m\x1b[KAngleAxis\x1b[m\x1b[K(const Scalar& angle, const MatrixBase<Derived>& axis) : m_axis(axis), m_angle(angle) {}\n'}
+[32.033422] (map) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[32.033519] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:80:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[32.033584] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:83:65:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst Eigen::MatrixBase<Derived>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst BasisReturnType()\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst Eigen::Block<const Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>, Eigen::Matrix<float, 3, 3> >, 3, 1, false>()\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[32.033654] (map) StderrLine: {'line': b'   83 |     Eigen::AngleAxisf rot_z(cur_pose.yaw, Eigen::Vector3f::UnitZ\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[32.033718] (map) StderrLine: {'line': b'      |                                                                 \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[32.033782] (map) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Geometry:43\x1b[m\x1b[K,\n'}
+[32.033846] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:46\x1b[m\x1b[K,\n'}
+[32.033910] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/include/map/utilty.h:9\x1b[m\x1b[K,\n'}
+[32.033973] (map) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:3\x1b[m\x1b[K:\n'}
+[32.034039] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:72:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KEigen::AngleAxis<Scalar>::AngleAxis() [with _Scalar = float]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.034106] (map) StderrLine: {'line': b'   72 |   EIGEN_DEVICE_FUNC \x1b[01;36m\x1b[KAngleAxis\x1b[m\x1b[K() {}\n'}
+[32.034170] (map) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[32.034235] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:72:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 2 provided\n'}
+[32.034308] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:49:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KEigen::AngleAxis<float>::AngleAxis(const Eigen::AngleAxis<float>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.034374] (map) StderrLine: {'line': b'   49 | class \x1b[01;36m\x1b[KAngleAxis\x1b[m\x1b[K : public RotationBase<AngleAxis<_Scalar>,3>\n'}
+[32.034439] (map) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[32.034503] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:49:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[32.034571] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:49:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KEigen::AngleAxis<float>::AngleAxis(Eigen::AngleAxis<float>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[32.034643] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:49:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[32.040550] (-) TimerEvent: {}
+[32.140802] (-) TimerEvent: {}
+[32.241116] (-) TimerEvent: {}
+[32.341413] (-) TimerEvent: {}
+[32.441770] (-) TimerEvent: {}
+[32.542078] (-) TimerEvent: {}
+[32.642378] (-) TimerEvent: {}
+[32.742695] (-) TimerEvent: {}
+[32.842981] (-) TimerEvent: {}
+[32.943263] (-) TimerEvent: {}
+[33.043548] (-) TimerEvent: {}
+[33.143829] (-) TimerEvent: {}
+[33.244149] (-) TimerEvent: {}
+[33.344458] (-) TimerEvent: {}
+[33.444771] (-) TimerEvent: {}
+[33.545084] (-) TimerEvent: {}
+[33.645397] (-) TimerEvent: {}
+[33.745710] (-) TimerEvent: {}
+[33.845987] (-) TimerEvent: {}
+[33.946301] (-) TimerEvent: {}
+[34.046596] (-) TimerEvent: {}
+[34.136896] (map) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/mapping_node.dir/build.make:76: CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o] Error 1\n'}
+[34.137631] (map) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/mapping_node.dir/all] Error 2\n'}
+[34.137746] (map) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[34.140074] (map) CommandEnded: {'returncode': 2}
+[34.146707] (-) TimerEvent: {}
+[34.201235] (map) JobEnded: {'identifier': 'map', 'rc': 2}
+[34.211874] (-) EventReactorShutdown: {}

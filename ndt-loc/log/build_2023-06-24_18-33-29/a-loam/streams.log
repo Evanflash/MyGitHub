@@ -1,0 +1,167 @@
+[0.018s] Invoking command in '/home/evan/code/ndt-loc/build/a-loam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/a-loam -- -j4 -l4
+[0.082s] [35m[1mConsolidate compiler generated dependencies of target scan_registration_node[0m
+[0.128s] [ 50%] [32mBuilding CXX object CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o[0m
+[6.496s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.497s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:29:18:[m[K [01;31m[Kerror: [m[Kneed ‘[01m[Ktypename[m[K’ before ‘[01m[Kpcl::PointCloud<PointT>::Ptr[m[K’ because ‘[01m[Kpcl::PointCloud<PointT>[m[K’ is a dependent scope
+[6.497s]    29 | using CLOUDPTR = [01;31m[Kpcl[m[K::PointCloud<PointT>::Ptr;
+[6.497s]       |                  [01;31m[K^~~[m[K
+[6.497s]       |                  [32m[Ktypename [m[K
+[6.497s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:45:33:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOUDPTR[m[K’ has not been declared
+[6.497s]    45 |     void removeClosedPointCloud([01;31m[KCLOUDPTR[m[K cloud_in, CLOUDPTR cloud_out, float thres){
+[6.497s]       |                                 [01;31m[K^~~~~~~~[m[K
+[6.497s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:45:52:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOUDPTR[m[K’ has not been declared
+[6.497s]    45 |     void removeClosedPointCloud(CLOUDPTR cloud_in, [01;31m[KCLOUDPTR[m[K cloud_out, float thres){
+[6.497s]       |                                                    [01;31m[K^~~~~~~~[m[K
+[6.497s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:72:39:[m[K [01;31m[Kerror: [m[K‘[01m[KCLOUDPTR[m[K’ has not been declared
+[6.497s]    72 |     void extractFeatureFromPointCloud([01;31m[KCLOUDPTR[m[K cloud_in){
+[6.497s]       |                                       [01;31m[K^~~~~~~~[m[K
+[6.500s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:[m[K In member function ‘[01m[Kvoid ALOAM::ScanRegistration<PointT>::removeClosedPointCloud(int, int, float)[m[K’:
+[6.500s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:47:23:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.500s]    47 |             cloud_out [01;31m[K->[m[K header = cloud_in -> header;
+[6.500s]       |                       [01;31m[K^~[m[K
+[6.500s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:47:44:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.500s]    47 |             cloud_out -> header = cloud_in [01;31m[K->[m[K header;
+[6.500s]       |                                            [01;31m[K^~[m[K
+[6.500s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:48:23:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.500s]    48 |             cloud_out [01;31m[K->[m[K points.resize(cloud_int -> points.size());
+[6.500s]       |                       [01;31m[K^~[m[K
+[6.508s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:48:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_int[m[K’ was not declared in this scope; did you mean ‘[01m[Kcloud_in[m[K’?
+[6.508s]    48 |             cloud_out -> points.resize([01;31m[Kcloud_int[m[K -> points.size());
+[6.508s]       |                                        [01;31m[K^~~~~~~~~[m[K
+[6.508s]       |                                        [32m[Kcloud_in[m[K
+[6.508s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:54:40:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.508s]    54 |         for(size_t i = 0; i < cloud_in [01;31m[K->[m[K size(); ++i){
+[6.509s]       |                                        [01;31m[K^~[m[K
+[6.509s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:55:37:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.509s]    55 |             PointT point = cloud_in [01;31m[K->[m[K points[i];
+[6.509s]       |                                     [01;31m[K^~[m[K
+[6.509s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:57:27:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.509s]    57 |                 cloud_out [01;31m[K->[m[K points[j] = point;
+[6.509s]       |                           [01;31m[K^~[m[K
+[6.509s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:62:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.509s]    62 |         cloud_out [01;31m[K->[m[K points.resize(j);
+[6.509s]       |                   [01;31m[K^~[m[K
+[6.509s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:63:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.509s]    63 |         cloud_out [01;31m[K->[m[K height = 1;
+[6.509s]       |                   [01;31m[K^~[m[K
+[6.509s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:64:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.510s]    64 |         cloud_out [01;31m[K->[m[K width = static_cast<uint32_t>(j);
+[6.510s]       |                   [01;31m[K^~[m[K
+[6.510s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:65:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.510s]    65 |         cloud_out [01;31m[K->[m[K is_dense = true;
+[6.510s]       |                   [01;31m[K^~[m[K
+[6.510s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:[m[K In member function ‘[01m[Kvoid ALOAM::ScanRegistration<PointT>::extractFeatureFromPointCloud(int)[m[K’:
+[6.510s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:76:34:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.511s]    76 |         int cloudSize = cloud_in [01;31m[K->[m[K size();
+[6.511s]       |                                  [01;31m[K^~[m[K
+[6.512s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:77:40:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.512s]    77 |         float strOri = -atan2(cloud_in [01;31m[K->[m[K points[0].y, cloud_in -> points[0].x);
+[6.512s]       |                                        [01;31m[K^~[m[K
+[6.512s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:77:65:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.512s]    77 |         float strOri = -atan2(cloud_in -> points[0].y, cloud_in [01;31m[K->[m[K points[0].x);
+[6.512s]       |                                                                 [01;31m[K^~[m[K
+[6.512s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:78:40:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.512s]    78 |         float endOri = -atan2(cloud_in [01;31m[K->[m[K points[cloudSize - 1].y,
+[6.512s]       |                                        [01;31m[K^~[m[K
+[6.512s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:79:40:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.512s]    79 |                               cloud_in [01;31m[K->[m[K points[cloudSize - 1].x) + 2 * M_PI;
+[6.512s]       |                                        [01;31m[K^~[m[K
+[6.512s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:95:32:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.513s]    95 |             point.x = cloud_in [01;31m[K->[m[K points[i].x;
+[6.513s]       |                                [01;31m[K^~[m[K
+[6.513s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:96:32:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.513s]    96 |             point.y = cloud_in [01;31m[K->[m[K points[i].y;
+[6.513s]       |                                [01;31m[K^~[m[K
+[6.513s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:97:32:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[6.513s]    97 |             point.z = cloud_in [01;31m[K->[m[K points[i].z;
+[6.513s]       |                                [01;31m[K^~[m[K
+[6.513s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:197:44:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[6.513s]   197 |         auto comp(const int i, const int j)[01;31m[K{[m[K
+[6.513s]       |                                            [01;31m[K^[m[K
+[6.521s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:209:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kcomp[m[K’ was not declared in this scope
+[6.521s]   209 |                 std::sort(cloudSortInd + sp, cloudSortInd + ep + 1, [01;31m[Kcomp[m[K);
+[6.521s]       |                                                                     [01;31m[K^~~~[m[K
+[6.542s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:[m[K In member function ‘[01m[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&)[m[K’:
+[6.542s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:25:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Kconst PointCloud2[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::PointCloud2_<std::allocator<void> >[m[K’})
+[6.542s]    63 |         pcl::fromROSMsg([01;31m[K*laserCloudMsg[m[K, *laserCloudIn);
+[6.543s]       |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.543s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+[6.543s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[6.543s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[6.543s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+[6.543s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.543s] [01m[K/usr/include/c++/11/complex:392:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const std::complex<_Tp>&)[m[K’
+[6.543s]   392 |     [01;36m[Koperator[m[K*(const complex<_Tp>& __x, const complex<_Tp>& __y)
+[6.543s]       |     [01;36m[K^~~~~~~~[m[K
+[6.543s] [01m[K/usr/include/c++/11/complex:392:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.543s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst PointCloud2[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::PointCloud2_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+[6.543s]    63 |         pcl::fromROSMsg(*[01;36m[KlaserCloudMsg[m[K, *laserCloudIn);
+[6.544s]       |                          [01;36m[K^~~~~~~~~~~~~[m[K
+[6.544s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+[6.544s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[6.544s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[6.544s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+[6.544s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.544s] [01m[K/usr/include/c++/11/complex:401:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const _Tp&)[m[K’
+[6.544s]   401 |     [01;36m[Koperator[m[K*(const complex<_Tp>& __x, const _Tp& __y)
+[6.544s]       |     [01;36m[K^~~~~~~~[m[K
+[6.544s] [01m[K/usr/include/c++/11/complex:401:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.544s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst PointCloud2[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::PointCloud2_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+[6.544s]    63 |         pcl::fromROSMsg(*[01;36m[KlaserCloudMsg[m[K, *laserCloudIn);
+[6.544s]       |                          [01;36m[K^~~~~~~~~~~~~[m[K
+[6.544s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+[6.544s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[6.545s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[6.545s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+[6.545s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.545s] [01m[K/usr/include/c++/11/complex:410:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const _Tp&, const std::complex<_Tp>&)[m[K’
+[6.545s]   410 |     [01;36m[Koperator[m[K*(const _Tp& __x, const complex<_Tp>& __y)
+[6.545s]       |     [01;36m[K^~~~~~~~[m[K
+[6.545s] [01m[K/usr/include/c++/11/complex:410:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.545s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[6.545s]    63 |         pcl::fromROSMsg(*[01;36m[KlaserCloudMsg[m[K, *laserCloudIn);
+[6.545s]       |                          [01;36m[K^~~~~~~~~~~~~[m[K
+[6.554s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:67:65:[m[K [01;31m[Kerror: [m[K‘[01m[KMINIMUM_RANGE[m[K’ was not declared in this scope; did you mean ‘[01m[KMINMUM_RANGE[m[K’?
+[6.554s]    67 |         sr.removeClosedPointCloud(*laserCloudIn, *laserCloudIn, [01;31m[KMINIMUM_RANGE[m[K);
+[6.554s]       |                                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[6.554s]       |                                                                 [32m[KMINMUM_RANGE[m[K
+[7.425s] /home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp: In instantiation of ‘[01m[KALOAM::ScanRegistrationNode<PointT>::ScanRegistrationNode(std::string) [with PointT = pcl::PointXYZ; std::string = std::__cxx11::basic_string<char>][m[K’:
+[7.425s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:4:[m[K   required from ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>][m[K’
+[7.425s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >][m[K’
+[7.425s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.425s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.426s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.426s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>][m[K’
+[7.426s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}][m[K’
+[7.426s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}][m[K’
+[7.426s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:94:52:[m[K   required from here
+[7.426s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:31:36:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&) [with PointT = pcl::PointXYZ; sensor_msgs::msg::PointCloud2 = sensor_msgs::msg::PointCloud2_<std::allocator<void> >][m[K’
+[7.426s]    31 |             "/laser_cloud_ori", 1, [01;31m[KRun[m[K);
+[7.426s]       |                                    [01;31m[K^~~[m[K
+[7.426s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:61:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[7.426s]    61 |     void [01;36m[KRun[m[K(const sensor_msgs::msg::PointCloud2 &laserCloudMsg){
+[7.426s]       |          [01;36m[K^~~[m[K
+[7.438s] /home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp: In instantiation of ‘[01m[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&) [with PointT = pcl::PointXYZ; sensor_msgs::msg::PointCloud2 = sensor_msgs::msg::PointCloud2_<std::allocator<void> >][m[K’:
+[7.439s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:31:36:[m[K   required from ‘[01m[KALOAM::ScanRegistrationNode<PointT>::ScanRegistrationNode(std::string) [with PointT = pcl::PointXYZ; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.439s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:4:[m[K   required from ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>][m[K’
+[7.439s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >][m[K’
+[7.439s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.439s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.439s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.439s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>][m[K’
+[7.439s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}][m[K’
+[7.439s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}][m[K’
+[7.439s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:94:52:[m[K   required from here
+[7.439s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:69:41:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kpcl::PointCloud<pcl::PointXYZ>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >[m[K’} to ‘[01m[Kint[m[K’
+[7.439s]    69 |         sr.extractFeatureFromPointCloud([01;31m[KlaserCloudIn[m[K);
+[7.439s]       |                                         [01;31m[K^~~~~~~~~~~~[m[K
+[7.440s]       |                                         [01;31m[K|[m[K
+[7.440s]       |                                         [01;31m[Kpcl::PointCloud<pcl::PointXYZ>::Ptr {aka std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >}[m[K
+[7.440s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[7.440s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:72:48:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid ALOAM::ScanRegistration<PointT>::extractFeatureFromPointCloud(int) [with PointT = pcl::PointXYZ][m[K’
+[7.440s]    72 |     void extractFeatureFromPointCloud([01;36m[KCLOUDPTR cloud_in[m[K){
+[7.440s]       |                                       [01;36m[K~~~~~~~~~^~~~~~~~[m[K
+[7.927s] gmake[2]: *** [CMakeFiles/scan_registration_node.dir/build.make:76: CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o] Error 1
+[7.931s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scan_registration_node.dir/all] Error 2
+[7.931s] gmake: *** [Makefile:146: all] Error 2
+[7.934s] Invoked command in '/home/evan/code/ndt-loc/build/a-loam' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/a-loam -- -j4 -l4

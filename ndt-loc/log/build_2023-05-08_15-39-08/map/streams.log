@@ -1,0 +1,24 @@
+[0.028s] Invoking command in '/home/evan/code/ndt-loc/build/map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4
+[0.102s] [35m[1mConsolidate compiler generated dependencies of target lidar_data_node[0m
+[0.143s] [35m[1mConsolidate compiler generated dependencies of target front_end_node[0m
+[0.162s] [ 25%] [32mBuilding CXX object CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o[0m
+[0.321s] [ 50%] [32mBuilding CXX object CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o[0m
+[8.237s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::LidarData::ReadData(std_msgs::msg::Bool)[m[K’:
+[8.237s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:19:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.237s]    19 | void LidarData::ReadData([01;35m[Kstd_msgs::msg::Bool message[m[K){
+[8.237s]       |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[8.271s] [01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:[m[K In constructor ‘[01m[Kndtloc::FrontEnd::FrontEnd(const string&)[m[K’:
+[8.271s] [01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:16:27:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid ndtloc::FrontEnd::CreateGlobalMap()[m[K’
+[8.271s]    16 |         "/create_map", 1, [01;31m[KCreateGlobalMap[m[K);
+[8.272s]       |                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[8.272s] In file included from [01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:1[m[K:
+[8.273s] [01m[K/home/evan/code/ndt-loc/src/map/include/map/FrontEnd.h:18:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[8.273s]    18 |     void [01;36m[KCreateGlobalMap[m[K();
+[8.273s]       |          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[15.835s] gmake[2]: *** [CMakeFiles/front_end_node.dir/build.make:76: CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o] Error 1
+[15.836s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/front_end_node.dir/all] Error 2
+[15.836s] gmake[1]: *** Waiting for unfinished jobs....
+[17.679s] [ 75%] [32m[1mLinking CXX executable lidar_data_node[0m
+[28.579s] [ 75%] Built target lidar_data_node
+[28.580s] gmake: *** [Makefile:146: all] Error 2
+[28.583s] Invoked command in '/home/evan/code/ndt-loc/build/map' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4

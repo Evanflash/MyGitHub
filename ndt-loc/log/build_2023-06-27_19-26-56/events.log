@@ -1,0 +1,308 @@
+[0.000000] (-) TimerEvent: {}
+[0.000213] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.000278] (-) JobUnselected: {'identifier': 'map'}
+[0.000934] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.000988] (-) JobUnselected: {'identifier': 'radar-data'}
+[0.001047] (a-loam) JobQueued: {'identifier': 'a-loam', 'dependencies': OrderedDict()}
+[0.001074] (data-publisher) JobQueued: {'identifier': 'data-publisher', 'dependencies': OrderedDict()}
+[0.001130] (a-loam) JobStarted: {'identifier': 'a-loam'}
+[0.013323] (data-publisher) JobStarted: {'identifier': 'data-publisher'}
+[0.024531] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'cmake'}
+[0.026283] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'build'}
+[0.027694] (a-loam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/a-loam', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/a-loam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2341'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2055,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2055'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45eb1294_9a03_415b_ba0e_2334cedfdce9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OHH061'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.292'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/a-loam'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[0.034481] (data-publisher) JobProgress: {'identifier': 'data-publisher', 'progress': 'cmake'}
+[0.035803] (data-publisher) JobProgress: {'identifier': 'data-publisher', 'progress': 'build'}
+[0.036529] (data-publisher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/data-publisher', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/data-publisher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2341'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2055,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2055'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45eb1294_9a03_415b_ba0e_2334cedfdce9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OHH061'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.292'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/data-publisher'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[0.099648] (-) TimerEvent: {}
+[0.102988] (a-loam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target laser_odometry_node\x1b[0m\n'}
+[0.123595] (a-loam) StdoutLine: {'line': b'[ 50%] Built target scan_registration_node\n'}
+[0.136205] (data-publisher) StdoutLine: {'line': b'[100%] Built target lidar_data_node\n'}
+[0.150584] (data-publisher) CommandEnded: {'returncode': 0}
+[0.155655] (a-loam) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/laser_odometry_node.dir/src/LaserOdometryNode.cpp.o\x1b[0m\n'}
+[0.182438] (data-publisher) JobProgress: {'identifier': 'data-publisher', 'progress': 'install'}
+[0.194941] (data-publisher) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/evan/code/ndt-loc/build/data-publisher'], 'cwd': '/home/evan/code/ndt-loc/build/data-publisher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2341'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2055,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2055'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45eb1294_9a03_415b_ba0e_2334cedfdce9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OHH061'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.292'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/data-publisher'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[0.199756] (-) TimerEvent: {}
+[0.205187] (data-publisher) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.209220] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/lib/data-publisher/lidar_data_node\n'}
+[0.209337] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/ament_index/resource_index/package_run_dependencies/data-publisher\n'}
+[0.209424] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/ament_index/resource_index/parent_prefix_path/data-publisher\n'}
+[0.209500] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/environment/ament_prefix_path.sh\n'}
+[0.209588] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/environment/ament_prefix_path.dsv\n'}
+[0.209664] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/environment/path.sh\n'}
+[0.209735] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/environment/path.dsv\n'}
+[0.209806] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/local_setup.bash\n'}
+[0.209890] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/local_setup.sh\n'}
+[0.209958] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/local_setup.zsh\n'}
+[0.210025] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/local_setup.dsv\n'}
+[0.210104] (data-publisher) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/package.dsv\n'}
+[0.210171] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/ament_index/resource_index/packages/data-publisher\n'}
+[0.210242] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.210311] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/cmake/data-publisherConfig.cmake\n'}
+[0.210378] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/cmake/data-publisherConfig-version.cmake\n'}
+[0.210445] (data-publisher) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/data-publisher/share/data-publisher/package.xml\n'}
+[0.211417] (data-publisher) CommandEnded: {'returncode': 0}
+[0.280984] (data-publisher) JobEnded: {'identifier': 'data-publisher', 'rc': 0}
+[0.299874] (-) TimerEvent: {}
+[0.400222] (-) TimerEvent: {}
+[0.500531] (-) TimerEvent: {}
+[0.600953] (-) TimerEvent: {}
+[0.701276] (-) TimerEvent: {}
+[0.801653] (-) TimerEvent: {}
+[0.901993] (-) TimerEvent: {}
+[1.002315] (-) TimerEvent: {}
+[1.102641] (-) TimerEvent: {}
+[1.202984] (-) TimerEvent: {}
+[1.303309] (-) TimerEvent: {}
+[1.403654] (-) TimerEvent: {}
+[1.503977] (-) TimerEvent: {}
+[1.604280] (-) TimerEvent: {}
+[1.704642] (-) TimerEvent: {}
+[1.805058] (-) TimerEvent: {}
+[1.905332] (-) TimerEvent: {}
+[2.005747] (-) TimerEvent: {}
+[2.106066] (-) TimerEvent: {}
+[2.206441] (-) TimerEvent: {}
+[2.306790] (-) TimerEvent: {}
+[2.407177] (-) TimerEvent: {}
+[2.507554] (-) TimerEvent: {}
+[2.607873] (-) TimerEvent: {}
+[2.708274] (-) TimerEvent: {}
+[2.808662] (-) TimerEvent: {}
+[2.909054] (-) TimerEvent: {}
+[3.009391] (-) TimerEvent: {}
+[3.109734] (-) TimerEvent: {}
+[3.210127] (-) TimerEvent: {}
+[3.310501] (-) TimerEvent: {}
+[3.410848] (-) TimerEvent: {}
+[3.511165] (-) TimerEvent: {}
+[3.611480] (-) TimerEvent: {}
+[3.711779] (-) TimerEvent: {}
+[3.812104] (-) TimerEvent: {}
+[3.912409] (-) TimerEvent: {}
+[4.012694] (-) TimerEvent: {}
+[4.113005] (-) TimerEvent: {}
+[4.213357] (-) TimerEvent: {}
+[4.313665] (-) TimerEvent: {}
+[4.414010] (-) TimerEvent: {}
+[4.514375] (-) TimerEvent: {}
+[4.614820] (-) TimerEvent: {}
+[4.715217] (-) TimerEvent: {}
+[4.815608] (-) TimerEvent: {}
+[4.915954] (-) TimerEvent: {}
+[5.016291] (-) TimerEvent: {}
+[5.116646] (-) TimerEvent: {}
+[5.216952] (-) TimerEvent: {}
+[5.317275] (-) TimerEvent: {}
+[5.417607] (-) TimerEvent: {}
+[5.517930] (-) TimerEvent: {}
+[5.618286] (-) TimerEvent: {}
+[5.718693] (-) TimerEvent: {}
+[5.819018] (-) TimerEvent: {}
+[5.919361] (-) TimerEvent: {}
+[6.019686] (-) TimerEvent: {}
+[6.120032] (-) TimerEvent: {}
+[6.220372] (-) TimerEvent: {}
+[6.320649] (-) TimerEvent: {}
+[6.420963] (-) TimerEvent: {}
+[6.521278] (-) TimerEvent: {}
+[6.621589] (-) TimerEvent: {}
+[6.721864] (-) TimerEvent: {}
+[6.822199] (-) TimerEvent: {}
+[6.922509] (-) TimerEvent: {}
+[7.022798] (-) TimerEvent: {}
+[7.123116] (-) TimerEvent: {}
+[7.223398] (-) TimerEvent: {}
+[7.323676] (-) TimerEvent: {}
+[7.424017] (-) TimerEvent: {}
+[7.524304] (-) TimerEvent: {}
+[7.624588] (-) TimerEvent: {}
+[7.724998] (-) TimerEvent: {}
+[7.825469] (-) TimerEvent: {}
+[7.925860] (-) TimerEvent: {}
+[8.026163] (-) TimerEvent: {}
+[8.126684] (-) TimerEvent: {}
+[8.226948] (-) TimerEvent: {}
+[8.327263] (-) TimerEvent: {}
+[8.427599] (-) TimerEvent: {}
+[8.527893] (-) TimerEvent: {}
+[8.628168] (-) TimerEvent: {}
+[8.728465] (-) TimerEvent: {}
+[8.828742] (-) TimerEvent: {}
+[8.928998] (-) TimerEvent: {}
+[9.029272] (-) TimerEvent: {}
+[9.129555] (-) TimerEvent: {}
+[9.229824] (-) TimerEvent: {}
+[9.330082] (-) TimerEvent: {}
+[9.430347] (-) TimerEvent: {}
+[9.530627] (-) TimerEvent: {}
+[9.630851] (-) TimerEvent: {}
+[9.731119] (-) TimerEvent: {}
+[9.831379] (-) TimerEvent: {}
+[9.931677] (-) TimerEvent: {}
+[10.031992] (-) TimerEvent: {}
+[10.132299] (-) TimerEvent: {}
+[10.232588] (-) TimerEvent: {}
+[10.332853] (-) TimerEvent: {}
+[10.433156] (-) TimerEvent: {}
+[10.533480] (-) TimerEvent: {}
+[10.633768] (-) TimerEvent: {}
+[10.734092] (-) TimerEvent: {}
+[10.834367] (-) TimerEvent: {}
+[10.934651] (-) TimerEvent: {}
+[11.034975] (-) TimerEvent: {}
+[11.135283] (-) TimerEvent: {}
+[11.235581] (-) TimerEvent: {}
+[11.335899] (-) TimerEvent: {}
+[11.436181] (-) TimerEvent: {}
+[11.536530] (-) TimerEvent: {}
+[11.636855] (-) TimerEvent: {}
+[11.737173] (-) TimerEvent: {}
+[11.837583] (-) TimerEvent: {}
+[11.937944] (-) TimerEvent: {}
+[12.038298] (-) TimerEvent: {}
+[12.138650] (-) TimerEvent: {}
+[12.238965] (-) TimerEvent: {}
+[12.339274] (-) TimerEvent: {}
+[12.439642] (-) TimerEvent: {}
+[12.540003] (-) TimerEvent: {}
+[12.640362] (-) TimerEvent: {}
+[12.740664] (-) TimerEvent: {}
+[12.840975] (-) TimerEvent: {}
+[12.941288] (-) TimerEvent: {}
+[13.041607] (-) TimerEvent: {}
+[13.141913] (-) TimerEvent: {}
+[13.242248] (-) TimerEvent: {}
+[13.342584] (-) TimerEvent: {}
+[13.442911] (-) TimerEvent: {}
+[13.543218] (-) TimerEvent: {}
+[13.643524] (-) TimerEvent: {}
+[13.743851] (-) TimerEvent: {}
+[13.844158] (-) TimerEvent: {}
+[13.944477] (-) TimerEvent: {}
+[14.044775] (-) TimerEvent: {}
+[14.145081] (-) TimerEvent: {}
+[14.245422] (-) TimerEvent: {}
+[14.345764] (-) TimerEvent: {}
+[14.446082] (-) TimerEvent: {}
+[14.546388] (-) TimerEvent: {}
+[14.646707] (-) TimerEvent: {}
+[14.747033] (-) TimerEvent: {}
+[14.847356] (-) TimerEvent: {}
+[14.947711] (-) TimerEvent: {}
+[15.048020] (-) TimerEvent: {}
+[15.148348] (-) TimerEvent: {}
+[15.248592] (-) TimerEvent: {}
+[15.348905] (-) TimerEvent: {}
+[15.449236] (-) TimerEvent: {}
+[15.549539] (-) TimerEvent: {}
+[15.649862] (-) TimerEvent: {}
+[15.750168] (-) TimerEvent: {}
+[15.850478] (-) TimerEvent: {}
+[15.950787] (-) TimerEvent: {}
+[16.051100] (-) TimerEvent: {}
+[16.151407] (-) TimerEvent: {}
+[16.251747] (-) TimerEvent: {}
+[16.352056] (-) TimerEvent: {}
+[16.452389] (-) TimerEvent: {}
+[16.552718] (-) TimerEvent: {}
+[16.653006] (-) TimerEvent: {}
+[16.753336] (-) TimerEvent: {}
+[16.853619] (-) TimerEvent: {}
+[16.953917] (-) TimerEvent: {}
+[17.054269] (-) TimerEvent: {}
+[17.154575] (-) TimerEvent: {}
+[17.254882] (-) TimerEvent: {}
+[17.355197] (-) TimerEvent: {}
+[17.455546] (-) TimerEvent: {}
+[17.555846] (-) TimerEvent: {}
+[17.656169] (-) TimerEvent: {}
+[17.756471] (-) TimerEvent: {}
+[17.856857] (-) TimerEvent: {}
+[17.957220] (-) TimerEvent: {}
+[18.057535] (-) TimerEvent: {}
+[18.157836] (-) TimerEvent: {}
+[18.259932] (-) TimerEvent: {}
+[18.360284] (-) TimerEvent: {}
+[18.460552] (-) TimerEvent: {}
+[18.560837] (-) TimerEvent: {}
+[18.661114] (-) TimerEvent: {}
+[18.761408] (-) TimerEvent: {}
+[18.861676] (-) TimerEvent: {}
+[18.961941] (-) TimerEvent: {}
+[19.062249] (-) TimerEvent: {}
+[19.162509] (-) TimerEvent: {}
+[19.262785] (-) TimerEvent: {}
+[19.377352] (-) TimerEvent: {}
+[19.477848] (-) TimerEvent: {}
+[19.578418] (-) TimerEvent: {}
+[19.678903] (-) TimerEvent: {}
+[19.779372] (-) TimerEvent: {}
+[19.879914] (-) TimerEvent: {}
+[19.980390] (-) TimerEvent: {}
+[20.080692] (-) TimerEvent: {}
+[20.180993] (-) TimerEvent: {}
+[20.281271] (-) TimerEvent: {}
+[20.381562] (-) TimerEvent: {}
+[20.481840] (-) TimerEvent: {}
+[20.582171] (-) TimerEvent: {}
+[20.682488] (-) TimerEvent: {}
+[20.782750] (-) TimerEvent: {}
+[20.883065] (-) TimerEvent: {}
+[20.983318] (-) TimerEvent: {}
+[21.083575] (-) TimerEvent: {}
+[21.183860] (-) TimerEvent: {}
+[21.284131] (-) TimerEvent: {}
+[21.309615] (a-loam) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable laser_odometry_node\x1b[0m\n'}
+[21.384604] (-) TimerEvent: {}
+[21.485021] (-) TimerEvent: {}
+[21.585510] (-) TimerEvent: {}
+[21.685896] (-) TimerEvent: {}
+[21.786197] (-) TimerEvent: {}
+[21.886554] (-) TimerEvent: {}
+[21.987359] (-) TimerEvent: {}
+[22.088013] (-) TimerEvent: {}
+[22.188479] (-) TimerEvent: {}
+[22.288800] (-) TimerEvent: {}
+[22.389084] (-) TimerEvent: {}
+[22.489420] (-) TimerEvent: {}
+[22.589798] (-) TimerEvent: {}
+[22.691956] (-) TimerEvent: {}
+[22.792428] (-) TimerEvent: {}
+[22.892749] (-) TimerEvent: {}
+[22.993063] (-) TimerEvent: {}
+[23.093373] (-) TimerEvent: {}
+[23.193735] (-) TimerEvent: {}
+[23.294011] (-) TimerEvent: {}
+[23.394324] (-) TimerEvent: {}
+[23.494723] (-) TimerEvent: {}
+[23.595108] (-) TimerEvent: {}
+[23.695370] (-) TimerEvent: {}
+[23.789714] (a-loam) StdoutLine: {'line': b'[100%] Built target laser_odometry_node\n'}
+[23.795463] (-) TimerEvent: {}
+[23.803674] (a-loam) CommandEnded: {'returncode': 0}
+[23.839853] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'install'}
+[23.840522] (a-loam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/evan/code/ndt-loc/build/a-loam'], 'cwd': '/home/evan/code/ndt-loc/build/a-loam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2341'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2055,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2055'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45eb1294_9a03_415b_ba0e_2334cedfdce9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OHH061'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.292'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/a-loam'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[23.850329] (a-loam) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.850546] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/lib/a-loam/scan_registration_node\n'}
+[23.851136] (a-loam) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/a-loam/lib/a-loam/laser_odometry_node\n'}
+[23.869827] (a-loam) StdoutLine: {'line': b'-- Set runtime path of "/home/evan/code/ndt-loc/install/a-loam/lib/a-loam/laser_odometry_node" to ""\n'}
+[23.870057] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/ament_index/resource_index/package_run_dependencies/a-loam\n'}
+[23.870207] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/ament_index/resource_index/parent_prefix_path/a-loam\n'}
+[23.870293] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/environment/ament_prefix_path.sh\n'}
+[23.870370] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/environment/ament_prefix_path.dsv\n'}
+[23.870443] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/environment/path.sh\n'}
+[23.870518] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/environment/path.dsv\n'}
+[23.870587] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/local_setup.bash\n'}
+[23.870708] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/local_setup.sh\n'}
+[23.870780] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/local_setup.zsh\n'}
+[23.870848] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/local_setup.dsv\n'}
+[23.870923] (a-loam) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/package.dsv\n'}
+[23.870990] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/ament_index/resource_index/packages/a-loam\n'}
+[23.871061] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[23.871397] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/cmake/a-loamConfig.cmake\n'}
+[23.871475] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/cmake/a-loamConfig-version.cmake\n'}
+[23.871547] (a-loam) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/a-loam/share/a-loam/package.xml\n'}
+[23.872558] (a-loam) CommandEnded: {'returncode': 0}
+[23.895622] (-) TimerEvent: {}
+[23.936996] (a-loam) JobEnded: {'identifier': 'a-loam', 'rc': 0}
+[23.937837] (-) EventReactorShutdown: {}

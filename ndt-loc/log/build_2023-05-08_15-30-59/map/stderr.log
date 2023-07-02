@@ -1,0 +1,22 @@
+[01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:[m[K In constructor ‘[01m[Kndtloc::FrontEnd::FrontEnd(const string&)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:16:27:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid ndtloc::FrontEnd::CreateGlobalMap()[m[K’
+   16 |         "/create_map", 1, [01;31m[KCreateGlobalMap[m[K);
+      |                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:1[m[K:
+[01m[K/home/evan/code/ndt-loc/src/map/include/map/FrontEnd.h:18:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   18 |     void [01;36m[KCreateGlobalMap[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:[m[K In constructor ‘[01m[Kndtloc::LidarData::LidarData(const string&)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:8:37:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid ndtloc::LidarData::ReadData()[m[K’
+    8 |         "/read_data", 1, [01;31m[KLidarData::ReadData[m[K);
+      |                          [01;31m[K~~~~~~~~~~~^~~~~~~~[m[K
+In file included from [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:1[m[K:
+[01m[K/home/evan/code/ndt-loc/src/map/include/map/LidarData.h:11:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   11 |     void [01;36m[KReadData[m[K();
+      |          [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/lidar_data_node.dir/build.make:76: CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/lidar_data_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/front_end_node.dir/build.make:76: CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/front_end_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

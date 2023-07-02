@@ -1,0 +1,26 @@
+[0.024s] Invoking command in '/home/evan/code/ndt-loc/build/map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4
+[0.093s] [ 50%] [32mBuilding CXX object CMakeFiles/LidarData.dir/src/LidarData.cpp.o[0m
+[5.391s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::LidarData::ReadData()[m[K’:
+[5.391s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:21:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[5.391s]    21 |     while([01;35m[KleftInd < _left.size()[m[K || rightInd < _right.size()){
+[5.391s]       |           [01;35m[K~~~~~~~~^~~~~~~~~~~~~~[m[K
+[5.391s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:21:46:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[5.391s]    21 |     while(leftInd < _left.size() || [01;35m[KrightInd < _right.size()[m[K){
+[5.391s]       |                                     [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[5.391s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:22:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[5.391s]    22 |         if([01;35m[KleftInd >= _left.size()[m[K){
+[5.391s]       |            [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[5.392s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:26:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[5.392s]    26 |         else if([01;35m[KrightInd >= _right.size()[m[K){
+[5.392s]       |                 [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[5.403s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:57:33:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[5.403s]    57 |             for(size_t i = 0; [01;35m[Ki < size[m[K; i++){
+[5.403s]       |                               [01;35m[K~~^~~~~~[m[K
+[5.405s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::LidarData::PublishCloud()[m[K’:
+[5.406s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:104:14:[m[K [01;31m[Kerror: [m[K‘[01m[KtoROSMsg[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+[5.406s]   104 |         pcl::[01;31m[KtoROSMsg[m[K(*_laser_data, tmp);
+[5.406s]       |              [01;31m[K^~~~~~~~[m[K
+[6.451s] gmake[2]: *** [CMakeFiles/LidarData.dir/build.make:76: CMakeFiles/LidarData.dir/src/LidarData.cpp.o] Error 1
+[6.451s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LidarData.dir/all] Error 2
+[6.454s] gmake: *** [Makefile:146: all] Error 2
+[6.455s] Invoked command in '/home/evan/code/ndt-loc/build/map' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4

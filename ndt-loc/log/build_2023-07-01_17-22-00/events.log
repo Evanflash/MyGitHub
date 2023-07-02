@@ -1,0 +1,245 @@
+[0.000000] (-) TimerEvent: {}
+[0.003224] (-) JobUnselected: {'identifier': 'a-loam'}
+[0.003304] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.003380] (-) JobUnselected: {'identifier': 'data-publisher'}
+[0.003423] (-) JobUnselected: {'identifier': 'map'}
+[0.003446] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.003472] (radar-odometry) JobQueued: {'identifier': 'radar-odometry', 'dependencies': OrderedDict()}
+[0.003498] (radar-odometry) JobStarted: {'identifier': 'radar-odometry'}
+[0.099154] (-) TimerEvent: {}
+[0.199468] (-) TimerEvent: {}
+[0.284346] (radar-odometry) JobProgress: {'identifier': 'radar-odometry', 'progress': 'cmake'}
+[0.294505] (radar-odometry) JobProgress: {'identifier': 'radar-odometry', 'progress': 'build'}
+[0.294607] (radar-odometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/radar-odometry', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/radar-odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2471'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2254,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2254'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6891e234_375c_48ed_942b_4977adfb4374'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4RSX61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-odometry:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/zsh'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/radar-odometry'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-odometry:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[0.299558] (-) TimerEvent: {}
+[0.399864] (-) TimerEvent: {}
+[0.439458] (radar-odometry) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target radar_feature_node\x1b[0m\n'}
+[0.497651] (radar-odometry) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/radar_feature_node.dir/src/RadarFeaturesNode.cpp.o\x1b[0m\n'}
+[0.499944] (-) TimerEvent: {}
+[0.600228] (-) TimerEvent: {}
+[0.700700] (-) TimerEvent: {}
+[0.800965] (-) TimerEvent: {}
+[0.901277] (-) TimerEvent: {}
+[1.001683] (-) TimerEvent: {}
+[1.102088] (-) TimerEvent: {}
+[1.202459] (-) TimerEvent: {}
+[1.302750] (-) TimerEvent: {}
+[1.403039] (-) TimerEvent: {}
+[1.503325] (-) TimerEvent: {}
+[1.603626] (-) TimerEvent: {}
+[1.703958] (-) TimerEvent: {}
+[1.804252] (-) TimerEvent: {}
+[1.904558] (-) TimerEvent: {}
+[2.004855] (-) TimerEvent: {}
+[2.105215] (-) TimerEvent: {}
+[2.205521] (-) TimerEvent: {}
+[2.305818] (-) TimerEvent: {}
+[2.406131] (-) TimerEvent: {}
+[2.506416] (-) TimerEvent: {}
+[2.606721] (-) TimerEvent: {}
+[2.706978] (-) TimerEvent: {}
+[2.807239] (-) TimerEvent: {}
+[2.907507] (-) TimerEvent: {}
+[3.007787] (-) TimerEvent: {}
+[3.108045] (-) TimerEvent: {}
+[3.208331] (-) TimerEvent: {}
+[3.308624] (-) TimerEvent: {}
+[3.408917] (-) TimerEvent: {}
+[3.509206] (-) TimerEvent: {}
+[3.609519] (-) TimerEvent: {}
+[3.709814] (-) TimerEvent: {}
+[3.810152] (-) TimerEvent: {}
+[3.910687] (-) TimerEvent: {}
+[4.011089] (-) TimerEvent: {}
+[4.111359] (-) TimerEvent: {}
+[4.211634] (-) TimerEvent: {}
+[4.311887] (-) TimerEvent: {}
+[4.412166] (-) TimerEvent: {}
+[4.512443] (-) TimerEvent: {}
+[4.612714] (-) TimerEvent: {}
+[4.712992] (-) TimerEvent: {}
+[4.813293] (-) TimerEvent: {}
+[4.913630] (-) TimerEvent: {}
+[5.013917] (-) TimerEvent: {}
+[5.114215] (-) TimerEvent: {}
+[5.214508] (-) TimerEvent: {}
+[5.314766] (-) TimerEvent: {}
+[5.415041] (-) TimerEvent: {}
+[5.515304] (-) TimerEvent: {}
+[5.615593] (-) TimerEvent: {}
+[5.715920] (-) TimerEvent: {}
+[5.816172] (-) TimerEvent: {}
+[5.916441] (-) TimerEvent: {}
+[6.016705] (-) TimerEvent: {}
+[6.116965] (-) TimerEvent: {}
+[6.217227] (-) TimerEvent: {}
+[6.317501] (-) TimerEvent: {}
+[6.417778] (-) TimerEvent: {}
+[6.518080] (-) TimerEvent: {}
+[6.618377] (-) TimerEvent: {}
+[6.718667] (-) TimerEvent: {}
+[6.818964] (-) TimerEvent: {}
+[6.919300] (-) TimerEvent: {}
+[7.019680] (-) TimerEvent: {}
+[7.120024] (-) TimerEvent: {}
+[7.220379] (-) TimerEvent: {}
+[7.320657] (-) TimerEvent: {}
+[7.420937] (-) TimerEvent: {}
+[7.521256] (-) TimerEvent: {}
+[7.621524] (-) TimerEvent: {}
+[7.721788] (-) TimerEvent: {}
+[7.822065] (-) TimerEvent: {}
+[7.922346] (-) TimerEvent: {}
+[8.022606] (-) TimerEvent: {}
+[8.122896] (-) TimerEvent: {}
+[8.223199] (-) TimerEvent: {}
+[8.323497] (-) TimerEvent: {}
+[8.423778] (-) TimerEvent: {}
+[8.524052] (-) TimerEvent: {}
+[8.624328] (-) TimerEvent: {}
+[8.724589] (-) TimerEvent: {}
+[8.824860] (-) TimerEvent: {}
+[8.925161] (-) TimerEvent: {}
+[9.025453] (-) TimerEvent: {}
+[9.125738] (-) TimerEvent: {}
+[9.226046] (-) TimerEvent: {}
+[9.326327] (-) TimerEvent: {}
+[9.426600] (-) TimerEvent: {}
+[9.526879] (-) TimerEvent: {}
+[9.627185] (-) TimerEvent: {}
+[9.727455] (-) TimerEvent: {}
+[9.827738] (-) TimerEvent: {}
+[9.928047] (-) TimerEvent: {}
+[10.028359] (-) TimerEvent: {}
+[10.128668] (-) TimerEvent: {}
+[10.228988] (-) TimerEvent: {}
+[10.329293] (-) TimerEvent: {}
+[10.429641] (-) TimerEvent: {}
+[10.529993] (-) TimerEvent: {}
+[10.630304] (-) TimerEvent: {}
+[10.730619] (-) TimerEvent: {}
+[10.830968] (-) TimerEvent: {}
+[10.931290] (-) TimerEvent: {}
+[11.031629] (-) TimerEvent: {}
+[11.131944] (-) TimerEvent: {}
+[11.232268] (-) TimerEvent: {}
+[11.332582] (-) TimerEvent: {}
+[11.432896] (-) TimerEvent: {}
+[11.533208] (-) TimerEvent: {}
+[11.633504] (-) TimerEvent: {}
+[11.733851] (-) TimerEvent: {}
+[11.834144] (-) TimerEvent: {}
+[11.934521] (-) TimerEvent: {}
+[12.034841] (-) TimerEvent: {}
+[12.135168] (-) TimerEvent: {}
+[12.235508] (-) TimerEvent: {}
+[12.335828] (-) TimerEvent: {}
+[12.436159] (-) TimerEvent: {}
+[12.536471] (-) TimerEvent: {}
+[12.636771] (-) TimerEvent: {}
+[12.737080] (-) TimerEvent: {}
+[12.837423] (-) TimerEvent: {}
+[12.937733] (-) TimerEvent: {}
+[13.038044] (-) TimerEvent: {}
+[13.138378] (-) TimerEvent: {}
+[13.238688] (-) TimerEvent: {}
+[13.339001] (-) TimerEvent: {}
+[13.439279] (-) TimerEvent: {}
+[13.539600] (-) TimerEvent: {}
+[13.639910] (-) TimerEvent: {}
+[13.740218] (-) TimerEvent: {}
+[13.840528] (-) TimerEvent: {}
+[13.940865] (-) TimerEvent: {}
+[14.041173] (-) TimerEvent: {}
+[14.141468] (-) TimerEvent: {}
+[14.241774] (-) TimerEvent: {}
+[14.342084] (-) TimerEvent: {}
+[14.442364] (-) TimerEvent: {}
+[14.542692] (-) TimerEvent: {}
+[14.643022] (-) TimerEvent: {}
+[14.743509] (-) TimerEvent: {}
+[14.844098] (-) TimerEvent: {}
+[14.944589] (-) TimerEvent: {}
+[15.044915] (-) TimerEvent: {}
+[15.145238] (-) TimerEvent: {}
+[15.245546] (-) TimerEvent: {}
+[15.345884] (-) TimerEvent: {}
+[15.446191] (-) TimerEvent: {}
+[15.540320] (radar-odometry) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable radar_feature_node\x1b[0m\n'}
+[15.546300] (-) TimerEvent: {}
+[15.646609] (-) TimerEvent: {}
+[15.746926] (-) TimerEvent: {}
+[15.847338] (-) TimerEvent: {}
+[15.947640] (-) TimerEvent: {}
+[16.047986] (-) TimerEvent: {}
+[16.148324] (-) TimerEvent: {}
+[16.248664] (-) TimerEvent: {}
+[16.349055] (-) TimerEvent: {}
+[16.449420] (-) TimerEvent: {}
+[16.549809] (-) TimerEvent: {}
+[16.650097] (-) TimerEvent: {}
+[16.750413] (-) TimerEvent: {}
+[16.806697] (radar-odometry) StdoutLine: {'line': b'[100%] Built target radar_feature_node\n'}
+[16.850621] (-) TimerEvent: {}
+[16.951227] (-) TimerEvent: {}
+[17.051798] (-) TimerEvent: {}
+[17.152363] (-) TimerEvent: {}
+[17.252924] (-) TimerEvent: {}
+[17.353443] (-) TimerEvent: {}
+[17.453847] (-) TimerEvent: {}
+[17.554446] (-) TimerEvent: {}
+[17.654992] (-) TimerEvent: {}
+[17.755574] (-) TimerEvent: {}
+[17.856018] (-) TimerEvent: {}
+[17.956699] (-) TimerEvent: {}
+[18.057280] (-) TimerEvent: {}
+[18.157822] (-) TimerEvent: {}
+[18.258155] (-) TimerEvent: {}
+[18.358788] (-) TimerEvent: {}
+[18.459430] (-) TimerEvent: {}
+[18.560114] (-) TimerEvent: {}
+[18.660698] (-) TimerEvent: {}
+[18.761311] (-) TimerEvent: {}
+[18.861921] (-) TimerEvent: {}
+[18.962533] (-) TimerEvent: {}
+[19.063135] (-) TimerEvent: {}
+[19.163766] (-) TimerEvent: {}
+[19.264356] (-) TimerEvent: {}
+[19.364915] (-) TimerEvent: {}
+[19.465526] (-) TimerEvent: {}
+[19.566125] (-) TimerEvent: {}
+[19.666751] (-) TimerEvent: {}
+[19.767345] (-) TimerEvent: {}
+[19.867951] (-) TimerEvent: {}
+[19.968566] (-) TimerEvent: {}
+[20.069203] (-) TimerEvent: {}
+[20.169731] (-) TimerEvent: {}
+[20.270247] (-) TimerEvent: {}
+[25.659928] (radar-odometry) CommandEnded: {'returncode': 0}
+[25.662965] (-) TimerEvent: {}
+[25.717426] (radar-odometry) JobProgress: {'identifier': 'radar-odometry', 'progress': 'install'}
+[25.728105] (radar-odometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/evan/code/ndt-loc/build/radar-odometry'], 'cwd': '/home/evan/code/ndt-loc/build/radar-odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2471'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2254,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2254'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6891e234_375c_48ed_942b_4977adfb4374'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4RSX61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-odometry:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/zsh'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/radar-odometry'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-odometry:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[25.736948] (radar-odometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.737210] (radar-odometry) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/radar-odometry/lib/radar-odometry/radar_feature_node\n'}
+[25.743164] (radar-odometry) StdoutLine: {'line': b'-- Set runtime path of "/home/evan/code/ndt-loc/install/radar-odometry/lib/radar-odometry/radar_feature_node" to ""\n'}
+[25.743517] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/ament_index/resource_index/package_run_dependencies/radar-odometry\n'}
+[25.743632] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/ament_index/resource_index/parent_prefix_path/radar-odometry\n'}
+[25.743714] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/environment/ament_prefix_path.sh\n'}
+[25.743787] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/environment/ament_prefix_path.dsv\n'}
+[25.743858] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/environment/path.sh\n'}
+[25.743927] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/environment/path.dsv\n'}
+[25.744058] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/local_setup.bash\n'}
+[25.744151] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/local_setup.sh\n'}
+[25.744244] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/local_setup.zsh\n'}
+[25.744315] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/local_setup.dsv\n'}
+[25.744383] (radar-odometry) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/package.dsv\n'}
+[25.744451] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/ament_index/resource_index/packages/radar-odometry\n'}
+[25.744518] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[25.744591] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/cmake/radar-odometryConfig.cmake\n'}
+[25.744659] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/cmake/radar-odometryConfig-version.cmake\n'}
+[25.744726] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/package.xml\n'}
+[25.763173] (-) TimerEvent: {}
+[25.790124] (radar-odometry) CommandEnded: {'returncode': 0}
+[25.864474] (-) TimerEvent: {}
+[25.870614] (radar-odometry) JobEnded: {'identifier': 'radar-odometry', 'rc': 0}
+[25.871471] (-) EventReactorShutdown: {}

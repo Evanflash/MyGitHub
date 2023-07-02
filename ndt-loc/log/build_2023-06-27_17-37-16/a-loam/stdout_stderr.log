@@ -1,0 +1,138 @@
+[35m[1mConsolidate compiler generated dependencies of target laser_odometry_node[0m
+[ 50%] Built target scan_registration_node
+[ 66%] [32mBuilding CXX object CMakeFiles/laser_odometry_node.dir/src/LaserOdometryNode.cpp.o[0m
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:[m[K In constructor ‘[01m[KALOAM::LaserOdometryNode::LaserOdometryNode(std::string)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:16:49:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_mags[m[K’ was not declared in this scope; did you mean ‘[01m[Knav_msgs[m[K’?
+   16 |         pubLaserPath = this -> create_publisher<[01;31m[Knav_mags[m[K::msg::Path>(
+      |                                                 [01;31m[K^~~~~~~~[m[K
+      |                                                 [32m[Knav_msgs[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:16:32:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   16 |         pubLaserPath = this -> [01;31m[Kcreate_publisher<nav_mags::msg::Path>[m[K(
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:16:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KALOAM::LaserOdometryNode::create_publisher<<expression error> >(const char [12], int)[m[K’
+   16 |         pubLaserPath = [01;31m[Kthis -> create_publisher<nav_mags::msg::Path>([m[K
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   17 | [01;31m[K            "/lidar_path", 1)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~[m[K                                        
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/common.h:4[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:5[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   73 | [01;36m[KNode[m[K::create_publisher(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:16:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   16 |         pubLaserPath = [01;31m[Kthis -> create_publisher<nav_mags::msg::Path>([m[K
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   17 | [01;31m[K            "/lidar_path", 1)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~[m[K                                        
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:[m[K In member function ‘[01m[Kvoid ALOAM::LaserOdometryNode::publishOdometry() const[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:95:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst Path[m[K’ {aka ‘[01m[Kconst struct nav_msgs::msg::Path_<std::allocator<void> >[m[K’} has no member named ‘[01m[KPose[m[K’
+   95 |         laserPath.[01;31m[KPose[m[K = laserOdometry.pose.pose;
+      |                   [01;31m[K^~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:97:37:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kconst _frame_id_type[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>[m[K’} and ‘[01m[Kconst char [6][m[K’)
+   97 |         laserPath.header.frame_id = [01;31m[K"lidar"[m[K;
+      |                                     [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+                 from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+                 from [01m[K/usr/include/c++/11/system_error:41[m[K,
+                 from [01m[K/usr/include/c++/11/mutex:42[m[K,
+                 from [01m[K/usr/include/c++/11/future:38[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/common.h:4[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:5[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/basic_string.h:799:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv<_Tp, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _Tp&) [with _Tp = _Tp; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+  799 |        [01;36m[Koperator[m[K=(const _Tp& __svt)
+      |        [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/basic_string.h:799:8:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/11/bits/move.h:57[m[K,
+                 from [01m[K/usr/include/c++/11/bits/stl_pair.h:59[m[K,
+                 from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+                 from [01m[K/usr/include/c++/11/memory:63[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/common.h:4[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:5[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1[m[K:
+/usr/include/c++/11/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = std::__cxx11::basic_string<char>&][m[K’:
+[01m[K/usr/include/c++/11/bits/basic_string.h:125:8:[m[K   required by substitution of ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> template<class _Tp, class _Res> using _If_sv = std::enable_if_t<std::__and_<std::is_convertible<const _Tp&, std::basic_string_view<_CharT, _Traits> >, std::__not_<std::is_convertible<const _Tp*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>*> >, std::__not_<std::is_convertible<const _Tp&, const _CharT*> > >::value, _Res> [with _Tp = char [6]; _Res = std::__cxx11::basic_string<char>&; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+[01m[K/usr/include/c++/11/bits/basic_string.h:799:8:[m[K   required by substitution of ‘[01m[Ktemplate<class _Tp> std::__cxx11::basic_string<char>::_If_sv<_Tp, std::__cxx11::basic_string<char>&> std::__cxx11::basic_string<char>::operator=<_Tp>(const _Tp&) [with _Tp = char [6]][m[K’
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:97:37:[m[K   required from here
+[01m[K/usr/include/c++/11/type_traits:2585:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::__cxx11::basic_string<char>&>[m[K’
+ 2585 |     using [01;31m[Kenable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+      |           [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+                 from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+                 from [01m[K/usr/include/c++/11/system_error:41[m[K,
+                 from [01m[K/usr/include/c++/11/mutex:42[m[K,
+                 from [01m[K/usr/include/c++/11/future:38[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/common.h:4[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:5[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/basic_string.h:679:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ (near match)
+  679 |       [01;36m[Koperator[m[K=(const basic_string& __str)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/basic_string.h:679:7:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst _frame_id_type*[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>*[m[K’} as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/c++/11/bits/basic_string.h:689:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ (near match)
+  689 |       [01;36m[Koperator[m[K=(const _CharT* __s)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/basic_string.h:689:7:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst _frame_id_type*[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>*[m[K’} as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/c++/11/bits/basic_string.h:700:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ (near match)
+  700 |       [01;36m[Koperator[m[K=(_CharT __c)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/basic_string.h:700:7:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:97:37:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Kchar[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   97 |         laserPath.header.frame_id = [01;31m[K"lidar"[m[K;
+      |                                     [01;31m[K^~~~~~~[m[K
+      |                                     [01;31m[K|[m[K
+      |                                     [01;31m[Kconst char*[m[K
+In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+                 from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+                 from [01m[K/usr/include/c++/11/system_error:41[m[K,
+                 from [01m[K/usr/include/c++/11/mutex:42[m[K,
+                 from [01m[K/usr/include/c++/11/future:38[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/common.h:4[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:5[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/basic_string.h:717:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’ (near match)
+  717 |       [01;36m[Koperator[m[K=(basic_string&& __str)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/basic_string.h:717:7:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst _frame_id_type*[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>*[m[K’} as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/c++/11/bits/basic_string.h:785:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K’
+  785 |       [01;36m[Koperator[m[K=(initializer_list<_CharT> __l)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/basic_string.h:785:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [6][m[K’ to ‘[01m[Kstd::initializer_list<char>[m[K’
+  785 |       operator=([01;36m[Kinitializer_list<_CharT> __l[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:98:34:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst _poses_type[m[K’ {aka ‘[01m[Kconst std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >[m[K’} as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   98 |         [01;31m[KlaserPath.poses.push_back(laserPose)[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/common.h:4[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:5[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; _Alloc = std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >; std::vector<_Tp, _Alloc>::value_type = geometry_msgs::msg::PoseStamped_<std::allocator<void> >][m[K’
+ 1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:101:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+  101 |     [01;31m[K}[m[K
+      |     [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/laser_odometry_node.dir/build.make:76: CMakeFiles/laser_odometry_node.dir/src/LaserOdometryNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/laser_odometry_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

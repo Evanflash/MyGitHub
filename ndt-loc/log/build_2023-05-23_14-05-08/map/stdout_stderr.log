@@ -1,0 +1,73 @@
+[35m[1mConsolidate compiler generated dependencies of target image_projection_node[0m
+[35m[1mConsolidate compiler generated dependencies of target front_end_node[0m
+[ 20%] Built target show_map_node
+[ 40%] Built target image_projection_node
+[ 60%] Built target lidar_data_node
+[ 80%] Built target front_end_node
+[35m[1mConsolidate compiler generated dependencies of target mapping_node[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o[0m
+[01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:[m[K In function ‘[01m[KEigen::Matrix4f TransMatrix(ndtloc::pose&)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:85:58:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEigen::AngleAxis<float>::AngleAxis(const float&, const BasisReturnType (&)())[m[K’
+   85 |     Eigen::AngleAxisf rot_z(alpha, Eigen::Vector3f::UnitZ[01;31m[K)[m[K;
+      |                                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:43[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:46[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/map/include/map/utilty.h:9[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:3[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:139:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherScalarType> Eigen::AngleAxis<Scalar>::AngleAxis(const Eigen::AngleAxis<NewScalarType>&) [with OtherScalarType = OtherScalarType; _Scalar = float][m[K’
+  139 |   EIGEN_DEVICE_FUNC inline explicit [01;36m[KAngleAxis[m[K(const AngleAxis<OtherScalarType>& other)
+      |                                     [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:139:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:85:58:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::AngleAxis<_Scalar>[m[K’ and ‘[01m[Kconst float[m[K’
+   85 |     Eigen::AngleAxisf rot_z(alpha, Eigen::Vector3f::UnitZ[01;36m[K)[m[K;
+      |                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:43[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:46[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/map/include/map/utilty.h:9[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:3[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:88:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived> Eigen::AngleAxis<Scalar>::AngleAxis(const Eigen::MatrixBase<OtherDerived>&) [with Derived = Derived; _Scalar = float][m[K’
+   88 |   EIGEN_DEVICE_FUNC inline explicit [01;36m[KAngleAxis[m[K(const MatrixBase<Derived>& m) { *this = m; }
+      |                                     [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:88:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:85:58:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’ and ‘[01m[Kconst float[m[K’
+   85 |     Eigen::AngleAxisf rot_z(alpha, Eigen::Vector3f::UnitZ[01;36m[K)[m[K;
+      |                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:43[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:46[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/map/include/map/utilty.h:9[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:3[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:85:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class QuatDerived> Eigen::AngleAxis<Scalar>::AngleAxis(const Eigen::QuaternionBase<OtherDerived>&) [with QuatDerived = QuatDerived; _Scalar = float][m[K’
+   85 |   EIGEN_DEVICE_FUNC inline explicit [01;36m[KAngleAxis[m[K(const QuaternionBase<QuatDerived>& q) { *this = q; }
+      |                                     [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:85:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:85:58:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::QuaternionBase<Derived>[m[K’ and ‘[01m[Kconst float[m[K’
+   85 |     Eigen::AngleAxisf rot_z(alpha, Eigen::Vector3f::UnitZ[01;36m[K)[m[K;
+      |                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:43[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:46[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/map/include/map/utilty.h:9[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:3[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:80:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived> Eigen::AngleAxis<Scalar>::AngleAxis(const Scalar&, const Eigen::MatrixBase<OtherDerived>&) [with Derived = Derived; _Scalar = float][m[K’
+   80 |   inline [01;36m[KAngleAxis[m[K(const Scalar& angle, const MatrixBase<Derived>& axis) : m_axis(axis), m_angle(angle) {}
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:80:10:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:85:58:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst Eigen::MatrixBase<Derived>[m[K’ and ‘[01m[Kconst BasisReturnType()[m[K’ {aka ‘[01m[Kconst Eigen::Block<const Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<float>, Eigen::Matrix<float, 3, 3> >, 3, 1, false>()[m[K’}
+   85 |     Eigen::AngleAxisf rot_z(alpha, Eigen::Vector3f::UnitZ[01;36m[K)[m[K;
+      |                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:43[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:46[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/map/include/map/utilty.h:9[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:3[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:72:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::AngleAxis<Scalar>::AngleAxis() [with _Scalar = float][m[K’
+   72 |   EIGEN_DEVICE_FUNC [01;36m[KAngleAxis[m[K() {}
+      |                     [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:72:21:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:49:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::AngleAxis<float>::AngleAxis(const Eigen::AngleAxis<float>&)[m[K’
+   49 | class [01;36m[KAngleAxis[m[K : public RotationBase<AngleAxis<_Scalar>,3>
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:49:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:49:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::AngleAxis<float>::AngleAxis(Eigen::AngleAxis<float>&&)[m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:49:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+gmake[2]: *** [CMakeFiles/mapping_node.dir/build.make:76: CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/mapping_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

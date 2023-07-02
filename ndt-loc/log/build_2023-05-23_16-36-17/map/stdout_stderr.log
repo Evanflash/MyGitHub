@@ -1,0 +1,38 @@
+[ 33%] Built target show_map_node
+[ 40%] Built target lidar_data_node
+[ 46%] [32mBuilding CXX object CMakeFiles/mapping_image.dir/src/ImageProjection.cpp.o[0m
+[ 66%] Built target front_end_node
+[01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::ImageProjection::LabelComponents(int, int)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:244:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kboost::circular_buffer<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  244 |     if([01;35m[Kall_pushed.size() > _segment_valid_num[m[K){
+      |        [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:247:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kboost::circular_buffer<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  247 |     else if([01;35m[Kall_pushed.size() >= _segment_valid_point_num[m[K){
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:249:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  249 |         for(size_t i = 0; [01;35m[Ki < _vertical_scans[m[K; i++){
+      |                           [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:[m[K At global scope:
+[01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:289:10:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kndtloc::CLOUDPTR ndtloc::ImageProjection::GetSegmentCloud()[m[K’
+  289 | CLOUDPTR [01;31m[KImageProjection[m[K::GetSegmentCloud(){
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:2[m[K:
+[01m[K/home/evan/code/ndt-loc/src/map/include/map/ImageProjection.h:26:11:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kndtloc::CLOUD ndtloc::ImageProjection::GetSegmentCloud()[m[K’
+   26 |     CLOUD [01;36m[KGetSegmentCloud[m[K();
+      |           [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/map/include/map/ImageProjection.h:14:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ndtloc::ImageProjection[m[K’ defined here
+   14 | class [01;36m[KImageProjection[m[K : public rclcpp::Node{
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:299:7:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kndtloc::CLOUD ndtloc::ImageProjection::Run(ndtloc::CLOUDPTR)[m[K’
+  299 | CLOUD [01;31m[KImageProjection[m[K::Run(CLOUDPTR cloud){
+      |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:2[m[K:
+[01m[K/home/evan/code/ndt-loc/src/map/include/map/ImageProjection.h:27:14:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kndtloc::CLOUDPTR ndtloc::ImageProjection::Run(ndtloc::CLOUDPTR)[m[K’
+   27 |     CLOUDPTR [01;36m[KRun[m[K(CLOUDPTR cloud);
+      |              [01;36m[K^~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/map/include/map/ImageProjection.h:14:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ndtloc::ImageProjection[m[K’ defined here
+   14 | class [01;36m[KImageProjection[m[K : public rclcpp::Node{
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mapping_image.dir/build.make:76: CMakeFiles/mapping_image.dir/src/ImageProjection.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/mapping_image.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

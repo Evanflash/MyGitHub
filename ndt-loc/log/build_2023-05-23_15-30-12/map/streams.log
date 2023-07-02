@@ -1,0 +1,19 @@
+[0.018s] Invoking command in '/home/evan/code/ndt-loc/build/map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4
+[0.110s] [ 10%] [32mBuilding CXX object CMakeFiles/image_projection_node.dir/src/ImageProjection.cpp.o[0m
+[0.120s] [ 30%] Built target front_end_node
+[0.124s] [ 50%] Built target show_map_node
+[0.129s] [ 70%] Built target lidar_data_node
+[0.144s] [35m[1mConsolidate compiler generated dependencies of target mapping_node[0m
+[0.190s] [ 80%] [32mBuilding CXX object CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o[0m
+[14.341s] [ 90%] [32m[1mLinking CXX executable mapping_node[0m
+[15.009s] /usr/bin/ld: CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o: in function `RunMapping()':
+[15.009s] GroundTruth.cpp:(.text+0xb6a): undefined reference to `ndtloc::ImageProjection::ImageProjection(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[15.009s] /usr/bin/ld: GroundTruth.cpp:(.text+0xf49): undefined reference to `ndtloc::ImageProjection::Run(std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >)'
+[15.042s] collect2: error: ld returned 1 exit status
+[15.090s] gmake[2]: *** [CMakeFiles/mapping_node.dir/build.make:296: mapping_node] Error 1
+[15.090s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/mapping_node.dir/all] Error 2
+[15.091s] gmake[1]: *** Waiting for unfinished jobs....
+[20.286s] [100%] [32m[1mLinking CXX executable image_projection_node[0m
+[22.765s] [100%] Built target image_projection_node
+[22.767s] gmake: *** [Makefile:146: all] Error 2
+[22.769s] Invoked command in '/home/evan/code/ndt-loc/build/map' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4

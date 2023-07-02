@@ -1,0 +1,78 @@
+[35m[1mConsolidate compiler generated dependencies of target scan_registration_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o[0m
+In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:[m[K In member function ‘[01m[Kvoid ALOAM::ScanRegistration<PointT>::removeClosedPointCloud(ALOAM::ScanRegistration<PointT>::CLOUDPTR, ALOAM::ScanRegistration<PointT>::CLOUDPTR, float)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:48:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_int[m[K’ was not declared in this scope; did you mean ‘[01m[Kcloud_in[m[K’?
+   48 |             cloud_out -> points.resize([01;31m[Kcloud_int[m[K -> points.size());
+      |                                        [01;31m[K^~~~~~~~~[m[K
+      |                                        [32m[Kcloud_in[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:[m[K In member function ‘[01m[Kvoid ALOAM::ScanRegistration<PointT>::extractFeatureFromPointCloud(ALOAM::ScanRegistration<PointT>::CLOUDPTR)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:197:44:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  197 |         auto comp(const int i, const int j)[01;31m[K{[m[K
+      |                                            [01;31m[K^[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:209:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kcomp[m[K’ was not declared in this scope
+  209 |                 std::sort(cloudSortInd + sp, cloudSortInd + ep + 1, [01;31m[Kcomp[m[K);
+      |                                                                     [01;31m[K^~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:[m[K In member function ‘[01m[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:25:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Kconst PointCloud2[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::PointCloud2_<std::allocator<void> >[m[K’})
+   63 |         pcl::fromROSMsg([01;31m[K*laserCloudMsg[m[K, *laserCloudIn);
+      |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[01m[K/usr/include/c++/11/complex:392:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const std::complex<_Tp>&)[m[K’
+  392 |     [01;36m[Koperator[m[K*(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/complex:392:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst PointCloud2[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::PointCloud2_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+   63 |         pcl::fromROSMsg(*[01;36m[KlaserCloudMsg[m[K, *laserCloudIn);
+      |                          [01;36m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[01m[K/usr/include/c++/11/complex:401:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const _Tp&)[m[K’
+  401 |     [01;36m[Koperator[m[K*(const complex<_Tp>& __x, const _Tp& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/complex:401:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:26:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst PointCloud2[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::PointCloud2_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+   63 |         pcl::fromROSMsg(*[01;36m[KlaserCloudMsg[m[K, *laserCloudIn);
+      |                          [01;36m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+                 from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[01m[K/usr/include/c++/11/complex:410:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator*(const _Tp&, const std::complex<_Tp>&)[m[K’
+  410 |     [01;36m[Koperator[m[K*(const _Tp& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/complex:410:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:63:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   63 |         pcl::fromROSMsg(*[01;36m[KlaserCloudMsg[m[K, *laserCloudIn);
+      |                          [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:67:65:[m[K [01;31m[Kerror: [m[K‘[01m[KMINIMUM_RANGE[m[K’ was not declared in this scope; did you mean ‘[01m[KMINMUM_RANGE[m[K’?
+   67 |         sr.removeClosedPointCloud(*laserCloudIn, *laserCloudIn, [01;31m[KMINIMUM_RANGE[m[K);
+      |                                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                                 [32m[KMINMUM_RANGE[m[K
+/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp: In instantiation of ‘[01m[KALOAM::ScanRegistrationNode<PointT>::ScanRegistrationNode(std::string) [with PointT = pcl::PointXYZ; std::string = std::__cxx11::basic_string<char>][m[K’:
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:4:[m[K   required from ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>][m[K’
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}][m[K’
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:94:52:[m[K   required from here
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:31:36:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&) [with PointT = pcl::PointXYZ; sensor_msgs::msg::PointCloud2 = sensor_msgs::msg::PointCloud2_<std::allocator<void> >][m[K’
+   31 |             "/laser_cloud_ori", 1, [01;31m[KRun[m[K);
+      |                                    [01;31m[K^~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:61:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   61 |     void [01;36m[KRun[m[K(const sensor_msgs::msg::PointCloud2 &laserCloudMsg){
+      |          [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/scan_registration_node.dir/build.make:76: CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scan_registration_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

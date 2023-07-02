@@ -1,0 +1,63 @@
+[0.210s] Invoking command in '/home/evan/code/ndt-loc/build/map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4
+[0.316s] [35m[1mConsolidate compiler generated dependencies of target show_map_node[0m
+[0.330s] [ 10%] [32mBuilding CXX object CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o[0m
+[0.344s] [35m[1mConsolidate compiler generated dependencies of target mapping_image[0m
+[0.345s] [ 20%] [32mBuilding CXX object CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o[0m
+[2.863s] [ 30%] [32mBuilding CXX object CMakeFiles/show_map_node.dir/src/ShowMap.cpp.o[0m
+[2.944s] [ 40%] [32mBuilding CXX object CMakeFiles/mapping_image.dir/src/ImageProjection.cpp.o[0m
+[13.013s] [01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:[m[K In member function ‘[01m[Kbool ndtloc::FrontEnd::UpdateNewFrame(const ndtloc::Frame&)[m[K’:
+[13.019s] [01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:105:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::deque<ndtloc::Frame>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[13.020s]   105 |     while([01;35m[Klocal_map_frames.size() > max_local_map_frames[m[K){
+[13.020s]       |           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.021s] [01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:117:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::deque<ndtloc::Frame>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[13.021s]   117 |     if([01;35m[Klocal_map_frames.size() < local_map_filter_frames_num[m[K){
+[13.022s]       |        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.159s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::ImageProjection::LabelComponents(int, int)[m[K’:
+[16.159s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:244:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kboost::circular_buffer<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[16.160s]   244 |     if([01;35m[Kall_pushed.size() > _segment_valid_num[m[K){
+[16.160s]       |        [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[16.161s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:247:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kboost::circular_buffer<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[16.161s]   247 |     else if([01;35m[Kall_pushed.size() >= _segment_valid_point_num[m[K){
+[16.162s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.162s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:249:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[16.163s]   249 |         for(size_t i = 0; [01;35m[Ki < _vertical_scans[m[K; i++){
+[16.163s]       |                           [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[28.205s] [ 50%] [32m[1mLinking CXX executable show_map_node[0m
+[30.845s] /usr/bin/ld: CMakeFiles/show_map_node.dir/src/ShowMap.cpp.o: in function `ndtloc::ShowMap::Show()':
+[30.845s] ShowMap.cpp:(.text+0x84): undefined reference to `ndtloc::map_file_path[abi:cxx11]'
+[30.887s] collect2: error: ld returned 1 exit status
+[30.890s] gmake[2]: *** [CMakeFiles/show_map_node.dir/build.make:296: show_map_node] Error 1
+[30.890s] gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/show_map_node.dir/all] Error 2
+[30.891s] gmake[1]: *** Waiting for unfinished jobs....
+[31.587s] [ 60%] [32m[1mLinking CXX executable lidar_data_node[0m
+[32.863s] [ 70%] [32m[1mLinking CXX static library libmapping_image.a[0m
+[34.397s] /usr/bin/ld: CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o: in function `ndtloc::LidarData::LidarData(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[34.397s] LidarData.cpp:(.text+0x655): undefined reference to `ndtloc::_left_lidar_time[abi:cxx11]'
+[34.398s] /usr/bin/ld: LidarData.cpp:(.text+0x6cc): undefined reference to `ndtloc::_right_lidar_time[abi:cxx11]'
+[34.399s] /usr/bin/ld: CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o: in function `ndtloc::LidarData::GetNextTimestampingByTime[abi:cxx11]()':
+[34.399s] LidarData.cpp:(.text+0xc3f): undefined reference to `ndtloc::_left_lidar_path[abi:cxx11]'
+[34.400s] /usr/bin/ld: LidarData.cpp:(.text+0xc4b): undefined reference to `ndtloc::_right_lidar_path[abi:cxx11]'
+[34.401s] /usr/bin/ld: CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o: in function `ndtloc::LidarData::Offset(bool)':
+[34.401s] LidarData.cpp:(.text+0x17a9): undefined reference to `ndtloc::_x_offset'
+[34.403s] /usr/bin/ld: LidarData.cpp:(.text+0x1848): undefined reference to `ndtloc::_z_offset'
+[34.403s] /usr/bin/ld: LidarData.cpp:(.text+0x1897): undefined reference to `ndtloc::_y_offset'
+[34.404s] /usr/bin/ld: LidarData.cpp:(.text+0x18dc): undefined reference to `ndtloc::_y_offset'
+[34.610s] collect2: error: ld returned 1 exit status
+[34.612s] gmake[2]: *** [CMakeFiles/lidar_data_node.dir/build.make:296: lidar_data_node] Error 1
+[34.612s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/lidar_data_node.dir/all] Error 2
+[36.056s] [ 70%] Built target mapping_image
+[42.966s] [ 80%] [32m[1mLinking CXX executable front_end_node[0m
+[45.376s] /usr/bin/ld: CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o: in function `ndtloc::FrontEnd::Update(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >)':
+[45.376s] FrontEnd.cpp:(.text+0x1590): undefined reference to `ndtloc::key_frame_distance'
+[45.378s] /usr/bin/ld: CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o: in function `ndtloc::FrontEnd::UpdateNewFrame(ndtloc::Frame const&)':
+[45.378s] FrontEnd.cpp:(.text+0x199b): undefined reference to `ndtloc::key_frame_path[abi:cxx11]'
+[45.380s] /usr/bin/ld: FrontEnd.cpp:(.text+0x1b3c): undefined reference to `ndtloc::max_local_map_frames'
+[45.382s] /usr/bin/ld: FrontEnd.cpp:(.text+0x1c9c): undefined reference to `ndtloc::local_map_filter_frames_num'
+[45.386s] /usr/bin/ld: CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o: in function `ndtloc::FrontEnd::CreateGlobalMap(std_msgs::msg::Bool_<std::allocator<void> >)':
+[45.386s] FrontEnd.cpp:(.text+0x22a1): undefined reference to `ndtloc::key_frame_path[abi:cxx11]'
+[45.388s] /usr/bin/ld: FrontEnd.cpp:(.text+0x252d): undefined reference to `ndtloc::map_file_path[abi:cxx11]'
+[45.550s] collect2: error: ld returned 1 exit status
+[45.552s] gmake[2]: *** [CMakeFiles/front_end_node.dir/build.make:296: front_end_node] Error 1
+[45.553s] gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/front_end_node.dir/all] Error 2
+[45.553s] gmake: *** [Makefile:146: all] Error 2
+[45.556s] Invoked command in '/home/evan/code/ndt-loc/build/map' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4

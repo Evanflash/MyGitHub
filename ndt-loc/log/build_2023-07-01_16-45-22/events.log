@@ -1,0 +1,176 @@
+[0.000000] (-) TimerEvent: {}
+[0.000514] (-) JobUnselected: {'identifier': 'a-loam'}
+[0.001072] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.001236] (-) JobUnselected: {'identifier': 'data-publisher'}
+[0.001264] (-) JobUnselected: {'identifier': 'map'}
+[0.002099] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.002158] (radar-odometry) JobQueued: {'identifier': 'radar-odometry', 'dependencies': OrderedDict()}
+[0.002219] (radar-odometry) JobStarted: {'identifier': 'radar-odometry'}
+[0.014643] (radar-odometry) JobProgress: {'identifier': 'radar-odometry', 'progress': 'cmake'}
+[0.015530] (radar-odometry) Command: {'cmd': ['/usr/bin/cmake', '/home/evan/code/ndt-loc/src/radar-odometry', '-DCMAKE_INSTALL_PREFIX=/home/evan/code/ndt-loc/install/radar-odometry'], 'cwd': '/home/evan/code/ndt-loc/build/radar-odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2471'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2254,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2254'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6891e234_375c_48ed_942b_4977adfb4374'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4RSX61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/zsh'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/radar-odometry'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[0.031646] (radar-odometry) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099901] (-) TimerEvent: {}
+[0.193477] (radar-odometry) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.200037] (-) TimerEvent: {}
+[0.231473] (radar-odometry) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.234707] (radar-odometry) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.243207] (radar-odometry) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.257311] (radar-odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.276381] (radar-odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300120] (-) TimerEvent: {}
+[0.347605] (radar-odometry) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.349359] (radar-odometry) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400209] (-) TimerEvent: {}
+[0.499206] (radar-odometry) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500289] (-) TimerEvent: {}
+[0.600555] (-) TimerEvent: {}
+[0.694001] (radar-odometry) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.700620] (-) TimerEvent: {}
+[0.800920] (-) TimerEvent: {}
+[0.851654] (radar-odometry) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[0.901041] (-) TimerEvent: {}
+[1.001343] (-) TimerEvent: {}
+[1.013903] (radar-odometry) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.049727] (radar-odometry) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.087487] (radar-odometry) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.101431] (-) TimerEvent: {}
+[1.121951] (radar-odometry) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.122116] (radar-odometry) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.201629] (-) TimerEvent: {}
+[1.238709] (radar-odometry) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[1.258267] (radar-odometry) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.301820] (-) TimerEvent: {}
+[1.331286] (radar-odometry) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.402057] (-) TimerEvent: {}
+[1.444236] (radar-odometry) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.444654] (radar-odometry) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.490168] (radar-odometry) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[1.496588] (radar-odometry) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[1.502127] (-) TimerEvent: {}
+[1.602511] (-) TimerEvent: {}
+[1.702912] (-) TimerEvent: {}
+[1.803510] (-) TimerEvent: {}
+[1.904042] (-) TimerEvent: {}
+[1.949864] (radar-odometry) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[1.950238] (radar-odometry) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[1.952932] (radar-odometry) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[1.962931] (radar-odometry) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[1.981265] (radar-odometry) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[2.004138] (-) TimerEvent: {}
+[2.045511] (radar-odometry) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[2.104237] (-) TimerEvent: {}
+[2.204572] (-) TimerEvent: {}
+[2.269061] (radar-odometry) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[2.269340] (radar-odometry) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[2.304684] (-) TimerEvent: {}
+[2.404982] (-) TimerEvent: {}
+[2.409525] (radar-odometry) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[2.409731] (radar-odometry) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[2.491431] (radar-odometry) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[2.491769] (radar-odometry) StdoutLine: {'line': b'-- Looking for connect\n'}
+[2.505111] (-) TimerEvent: {}
+[2.567276] (radar-odometry) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[2.567532] (radar-odometry) StdoutLine: {'line': b'-- Looking for remove\n'}
+[2.605239] (-) TimerEvent: {}
+[2.641733] (radar-odometry) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[2.641952] (radar-odometry) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[2.705365] (-) TimerEvent: {}
+[2.718779] (radar-odometry) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[2.719116] (radar-odometry) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[2.794162] (radar-odometry) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[2.805415] (-) TimerEvent: {}
+[2.880719] (radar-odometry) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[2.882739] (radar-odometry) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[2.885128] (radar-odometry) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[2.886806] (radar-odometry) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[2.899348] (radar-odometry) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[2.904578] (radar-odometry) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[2.905509] (-) TimerEvent: {}
+[2.909742] (radar-odometry) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[2.917570] (radar-odometry) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[3.005720] (-) TimerEvent: {}
+[3.063000] (radar-odometry) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[3.096771] (radar-odometry) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[3.105803] (-) TimerEvent: {}
+[3.141578] (radar-odometry) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[3.142794] (radar-odometry) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[3.142946] (radar-odometry) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.205890] (-) TimerEvent: {}
+[3.227146] (radar-odometry) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[3.227310] (radar-odometry) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.227544] (radar-odometry) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[3.306000] (-) TimerEvent: {}
+[3.400903] (radar-odometry) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.406119] (-) TimerEvent: {}
+[3.410765] (radar-odometry) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.419897] (radar-odometry) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.506240] (-) TimerEvent: {}
+[3.587521] (radar-odometry) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.606342] (-) TimerEvent: {}
+[3.706633] (-) TimerEvent: {}
+[3.755646] (radar-odometry) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.806724] (-) TimerEvent: {}
+[3.907034] (-) TimerEvent: {}
+[3.916992] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[3.918226] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.918448] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[3.919582] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.919776] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[3.920682] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.920948] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[3.921791] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.922013] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[3.922879] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.923193] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[3.924114] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.924416] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[3.924668] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.924889] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[3.925197] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.925340] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[3.926217] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.926511] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[3.927712] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.928230] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[3.929276] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.929497] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[3.930811] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.931194] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[3.932170] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.932532] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[3.933704] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.934054] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[3.934953] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.935308] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[3.936304] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.936643] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[3.937497] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.937691] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[3.938553] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.938933] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[3.939786] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.939988] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[3.940759] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.941358] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[3.941546] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.941687] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[3.942016] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.942154] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[3.942556] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.942708] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[3.943687] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.943864] (radar-odometry) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[3.945017] (radar-odometry) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.946077] (radar-odometry) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[3.947108] (radar-odometry) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):\n'}
+[3.947319] (radar-odometry) StderrLine: {'line': b"  ament_target_dependencies() the passed package name 'dependencies' was not\n"}
+[3.947444] (radar-odometry) StderrLine: {'line': b'  found before\n'}
+[3.947517] (radar-odometry) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[3.947600] (radar-odometry) StderrLine: {'line': b'  CMakeLists.txt:34 (ament_target_dependencies)\n'}
+[3.947671] (radar-odometry) StderrLine: {'line': b'\n'}
+[3.947737] (radar-odometry) StderrLine: {'line': b'\x1b[0m\n'}
+[3.947803] (radar-odometry) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.947874] (radar-odometry) StdoutLine: {'line': b'See also "/home/evan/code/ndt-loc/build/radar-odometry/CMakeFiles/CMakeOutput.log".\n'}
+[3.967327] (radar-odometry) CommandEnded: {'returncode': 1}
+[3.994063] (radar-odometry) JobEnded: {'identifier': 'radar-odometry', 'rc': 1}
+[4.004689] (-) EventReactorShutdown: {}

@@ -1,0 +1,461 @@
+[0.000000] (-) TimerEvent: {}
+[0.000417] (-) JobUnselected: {'identifier': 'A-LOAM'}
+[0.001293] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.001352] (-) JobUnselected: {'identifier': 'map'}
+[0.001466] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.001505] (-) JobUnselected: {'identifier': 'radar-data'}
+[0.001552] (data-publisher) JobQueued: {'identifier': 'data-publisher', 'dependencies': OrderedDict()}
+[0.001579] (data-publisher) JobStarted: {'identifier': 'data-publisher'}
+[0.099771] (-) TimerEvent: {}
+[0.158412] (data-publisher) JobProgress: {'identifier': 'data-publisher', 'progress': 'cmake'}
+[0.159272] (data-publisher) Command: {'cmd': ['/usr/bin/cmake', '/home/evan/code/ndt-loc/src/data-publisher', '-DCMAKE_INSTALL_PREFIX=/home/evan/code/ndt-loc/install/data-publisher'], 'cwd': '/home/evan/code/ndt-loc/build/data-publisher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code/demo_test/cpp_test/src'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2298'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2111,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2111'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/126383b8_d7c8_45a8_9a53_f289a66a89ea'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.R1JB61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.3464'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/data-publisher'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble')]), 'shell': False}
+[0.199950] (-) TimerEvent: {}
+[0.300461] (-) TimerEvent: {}
+[0.400921] (-) TimerEvent: {}
+[0.501476] (-) TimerEvent: {}
+[0.602004] (-) TimerEvent: {}
+[0.702502] (-) TimerEvent: {}
+[0.802863] (-) TimerEvent: {}
+[0.903428] (-) TimerEvent: {}
+[1.003869] (-) TimerEvent: {}
+[1.104436] (-) TimerEvent: {}
+[1.204906] (-) TimerEvent: {}
+[1.305232] (-) TimerEvent: {}
+[1.405585] (-) TimerEvent: {}
+[1.506139] (-) TimerEvent: {}
+[1.606734] (-) TimerEvent: {}
+[1.707263] (-) TimerEvent: {}
+[1.807675] (-) TimerEvent: {}
+[1.908302] (-) TimerEvent: {}
+[2.008899] (-) TimerEvent: {}
+[2.109471] (-) TimerEvent: {}
+[2.210028] (-) TimerEvent: {}
+[2.310544] (-) TimerEvent: {}
+[2.411107] (-) TimerEvent: {}
+[2.511717] (-) TimerEvent: {}
+[2.612426] (-) TimerEvent: {}
+[2.712957] (-) TimerEvent: {}
+[2.813416] (-) TimerEvent: {}
+[2.914060] (-) TimerEvent: {}
+[3.014609] (-) TimerEvent: {}
+[3.115309] (-) TimerEvent: {}
+[3.215872] (-) TimerEvent: {}
+[3.316406] (-) TimerEvent: {}
+[3.416977] (-) TimerEvent: {}
+[3.505396] (data-publisher) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[3.517080] (-) TimerEvent: {}
+[3.617442] (-) TimerEvent: {}
+[3.718024] (-) TimerEvent: {}
+[3.818756] (-) TimerEvent: {}
+[3.919112] (-) TimerEvent: {}
+[4.019710] (-) TimerEvent: {}
+[4.120233] (-) TimerEvent: {}
+[4.220511] (-) TimerEvent: {}
+[4.320929] (-) TimerEvent: {}
+[4.421262] (-) TimerEvent: {}
+[4.521825] (-) TimerEvent: {}
+[4.622142] (-) TimerEvent: {}
+[4.722622] (-) TimerEvent: {}
+[4.823177] (-) TimerEvent: {}
+[4.923719] (-) TimerEvent: {}
+[5.024338] (-) TimerEvent: {}
+[5.125018] (-) TimerEvent: {}
+[5.225607] (-) TimerEvent: {}
+[5.326196] (-) TimerEvent: {}
+[5.426852] (-) TimerEvent: {}
+[5.509710] (data-publisher) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[5.526981] (-) TimerEvent: {}
+[5.542837] (data-publisher) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.627389] (-) TimerEvent: {}
+[5.727721] (-) TimerEvent: {}
+[5.828095] (-) TimerEvent: {}
+[5.928421] (-) TimerEvent: {}
+[5.944654] (data-publisher) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.955294] (data-publisher) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.956096] (data-publisher) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.967244] (data-publisher) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.991289] (data-publisher) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.028509] (-) TimerEvent: {}
+[6.128808] (-) TimerEvent: {}
+[6.141036] (data-publisher) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.149950] (data-publisher) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.150279] (data-publisher) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.150795] (data-publisher) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.228987] (-) TimerEvent: {}
+[6.320722] (data-publisher) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.329119] (-) TimerEvent: {}
+[6.429537] (-) TimerEvent: {}
+[6.529869] (-) TimerEvent: {}
+[6.630331] (-) TimerEvent: {}
+[6.730944] (-) TimerEvent: {}
+[6.831185] (-) TimerEvent: {}
+[6.931538] (-) TimerEvent: {}
+[7.031791] (-) TimerEvent: {}
+[7.043334] (data-publisher) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[7.131951] (-) TimerEvent: {}
+[7.232433] (-) TimerEvent: {}
+[7.332707] (-) TimerEvent: {}
+[7.433063] (-) TimerEvent: {}
+[7.533649] (-) TimerEvent: {}
+[7.624808] (data-publisher) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[7.633835] (-) TimerEvent: {}
+[7.734346] (-) TimerEvent: {}
+[7.834909] (-) TimerEvent: {}
+[7.935336] (-) TimerEvent: {}
+[8.035885] (-) TimerEvent: {}
+[8.136431] (-) TimerEvent: {}
+[8.236980] (-) TimerEvent: {}
+[8.337405] (-) TimerEvent: {}
+[8.416527] (data-publisher) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[8.437557] (-) TimerEvent: {}
+[8.472109] (data-publisher) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[8.525102] (data-publisher) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[8.537711] (-) TimerEvent: {}
+[8.638095] (-) TimerEvent: {}
+[8.668839] (data-publisher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.738308] (-) TimerEvent: {}
+[8.838916] (-) TimerEvent: {}
+[8.887927] (data-publisher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.939061] (-) TimerEvent: {}
+[9.039650] (-) TimerEvent: {}
+[9.140170] (-) TimerEvent: {}
+[9.240566] (-) TimerEvent: {}
+[9.295290] (data-publisher) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[9.322269] (data-publisher) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[9.340717] (-) TimerEvent: {}
+[9.441098] (-) TimerEvent: {}
+[9.541505] (-) TimerEvent: {}
+[9.642096] (-) TimerEvent: {}
+[9.742702] (-) TimerEvent: {}
+[9.843258] (-) TimerEvent: {}
+[9.943892] (-) TimerEvent: {}
+[10.005275] (data-publisher) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[10.044127] (-) TimerEvent: {}
+[10.058659] (data-publisher) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[10.115065] (data-publisher) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.144273] (-) TimerEvent: {}
+[10.244641] (-) TimerEvent: {}
+[10.258081] (data-publisher) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[10.344812] (-) TimerEvent: {}
+[10.445305] (-) TimerEvent: {}
+[10.509794] (data-publisher) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[10.510384] (data-publisher) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[10.545395] (-) TimerEvent: {}
+[10.633293] (data-publisher) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[10.634682] (data-publisher) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.645515] (-) TimerEvent: {}
+[10.750185] (-) TimerEvent: {}
+[10.850471] (-) TimerEvent: {}
+[10.950778] (-) TimerEvent: {}
+[11.051050] (-) TimerEvent: {}
+[11.151345] (-) TimerEvent: {}
+[11.251631] (-) TimerEvent: {}
+[11.305856] (data-publisher) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[11.351766] (-) TimerEvent: {}
+[11.452035] (-) TimerEvent: {}
+[11.552319] (-) TimerEvent: {}
+[11.575035] (data-publisher) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[11.652409] (-) TimerEvent: {}
+[11.674414] (data-publisher) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[11.712910] (data-publisher) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[11.713094] (data-publisher) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[11.752530] (-) TimerEvent: {}
+[11.854431] (-) TimerEvent: {}
+[11.954917] (-) TimerEvent: {}
+[12.021932] (data-publisher) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[12.040498] (data-publisher) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[12.055036] (-) TimerEvent: {}
+[12.091106] (data-publisher) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[12.136329] (data-publisher) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[12.137636] (data-publisher) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[12.155157] (-) TimerEvent: {}
+[12.255457] (-) TimerEvent: {}
+[12.355785] (-) TimerEvent: {}
+[12.396464] (data-publisher) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[12.455851] (-) TimerEvent: {}
+[12.529341] (data-publisher) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[12.555944] (-) TimerEvent: {}
+[12.656226] (-) TimerEvent: {}
+[12.756604] (-) TimerEvent: {}
+[12.856916] (-) TimerEvent: {}
+[12.957211] (-) TimerEvent: {}
+[13.057480] (-) TimerEvent: {}
+[13.157805] (-) TimerEvent: {}
+[13.192384] (data-publisher) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[13.192762] (data-publisher) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[13.219272] (data-publisher) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[13.257924] (-) TimerEvent: {}
+[13.308337] (data-publisher) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[13.358015] (-) TimerEvent: {}
+[13.402951] (data-publisher) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[13.458113] (-) TimerEvent: {}
+[13.558432] (-) TimerEvent: {}
+[13.658717] (-) TimerEvent: {}
+[13.689919] (data-publisher) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[13.758810] (-) TimerEvent: {}
+[13.859129] (-) TimerEvent: {}
+[13.959399] (-) TimerEvent: {}
+[14.006849] (data-publisher) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[14.019040] (data-publisher) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[14.059519] (-) TimerEvent: {}
+[14.128579] (data-publisher) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[14.128778] (data-publisher) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[14.159612] (-) TimerEvent: {}
+[14.216077] (data-publisher) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[14.216256] (data-publisher) StdoutLine: {'line': b'-- Looking for connect\n'}
+[14.259738] (-) TimerEvent: {}
+[14.302100] (data-publisher) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[14.302333] (data-publisher) StdoutLine: {'line': b'-- Looking for remove\n'}
+[14.360023] (-) TimerEvent: {}
+[14.390384] (data-publisher) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[14.390671] (data-publisher) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[14.460116] (-) TimerEvent: {}
+[14.477311] (data-publisher) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[14.477608] (data-publisher) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[14.561326] (-) TimerEvent: {}
+[14.569629] (data-publisher) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[14.661419] (-) TimerEvent: {}
+[14.676756] (data-publisher) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[14.679637] (data-publisher) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[14.702628] (data-publisher) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[14.722172] (data-publisher) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[14.747704] (data-publisher) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[14.761509] (-) TimerEvent: {}
+[14.763143] (data-publisher) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[14.768136] (data-publisher) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[14.798446] (data-publisher) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[14.861652] (-) TimerEvent: {}
+[14.961967] (-) TimerEvent: {}
+[15.000628] (data-publisher) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[15.035564] (data-publisher) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[15.062099] (-) TimerEvent: {}
+[15.079884] (data-publisher) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[15.093305] (data-publisher) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[15.093545] (data-publisher) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[15.162223] (-) TimerEvent: {}
+[15.200796] (data-publisher) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[15.201104] (data-publisher) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[15.201805] (data-publisher) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[15.262341] (-) TimerEvent: {}
+[15.362615] (-) TimerEvent: {}
+[15.390257] (data-publisher) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[15.399054] (data-publisher) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[15.406568] (data-publisher) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[15.462738] (-) TimerEvent: {}
+[15.563093] (-) TimerEvent: {}
+[15.632465] (data-publisher) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[15.663229] (-) TimerEvent: {}
+[15.763521] (-) TimerEvent: {}
+[15.816627] (data-publisher) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[15.863695] (-) TimerEvent: {}
+[15.963979] (-) TimerEvent: {}
+[15.989002] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[15.990531] (data-publisher) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[15.990810] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[15.991959] (data-publisher) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[15.992166] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[15.993307] (data-publisher) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[15.993742] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[15.994252] (data-publisher) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[15.994506] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[15.995386] (data-publisher) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[15.995566] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[15.996503] (data-publisher) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[15.996792] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[15.997073] (data-publisher) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[15.998802] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[15.998995] (data-publisher) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[15.999084] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[15.999165] (data-publisher) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[15.999288] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[16.000126] (data-publisher) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[16.000413] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[16.001467] (data-publisher) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[16.001646] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[16.002718] (data-publisher) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[16.003042] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[16.004214] (data-publisher) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[16.005061] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[16.006074] (data-publisher) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[16.006373] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[16.007632] (data-publisher) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[16.008063] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[16.009180] (data-publisher) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[16.009945] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[16.010567] (data-publisher) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[16.010833] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[16.011929] (data-publisher) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[16.012310] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[16.013237] (data-publisher) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[16.013440] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[16.015806] (data-publisher) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[16.016136] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[16.016236] (data-publisher) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[16.016316] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[16.016392] (data-publisher) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[16.016581] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[16.016951] (data-publisher) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[16.017098] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[16.018286] (data-publisher) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[16.018528] (data-publisher) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[16.019686] (data-publisher) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[16.020676] (data-publisher) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[16.056145] (data-publisher) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[16.064100] (-) TimerEvent: {}
+[16.164396] (-) TimerEvent: {}
+[16.264696] (-) TimerEvent: {}
+[16.364999] (-) TimerEvent: {}
+[16.465478] (-) TimerEvent: {}
+[16.547952] (data-publisher) StdoutLine: {'line': b'-- Configuring done\n'}
+[16.565572] (-) TimerEvent: {}
+[16.665830] (-) TimerEvent: {}
+[16.766100] (-) TimerEvent: {}
+[16.866401] (-) TimerEvent: {}
+[16.966690] (-) TimerEvent: {}
+[17.067000] (-) TimerEvent: {}
+[17.167334] (-) TimerEvent: {}
+[17.267634] (-) TimerEvent: {}
+[17.367965] (-) TimerEvent: {}
+[17.468263] (-) TimerEvent: {}
+[17.568573] (-) TimerEvent: {}
+[17.668943] (-) TimerEvent: {}
+[17.769538] (-) TimerEvent: {}
+[17.870119] (-) TimerEvent: {}
+[17.970674] (-) TimerEvent: {}
+[18.071260] (-) TimerEvent: {}
+[18.171824] (-) TimerEvent: {}
+[18.269529] (data-publisher) StdoutLine: {'line': b'-- Generating done\n'}
+[18.271951] (-) TimerEvent: {}
+[18.276782] (data-publisher) StdoutLine: {'line': b'-- Build files have been written to: /home/evan/code/ndt-loc/build/data-publisher\n'}
+[18.304948] (data-publisher) CommandEnded: {'returncode': 0}
+[18.306017] (data-publisher) JobProgress: {'identifier': 'data-publisher', 'progress': 'build'}
+[18.307357] (data-publisher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/data-publisher', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/data-publisher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code/demo_test/cpp_test/src'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2298'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2111,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2111'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/126383b8_d7c8_45a8_9a53_f289a66a89ea'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.R1JB61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.3464'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/data-publisher'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble')]), 'shell': False}
+[18.368329] (data-publisher) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o\x1b[0m\n'}
+[18.372041] (-) TimerEvent: {}
+[18.472332] (-) TimerEvent: {}
+[18.572674] (-) TimerEvent: {}
+[18.672969] (-) TimerEvent: {}
+[18.773299] (-) TimerEvent: {}
+[18.873658] (-) TimerEvent: {}
+[18.974029] (-) TimerEvent: {}
+[19.074404] (-) TimerEvent: {}
+[19.174948] (-) TimerEvent: {}
+[19.275305] (-) TimerEvent: {}
+[19.375705] (-) TimerEvent: {}
+[19.476276] (-) TimerEvent: {}
+[19.576700] (-) TimerEvent: {}
+[19.677039] (-) TimerEvent: {}
+[19.777440] (-) TimerEvent: {}
+[19.877777] (-) TimerEvent: {}
+[19.978152] (-) TimerEvent: {}
+[20.078522] (-) TimerEvent: {}
+[20.178881] (-) TimerEvent: {}
+[20.279257] (-) TimerEvent: {}
+[20.379889] (-) TimerEvent: {}
+[20.480297] (-) TimerEvent: {}
+[20.580676] (-) TimerEvent: {}
+[20.681103] (-) TimerEvent: {}
+[20.781496] (-) TimerEvent: {}
+[20.881936] (-) TimerEvent: {}
+[20.982501] (-) TimerEvent: {}
+[21.082842] (-) TimerEvent: {}
+[21.183163] (-) TimerEvent: {}
+[21.283473] (-) TimerEvent: {}
+[21.384353] (-) TimerEvent: {}
+[21.484696] (-) TimerEvent: {}
+[21.585032] (-) TimerEvent: {}
+[21.685347] (-) TimerEvent: {}
+[21.785653] (-) TimerEvent: {}
+[21.885954] (-) TimerEvent: {}
+[21.986263] (-) TimerEvent: {}
+[22.086618] (-) TimerEvent: {}
+[22.186967] (-) TimerEvent: {}
+[22.287243] (-) TimerEvent: {}
+[22.387537] (-) TimerEvent: {}
+[22.487855] (-) TimerEvent: {}
+[22.588168] (-) TimerEvent: {}
+[22.688487] (-) TimerEvent: {}
+[22.788781] (-) TimerEvent: {}
+[22.889011] (-) TimerEvent: {}
+[22.989973] (-) TimerEvent: {}
+[23.090339] (-) TimerEvent: {}
+[23.190671] (-) TimerEvent: {}
+[23.290968] (-) TimerEvent: {}
+[23.391292] (-) TimerEvent: {}
+[23.491602] (-) TimerEvent: {}
+[23.591903] (-) TimerEvent: {}
+[23.692208] (-) TimerEvent: {}
+[23.792524] (-) TimerEvent: {}
+[23.892898] (-) TimerEvent: {}
+[23.993242] (-) TimerEvent: {}
+[24.093544] (-) TimerEvent: {}
+[24.193899] (-) TimerEvent: {}
+[24.294228] (-) TimerEvent: {}
+[24.394539] (-) TimerEvent: {}
+[24.494886] (-) TimerEvent: {}
+[24.595251] (-) TimerEvent: {}
+[24.695555] (-) TimerEvent: {}
+[24.795856] (-) TimerEvent: {}
+[24.896175] (-) TimerEvent: {}
+[24.996486] (-) TimerEvent: {}
+[25.096804] (-) TimerEvent: {}
+[25.197121] (-) TimerEvent: {}
+[25.297433] (-) TimerEvent: {}
+[25.366501] (data-publisher) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/src/LidarData.cpp:1\x1b[m\x1b[K:\n'}
+[25.366731] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/include/data-publisher/LidarData.h:24:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBool\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.366826] (data-publisher) StderrLine: {'line': b'   24 | using SUBBOOL = rclcpp::Subscription<std_msgs::msg::\x1b[01;31m\x1b[KBool\x1b[m\x1b[K>::SharedPtr;\n'}
+[25.366898] (data-publisher) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[25.366967] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/include/data-publisher/LidarData.h:24:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[25.367037] (data-publisher) StderrLine: {'line': b'   24 | using SUBBOOL = rclcpp::Subscription<std_msgs::msg::Bool\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr;\n'}
+[25.367103] (data-publisher) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[25.367169] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/include/data-publisher/LidarData.h:24:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[25.367234] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/include/data-publisher/LidarData.h:24:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[25.367305] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/include/data-publisher/LidarData.h:24:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[25.367505] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/include/data-publisher/LidarData.h:25:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBool\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[25.367608] (data-publisher) StderrLine: {'line': b'   25 | using PUBBOOL = rclcpp::Publisher<std_msgs::msg::\x1b[01;31m\x1b[KBool\x1b[m\x1b[K>::SharedPtr;\n'}
+[25.367682] (data-publisher) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[25.367778] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/include/data-publisher/LidarData.h:25:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[25.367853] (data-publisher) StderrLine: {'line': b'   25 | using PUBBOOL = rclcpp::Publisher<std_msgs::msg::Bool\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr;\n'}
+[25.367922] (data-publisher) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[25.397564] (-) TimerEvent: {}
+[25.497884] (-) TimerEvent: {}
+[25.598212] (-) TimerEvent: {}
+[25.698530] (-) TimerEvent: {}
+[25.798860] (-) TimerEvent: {}
+[25.899212] (-) TimerEvent: {}
+[25.999532] (-) TimerEvent: {}
+[26.099855] (-) TimerEvent: {}
+[26.200159] (-) TimerEvent: {}
+[26.213341] (data-publisher) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[26.213550] (data-publisher) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[26.213661] (data-publisher) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:41\x1b[m\x1b[K,\n'}
+[26.213734] (data-publisher) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/include/data-publisher/LidarData.h:5\x1b[m\x1b[K,\n'}
+[26.213806] (data-publisher) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/src/LidarData.cpp:1\x1b[m\x1b[K:\n'}
+[26.213877] (data-publisher) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = DATA::LidarData; _Args = {const char (&)[16]}; _Tp = DATA::LidarData]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[26.213960] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = DATA::LidarData; _Args = {const char (&)[16]}; _Tp = DATA::LidarData; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<DATA::LidarData>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.214036] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[16]}; _Tp = DATA::LidarData; _Alloc = std::allocator<DATA::LidarData>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.214115] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = DATA::LidarData; _Alloc = std::allocator<DATA::LidarData>; _Args = {const char (&)[16]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.214188] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<DATA::LidarData>; _Args = {const char (&)[16]}; _Tp = DATA::LidarData; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.214267] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<DATA::LidarData>; _Args = {const char (&)[16]}; _Tp = DATA::LidarData]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.214340] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = DATA::LidarData; _Alloc = std::allocator<DATA::LidarData>; _Args = {const char (&)[16]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.214410] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = DATA::LidarData; _Args = {const char (&)[16]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.214478] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/src/LidarData.cpp:77:50:\x1b[m\x1b[K   required from here\n'}
+[26.214552] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KDATA::LidarData::LidarData(const char [16])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.214623] (data-publisher) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[26.214691] (data-publisher) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[26.214758] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/src/LidarData.cpp:6:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KDATA::LidarData::LidarData(const string&, const string&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[26.214833] (data-publisher) StderrLine: {'line': b'    6 | \x1b[01;36m\x1b[KLidarData\x1b[m\x1b[K::LidarData(const std::string &name, const std::string &file_path, const std::string &file_time)\n'}
+[26.214902] (data-publisher) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[26.215039] (data-publisher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/data-publisher/src/LidarData.cpp:6:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[26.300275] (-) TimerEvent: {}
+[26.400590] (-) TimerEvent: {}
+[26.501080] (-) TimerEvent: {}
+[26.601485] (-) TimerEvent: {}
+[26.684618] (data-publisher) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lidar_data_node.dir/build.make:76: CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o] Error 1\n'}
+[26.685096] (data-publisher) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lidar_data_node.dir/all] Error 2\n'}
+[26.685444] (data-publisher) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[26.687977] (data-publisher) CommandEnded: {'returncode': 2}
+[26.701569] (-) TimerEvent: {}
+[26.802044] (-) TimerEvent: {}
+[26.885715] (data-publisher) JobEnded: {'identifier': 'data-publisher', 'rc': 2}
+[26.888866] (-) EventReactorShutdown: {}

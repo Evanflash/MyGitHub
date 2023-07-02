@@ -1,0 +1,17 @@
+[ 10%] [32mBuilding CXX object CMakeFiles/image_projection_node.dir/src/ImageProjection.cpp.o[0m
+[ 30%] Built target front_end_node
+[ 50%] Built target show_map_node
+[ 70%] Built target lidar_data_node
+[35m[1mConsolidate compiler generated dependencies of target mapping_node[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o[0m
+[ 90%] [32m[1mLinking CXX executable mapping_node[0m
+/usr/bin/ld: CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o: in function `RunMapping()':
+GroundTruth.cpp:(.text+0xb6a): undefined reference to `ndtloc::ImageProjection::ImageProjection(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: GroundTruth.cpp:(.text+0xf49): undefined reference to `ndtloc::ImageProjection::Run(std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/mapping_node.dir/build.make:296: mapping_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/mapping_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[100%] [32m[1mLinking CXX executable image_projection_node[0m
+[100%] Built target image_projection_node
+gmake: *** [Makefile:146: all] Error 2

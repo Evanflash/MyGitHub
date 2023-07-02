@@ -1,0 +1,592 @@
+[0.000000] (-) TimerEvent: {}
+[0.000508] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.000544] (-) JobUnselected: {'identifier': 'data-publisher'}
+[0.000568] (-) JobUnselected: {'identifier': 'map'}
+[0.000588] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.000607] (-) JobUnselected: {'identifier': 'radar-data'}
+[0.000628] (a-loam) JobQueued: {'identifier': 'a-loam', 'dependencies': OrderedDict()}
+[0.000651] (a-loam) JobStarted: {'identifier': 'a-loam'}
+[0.016201] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'cmake'}
+[0.017393] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'build'}
+[0.018577] (a-loam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/a-loam', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/a-loam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2262'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2078,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2078'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dc5f1ab5_4feb_45b9_afe1_315ba9349bdf'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LG2261'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.147'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/a-loam'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble')]), 'shell': False}
+[0.079261] (a-loam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scan_registration_node\x1b[0m\n'}
+[0.099514] (-) TimerEvent: {}
+[0.114875] (a-loam) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o\x1b[0m\n'}
+[0.199611] (-) TimerEvent: {}
+[0.300812] (-) TimerEvent: {}
+[0.401197] (-) TimerEvent: {}
+[0.501495] (-) TimerEvent: {}
+[0.601848] (-) TimerEvent: {}
+[0.702205] (-) TimerEvent: {}
+[0.802531] (-) TimerEvent: {}
+[0.902837] (-) TimerEvent: {}
+[1.003129] (-) TimerEvent: {}
+[1.103441] (-) TimerEvent: {}
+[1.203757] (-) TimerEvent: {}
+[1.304088] (-) TimerEvent: {}
+[1.404410] (-) TimerEvent: {}
+[1.504750] (-) TimerEvent: {}
+[1.605042] (-) TimerEvent: {}
+[1.705352] (-) TimerEvent: {}
+[1.805687] (-) TimerEvent: {}
+[1.906009] (-) TimerEvent: {}
+[2.006329] (-) TimerEvent: {}
+[2.106700] (-) TimerEvent: {}
+[2.207024] (-) TimerEvent: {}
+[2.307432] (-) TimerEvent: {}
+[2.407785] (-) TimerEvent: {}
+[2.508118] (-) TimerEvent: {}
+[2.608452] (-) TimerEvent: {}
+[2.708812] (-) TimerEvent: {}
+[2.809185] (-) TimerEvent: {}
+[2.909513] (-) TimerEvent: {}
+[3.009820] (-) TimerEvent: {}
+[3.110144] (-) TimerEvent: {}
+[3.210506] (-) TimerEvent: {}
+[3.310817] (-) TimerEvent: {}
+[3.411118] (-) TimerEvent: {}
+[3.511403] (-) TimerEvent: {}
+[3.612012] (-) TimerEvent: {}
+[3.712290] (-) TimerEvent: {}
+[3.812621] (-) TimerEvent: {}
+[3.912924] (-) TimerEvent: {}
+[4.013202] (-) TimerEvent: {}
+[4.113526] (-) TimerEvent: {}
+[4.213840] (-) TimerEvent: {}
+[4.314110] (-) TimerEvent: {}
+[4.414380] (-) TimerEvent: {}
+[4.514655] (-) TimerEvent: {}
+[4.614926] (-) TimerEvent: {}
+[4.715235] (-) TimerEvent: {}
+[4.815527] (-) TimerEvent: {}
+[4.915854] (-) TimerEvent: {}
+[5.016366] (-) TimerEvent: {}
+[5.116667] (-) TimerEvent: {}
+[5.216979] (-) TimerEvent: {}
+[5.317275] (-) TimerEvent: {}
+[5.417620] (-) TimerEvent: {}
+[5.517898] (-) TimerEvent: {}
+[5.618153] (-) TimerEvent: {}
+[5.718432] (-) TimerEvent: {}
+[5.818705] (-) TimerEvent: {}
+[5.918994] (-) TimerEvent: {}
+[6.019263] (-) TimerEvent: {}
+[6.119544] (-) TimerEvent: {}
+[6.219890] (-) TimerEvent: {}
+[6.320291] (-) TimerEvent: {}
+[6.420629] (-) TimerEvent: {}
+[6.454559] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.454935] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistration<PointT>::extractFeatureFromPointCloud(ALOAM::ScanRegistration<PointT>::CLOUDPTR)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.455036] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator+\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[6.455182] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(\x1b[32m\x1b[KcloudSortInd\x1b[m\x1b[K \x1b[01;31m\x1b[K+\x1b[m\x1b[K \x1b[34m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.455702] (a-loam) StderrLine: {'line': b'      |                           \x1b[32m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^\x1b[m\x1b[K \x1b[34m\x1b[K~~\x1b[m\x1b[K\n'}
+[6.455961] (a-loam) StderrLine: {'line': b'      |                           \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[6.456491] (a-loam) StderrLine: {'line': b'      |                           \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[Kint\x1b[m\x1b[K\n'}
+[6.457182] (a-loam) StderrLine: {'line': b'      |                           \x1b[32m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\n'}
+[6.457266] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[6.457340] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/specfun.h:45\x1b[m\x1b[K,\n'}
+[6.457412] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/cmath:1935\x1b[m\x1b[K,\n'}
+[6.457480] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4\x1b[m\x1b[K,\n'}
+[6.457548] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.457615] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1242:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.457687] (a-loam) StderrLine: {'line': b' 1242 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename __normal_iterator<_Iterator, _Container>::difference_type\n'}
+[6.457754] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.457820] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1242:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.457888] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.457962] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.458040] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.458108] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.458174] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[6.458241] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/specfun.h:45\x1b[m\x1b[K,\n'}
+[6.458307] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/cmath:1935\x1b[m\x1b[K,\n'}
+[6.458372] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4\x1b[m\x1b[K,\n'}
+[6.458438] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.458505] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:568:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.458574] (a-loam) StderrLine: {'line': b'  568 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename reverse_iterator<_Iterator>::difference_type __n,\n'}
+[6.458646] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.458714] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:568:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.458782] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.458849] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.458923] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.458998] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.459065] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[6.459131] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/specfun.h:45\x1b[m\x1b[K,\n'}
+[6.459196] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/cmath:1935\x1b[m\x1b[K,\n'}
+[6.459261] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4\x1b[m\x1b[K,\n'}
+[6.459332] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.459399] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1646:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.459649] (a-loam) StderrLine: {'line': b' 1646 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename move_iterator<_Iterator>::difference_type __n,\n'}
+[6.459737] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.459812] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1646:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.459880] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.459945] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.460013] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.460078] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.460142] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.460207] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.460272] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.460337] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6095:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.460407] (a-loam) StderrLine: {'line': b' 6095 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[6.460473] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.460539] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6095:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.460604] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.460669] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.464731] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.464821] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.464888] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:56\x1b[m\x1b[K,\n'}
+[6.464954] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.465026] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.465091] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.465167] (a-loam) StderrLine: {'line': b' 1169 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _CharT* __lhs,\n'}
+[6.465232] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.465296] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.465361] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.465432] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.465503] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.465567] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.465631] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:56\x1b[m\x1b[K,\n'}
+[6.465695] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.465803] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.465870] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.465938] (a-loam) StderrLine: {'line': b' 1189 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)\n'}
+[6.466004] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.466069] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.466154] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.466290] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.466386] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.466451] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.466515] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.466579] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.466642] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.466706] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6132:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.466778] (a-loam) StderrLine: {'line': b' 6132 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[6.466843] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.466907] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6132:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.466972] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.467038] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.467109] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.467174] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.467237] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.467300] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.467364] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.467428] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6148:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.469319] (a-loam) StderrLine: {'line': b' 6148 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)\n'}
+[6.469437] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.469521] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6148:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.469600] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.469670] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.469746] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.469813] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.469879] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.469946] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.470017] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.470084] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6160:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.470154] (a-loam) StderrLine: {'line': b' 6160 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[6.470220] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.470286] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6160:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.470358] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.470425] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.470494] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.470559] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.472852] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.472963] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.473047] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.473118] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6166:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.473194] (a-loam) StderrLine: {'line': b' 6166 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[6.473267] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.473355] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6166:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.473432] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.473503] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.473577] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.473648] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.473722] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.473788] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.473854] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.473921] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6172:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.474000] (a-loam) StderrLine: {'line': b' 6172 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[6.474074] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.474142] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6172:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.474216] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.474285] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.474359] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.475371] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.475494] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.475586] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.475669] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.475745] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6194:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.475822] (a-loam) StderrLine: {'line': b' 6194 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _CharT* __lhs,\n'}
+[6.475891] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.475961] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6194:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.476029] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.476097] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.476180] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.476251] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.476322] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.476392] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.476466] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.476536] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6200:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.476616] (a-loam) StderrLine: {'line': b' 6200 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(_CharT __lhs,\n'}
+[6.476684] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.476751] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6200:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.476819] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.476887] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.476956] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.477023] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.477089] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.477157] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.477225] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.477294] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6206:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.477374] (a-loam) StderrLine: {'line': b' 6206 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[6.477445] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.477517] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6206:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.477695] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.477770] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.477851] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.477921] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.477992] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.478100] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.478176] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.478245] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6212:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.478318] (a-loam) StderrLine: {'line': b' 6212 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[6.478390] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.478460] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6212:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.478529] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.478598] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.478670] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.478739] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.478813] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[6.478890] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/StdVector:14\x1b[m\x1b[K,\n'}
+[6.478959] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:45\x1b[m\x1b[K,\n'}
+[6.479028] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9\x1b[m\x1b[K,\n'}
+[6.479096] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.479164] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:332:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.479234] (a-loam) StderrLine: {'line': b'  332 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const complex<_Tp>& __x, const complex<_Tp>& __y)\n'}
+[6.479303] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.479370] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:332:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.479458] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.479578] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.479650] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.479720] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.479788] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[6.479856] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/StdVector:14\x1b[m\x1b[K,\n'}
+[6.479923] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:45\x1b[m\x1b[K,\n'}
+[6.479995] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9\x1b[m\x1b[K,\n'}
+[6.480063] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.480129] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:341:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.480205] (a-loam) StderrLine: {'line': b'  341 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const complex<_Tp>& __x, const _Tp& __y)\n'}
+[6.480279] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.480348] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:341:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.480418] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.480485] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.481829] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.481915] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.481989] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[6.482060] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/StdVector:14\x1b[m\x1b[K,\n'}
+[6.482129] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:45\x1b[m\x1b[K,\n'}
+[6.482196] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9\x1b[m\x1b[K,\n'}
+[6.482265] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.482334] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:350:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const _Tp&, const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.482414] (a-loam) StderrLine: {'line': b'  350 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _Tp& __x, const complex<_Tp>& __y)\n'}
+[6.482481] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.482547] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:350:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.482614] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.482680] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.483787] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.483879] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.483957] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[6.484032] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/StdVector:14\x1b[m\x1b[K,\n'}
+[6.484106] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:45\x1b[m\x1b[K,\n'}
+[6.484178] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9\x1b[m\x1b[K,\n'}
+[6.484252] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.484325] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:451:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.484400] (a-loam) StderrLine: {'line': b'  451 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const complex<_Tp>& __x)\n'}
+[6.484472] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.484544] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:451:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.484615] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.484736] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.484812] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + \x1b[01;36m\x1b[Ksp\x1b[m\x1b[K, cloudSortInd + ep + 1, comp);\n'}
+[6.484882] (a-loam) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.484949] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator+\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[6.485021] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, \x1b[32m\x1b[KcloudSortInd\x1b[m\x1b[K \x1b[01;31m\x1b[K+\x1b[m\x1b[K \x1b[34m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.485098] (a-loam) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^\x1b[m\x1b[K \x1b[34m\x1b[K~~\x1b[m\x1b[K\n'}
+[6.485169] (a-loam) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[6.485236] (a-loam) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[Kint\x1b[m\x1b[K\n'}
+[6.485307] (a-loam) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\n'}
+[6.485373] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[6.485440] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/specfun.h:45\x1b[m\x1b[K,\n'}
+[6.485507] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/cmath:1935\x1b[m\x1b[K,\n'}
+[6.485575] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4\x1b[m\x1b[K,\n'}
+[6.485701] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.485772] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1242:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.485848] (a-loam) StderrLine: {'line': b' 1242 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename __normal_iterator<_Iterator, _Container>::difference_type\n'}
+[6.485915] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.485981] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1242:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.486048] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.486114] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.486272] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.486350] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.486420] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[6.486491] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/specfun.h:45\x1b[m\x1b[K,\n'}
+[6.486562] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/cmath:1935\x1b[m\x1b[K,\n'}
+[6.486633] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4\x1b[m\x1b[K,\n'}
+[6.486702] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.486770] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:568:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.486848] (a-loam) StderrLine: {'line': b'  568 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename reverse_iterator<_Iterator>::difference_type __n,\n'}
+[6.486925] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.487557] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:568:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.487653] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.487731] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.487852] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.487927] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.487999] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[6.488071] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/specfun.h:45\x1b[m\x1b[K,\n'}
+[6.488174] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/cmath:1935\x1b[m\x1b[K,\n'}
+[6.488250] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4\x1b[m\x1b[K,\n'}
+[6.488324] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.488395] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1646:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.488481] (a-loam) StderrLine: {'line': b' 1646 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename move_iterator<_Iterator>::difference_type __n,\n'}
+[6.488560] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.488632] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1646:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.488705] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.488778] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.488851] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.488923] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.488992] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.489065] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.489132] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.489198] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6095:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.489274] (a-loam) StderrLine: {'line': b' 6095 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[6.489344] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.489409] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6095:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.489477] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.489563] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.489637] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.489704] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.489770] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:56\x1b[m\x1b[K,\n'}
+[6.489835] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.489901] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.489967] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.490036] (a-loam) StderrLine: {'line': b' 1169 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _CharT* __lhs,\n'}
+[6.490102] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.490168] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.490234] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.490299] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.490368] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.490443] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.490509] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:56\x1b[m\x1b[K,\n'}
+[6.490575] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.490640] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.490707] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.490840] (a-loam) StderrLine: {'line': b' 1189 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)\n'}
+[6.490910] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.490976] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.491043] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.491109] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.491178] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.491244] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.491309] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.491381] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.491447] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.491562] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6132:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.491646] (a-loam) StderrLine: {'line': b' 6132 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[6.491713] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.491780] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6132:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.491846] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.491911] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.491986] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.492052] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.492118] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.492183] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.492249] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.492314] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6148:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.492383] (a-loam) StderrLine: {'line': b' 6148 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)\n'}
+[6.492449] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.492516] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6148:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.492583] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.492649] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.492720] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.492785] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.492873] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.492941] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.493013] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.493079] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6160:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.493158] (a-loam) StderrLine: {'line': b' 6160 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[6.493224] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.493292] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6160:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.493364] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.493434] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.493504] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.493570] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.493635] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.493701] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.493767] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.493836] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6166:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.493906] (a-loam) StderrLine: {'line': b' 6166 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[6.493972] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.494038] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6166:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.494104] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.494171] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.494242] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.494308] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.494378] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.494444] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.494510] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.494576] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6172:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.494646] (a-loam) StderrLine: {'line': b' 6172 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[6.494762] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.494844] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6172:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.494909] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.494978] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.495047] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.495118] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.495185] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.495254] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.495320] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.495386] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6194:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.495460] (a-loam) StderrLine: {'line': b' 6194 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _CharT* __lhs,\n'}
+[6.496039] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.496108] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6194:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.496176] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.496243] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.496313] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.496380] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.496447] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.496512] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.496582] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.496649] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6200:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.496725] (a-loam) StderrLine: {'line': b' 6200 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(_CharT __lhs,\n'}
+[6.496791] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.496857] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6200:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.496924] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.496991] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.497059] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.497125] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.497190] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.497257] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.497323] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.497390] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6206:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.497460] (a-loam) StderrLine: {'line': b' 6206 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[6.497530] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.497597] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6206:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.497668] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.497734] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.497804] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.497874] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.497967] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.498042] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6\x1b[m\x1b[K,\n'}
+[6.498113] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.498178] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6212:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.498291] (a-loam) StderrLine: {'line': b' 6212 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[6.498359] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.498426] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6212:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.498493] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.498559] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.498628] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.498694] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.498760] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[6.498828] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/StdVector:14\x1b[m\x1b[K,\n'}
+[6.498895] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:45\x1b[m\x1b[K,\n'}
+[6.498962] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9\x1b[m\x1b[K,\n'}
+[6.499081] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.499149] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:332:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.499217] (a-loam) StderrLine: {'line': b'  332 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const complex<_Tp>& __x, const complex<_Tp>& __y)\n'}
+[6.499283] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.499350] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:332:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.499417] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.499497] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.499569] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.499659] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.499727] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[6.499800] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/StdVector:14\x1b[m\x1b[K,\n'}
+[6.499867] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:45\x1b[m\x1b[K,\n'}
+[6.499934] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9\x1b[m\x1b[K,\n'}
+[6.500001] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.500068] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:341:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.500136] (a-loam) StderrLine: {'line': b'  341 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const complex<_Tp>& __x, const _Tp& __y)\n'}
+[6.500203] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.500269] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:341:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.500482] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.500553] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.500632] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.500705] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.500772] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[6.500838] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/StdVector:14\x1b[m\x1b[K,\n'}
+[6.500904] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:45\x1b[m\x1b[K,\n'}
+[6.500969] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9\x1b[m\x1b[K,\n'}
+[6.501036] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.501102] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:350:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const _Tp&, const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.501170] (a-loam) StderrLine: {'line': b'  350 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _Tp& __x, const complex<_Tp>& __y)\n'}
+[6.501236] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.501301] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:350:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.501368] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.501433] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.501506] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.501571] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.501638] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[6.501704] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/StdVector:14\x1b[m\x1b[K,\n'}
+[6.501778] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/point_cloud.h:45\x1b[m\x1b[K,\n'}
+[6.501914] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9\x1b[m\x1b[K,\n'}
+[6.501987] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.502055] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:451:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.502125] (a-loam) StderrLine: {'line': b'  451 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const complex<_Tp>& __x)\n'}
+[6.502191] (a-loam) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.502346] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:451:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.503164] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.503263] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int, std::allocator<int> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.503343] (a-loam) StderrLine: {'line': b'  208 |                 std::sort(cloudSortInd + sp, cloudSortInd + \x1b[01;36m\x1b[Kep\x1b[m\x1b[K + 1, comp);\n'}
+[6.503420] (a-loam) StderrLine: {'line': b'      |                                                             \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.520964] (-) TimerEvent: {}
+[6.621255] (-) TimerEvent: {}
+[6.721519] (-) TimerEvent: {}
+[6.821777] (-) TimerEvent: {}
+[6.922089] (-) TimerEvent: {}
+[7.022361] (-) TimerEvent: {}
+[7.122659] (-) TimerEvent: {}
+[7.222947] (-) TimerEvent: {}
+[7.323236] (-) TimerEvent: {}
+[7.365803] (a-loam) StderrLine: {'line': b'/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[KALOAM::ScanRegistrationNode<PointT>::ScanRegistrationNode(std::string) [with PointT = pcl::PointXYZ; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.366118] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.366204] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.366313] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.366392] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.366461] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.366540] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.366610] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.366678] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.366745] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:94:52:\x1b[m\x1b[K   required from here\n'}
+[7.366813] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:31:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&) [with PointT = pcl::PointXYZ; sensor_msgs::msg::PointCloud2 = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.366882] (a-loam) StderrLine: {'line': b'   31 |             "/laser_cloud_ori", 1, \x1b[01;31m\x1b[KRun\x1b[m\x1b[K);\n'}
+[7.366949] (a-loam) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.367013] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:61:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.367079] (a-loam) StderrLine: {'line': b'   61 |     void \x1b[01;36m\x1b[KRun\x1b[m\x1b[K(const sensor_msgs::msg::PointCloud2 &laserCloudMsg){\n'}
+[7.367164] (a-loam) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.379698] (a-loam) StderrLine: {'line': b'/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&) [with PointT = pcl::PointXYZ; sensor_msgs::msg::PointCloud2 = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.380012] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:31:36:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KALOAM::ScanRegistrationNode<PointT>::ScanRegistrationNode(std::string) [with PointT = pcl::PointXYZ; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.380119] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.380216] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.380319] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.380419] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.380502] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.380620] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.380694] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.380799] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.380872] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:94:52:\x1b[m\x1b[K   required from here\n'}
+[7.380938] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:67:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr_access<pcl::PointCloud<pcl::PointXYZ>, __gnu_cxx::_S_atomic, false, false>::element_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZ>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[KALOAM::ScanRegistration<pcl::PointXYZ>::CLOUDPTR\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[7.382387] (a-loam) StderrLine: {'line': b'   67 |         \x1b[01;31m\x1b[Ksr.removeClosedPointCloud(*laserCloudIn, *laserCloudIn, MINMUM_RANGE)\x1b[m\x1b[K;\n'}
+[7.382657] (a-loam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.382742] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[7.382814] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:45:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistration<PointT>::removeClosedPointCloud(ALOAM::ScanRegistration<PointT>::CLOUDPTR, ALOAM::ScanRegistration<PointT>::CLOUDPTR, float) [with PointT = pcl::PointXYZ; ALOAM::ScanRegistration<PointT>::CLOUDPTR = std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.382898] (a-loam) StderrLine: {'line': b'   45 |     void removeClosedPointCloud(\x1b[01;36m\x1b[KCLOUDPTR cloud_in\x1b[m\x1b[K, CLOUDPTR cloud_out, float thres){\n'}
+[7.382983] (a-loam) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[7.423363] (-) TimerEvent: {}
+[7.523665] (-) TimerEvent: {}
+[7.623972] (-) TimerEvent: {}
+[7.724302] (-) TimerEvent: {}
+[7.824653] (-) TimerEvent: {}
+[7.915605] (a-loam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/scan_registration_node.dir/build.make:76: CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o] Error 1\n'}
+[7.916169] (a-loam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scan_registration_node.dir/all] Error 2\n'}
+[7.916355] (a-loam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.918742] (a-loam) CommandEnded: {'returncode': 2}
+[7.924774] (-) TimerEvent: {}
+[7.973243] (a-loam) JobEnded: {'identifier': 'a-loam', 'rc': 2}
+[7.983601] (-) EventReactorShutdown: {}

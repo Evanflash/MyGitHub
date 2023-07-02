@@ -1,0 +1,147 @@
+[0.000000] (-) TimerEvent: {}
+[0.001918] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.001999] (-) JobUnselected: {'identifier': 'data-publisher'}
+[0.002031] (-) JobUnselected: {'identifier': 'map'}
+[0.002052] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.002072] (-) JobUnselected: {'identifier': 'radar-data'}
+[0.002097] (a-loam) JobQueued: {'identifier': 'a-loam', 'dependencies': OrderedDict()}
+[0.002122] (a-loam) JobStarted: {'identifier': 'a-loam'}
+[0.101898] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'cmake'}
+[0.102150] (-) TimerEvent: {}
+[0.121391] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'build'}
+[0.125192] (a-loam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/a-loam', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/a-loam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2262'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2078,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2078'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dc5f1ab5_4feb_45b9_afe1_315ba9349bdf'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LG2261'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.147'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/a-loam'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble')]), 'shell': False}
+[0.500078] (-) TimerEvent: {}
+[0.600584] (-) TimerEvent: {}
+[0.701150] (-) TimerEvent: {}
+[0.801708] (-) TimerEvent: {}
+[0.902171] (-) TimerEvent: {}
+[1.002792] (-) TimerEvent: {}
+[1.103411] (-) TimerEvent: {}
+[1.204047] (-) TimerEvent: {}
+[1.304678] (-) TimerEvent: {}
+[1.405262] (-) TimerEvent: {}
+[1.487462] (a-loam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scan_registration_node\x1b[0m\n'}
+[1.505428] (-) TimerEvent: {}
+[1.543997] (a-loam) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o\x1b[0m\n'}
+[1.605544] (-) TimerEvent: {}
+[1.706091] (-) TimerEvent: {}
+[1.806465] (-) TimerEvent: {}
+[1.906773] (-) TimerEvent: {}
+[2.007088] (-) TimerEvent: {}
+[2.107374] (-) TimerEvent: {}
+[2.207675] (-) TimerEvent: {}
+[2.307982] (-) TimerEvent: {}
+[2.408318] (-) TimerEvent: {}
+[2.508680] (-) TimerEvent: {}
+[2.608992] (-) TimerEvent: {}
+[2.709347] (-) TimerEvent: {}
+[2.809655] (-) TimerEvent: {}
+[2.909950] (-) TimerEvent: {}
+[3.010262] (-) TimerEvent: {}
+[3.110564] (-) TimerEvent: {}
+[3.210874] (-) TimerEvent: {}
+[3.311199] (-) TimerEvent: {}
+[3.411526] (-) TimerEvent: {}
+[3.511781] (-) TimerEvent: {}
+[3.612097] (-) TimerEvent: {}
+[3.712379] (-) TimerEvent: {}
+[3.812819] (-) TimerEvent: {}
+[3.913106] (-) TimerEvent: {}
+[4.013409] (-) TimerEvent: {}
+[4.113733] (-) TimerEvent: {}
+[4.214114] (-) TimerEvent: {}
+[4.314439] (-) TimerEvent: {}
+[4.414739] (-) TimerEvent: {}
+[4.515060] (-) TimerEvent: {}
+[4.615359] (-) TimerEvent: {}
+[4.715677] (-) TimerEvent: {}
+[4.815939] (-) TimerEvent: {}
+[4.916323] (-) TimerEvent: {}
+[5.016614] (-) TimerEvent: {}
+[5.116911] (-) TimerEvent: {}
+[5.217266] (-) TimerEvent: {}
+[5.317616] (-) TimerEvent: {}
+[5.418050] (-) TimerEvent: {}
+[5.518317] (-) TimerEvent: {}
+[5.618637] (-) TimerEvent: {}
+[5.718974] (-) TimerEvent: {}
+[5.819353] (-) TimerEvent: {}
+[5.919779] (-) TimerEvent: {}
+[6.020080] (-) TimerEvent: {}
+[6.120342] (-) TimerEvent: {}
+[6.220649] (-) TimerEvent: {}
+[6.320950] (-) TimerEvent: {}
+[6.421307] (-) TimerEvent: {}
+[6.521773] (-) TimerEvent: {}
+[6.622164] (-) TimerEvent: {}
+[6.722521] (-) TimerEvent: {}
+[6.822868] (-) TimerEvent: {}
+[6.923162] (-) TimerEvent: {}
+[7.023435] (-) TimerEvent: {}
+[7.123750] (-) TimerEvent: {}
+[7.224116] (-) TimerEvent: {}
+[7.389129] (-) TimerEvent: {}
+[7.489536] (-) TimerEvent: {}
+[7.589883] (-) TimerEvent: {}
+[7.690207] (-) TimerEvent: {}
+[7.791573] (-) TimerEvent: {}
+[7.891874] (-) TimerEvent: {}
+[7.992212] (-) TimerEvent: {}
+[8.092497] (-) TimerEvent: {}
+[8.192807] (-) TimerEvent: {}
+[8.293113] (-) TimerEvent: {}
+[8.393424] (-) TimerEvent: {}
+[8.493746] (-) TimerEvent: {}
+[8.594073] (-) TimerEvent: {}
+[8.694429] (-) TimerEvent: {}
+[8.794751] (-) TimerEvent: {}
+[8.805385] (a-loam) StderrLine: {'line': b'/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&) [with PointT = pcl::PointXYZ; sensor_msgs::msg::PointCloud2 = sensor_msgs::msg::PointCloud2_<std::allocator<void> >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.805893] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:31:46:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[KALOAM::ScanRegistrationNode<PointT>::ScanRegistrationNode(std::string) [with PointT = pcl::PointXYZ; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.806021] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.806173] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.806269] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.806359] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.806447] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.806534] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.806663] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.806749] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.806865] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:94:52:\x1b[m\x1b[K   required from here\n'}
+[8.806932] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:67:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr_access<pcl::PointCloud<pcl::PointXYZ>, __gnu_cxx::_S_atomic, false, false>::element_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZ>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[KALOAM::ScanRegistration<pcl::PointXYZ>::CLOUDPTR\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[8.807018] (a-loam) StderrLine: {'line': b'   67 |         \x1b[01;31m\x1b[Ksr.removeClosedPointCloud(*laserCloudIn, *laserCloudIn, MINMUM_RANGE)\x1b[m\x1b[K;\n'}
+[8.807088] (a-loam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.807152] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1\x1b[m\x1b[K:\n'}
+[8.807217] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:45:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::ScanRegistration<PointT>::removeClosedPointCloud(ALOAM::ScanRegistration<PointT>::CLOUDPTR, ALOAM::ScanRegistration<PointT>::CLOUDPTR, float) [with PointT = pcl::PointXYZ; ALOAM::ScanRegistration<PointT>::CLOUDPTR = std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.807285] (a-loam) StderrLine: {'line': b'   45 |     void removeClosedPointCloud(\x1b[01;36m\x1b[KCLOUDPTR cloud_in\x1b[m\x1b[K, CLOUDPTR cloud_out, float thres){\n'}
+[8.807349] (a-loam) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[8.894881] (-) TimerEvent: {}
+[8.995173] (-) TimerEvent: {}
+[9.095495] (-) TimerEvent: {}
+[9.195839] (-) TimerEvent: {}
+[9.296172] (-) TimerEvent: {}
+[9.396604] (-) TimerEvent: {}
+[9.496937] (-) TimerEvent: {}
+[9.597264] (-) TimerEvent: {}
+[9.697581] (-) TimerEvent: {}
+[9.797897] (-) TimerEvent: {}
+[9.898204] (-) TimerEvent: {}
+[9.998513] (-) TimerEvent: {}
+[10.098822] (-) TimerEvent: {}
+[10.199155] (-) TimerEvent: {}
+[10.299484] (-) TimerEvent: {}
+[10.399808] (-) TimerEvent: {}
+[10.500144] (-) TimerEvent: {}
+[10.600470] (-) TimerEvent: {}
+[10.700813] (-) TimerEvent: {}
+[10.801118] (-) TimerEvent: {}
+[10.901420] (-) TimerEvent: {}
+[11.001740] (-) TimerEvent: {}
+[11.102031] (-) TimerEvent: {}
+[11.202380] (-) TimerEvent: {}
+[11.302766] (-) TimerEvent: {}
+[11.360627] (a-loam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/scan_registration_node.dir/build.make:76: CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o] Error 1\n'}
+[11.360880] (a-loam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scan_registration_node.dir/all] Error 2\n'}
+[11.361242] (a-loam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.363846] (a-loam) CommandEnded: {'returncode': 2}
+[11.402965] (-) TimerEvent: {}
+[11.406132] (a-loam) JobEnded: {'identifier': 'a-loam', 'rc': 2}
+[11.416909] (-) EventReactorShutdown: {}

@@ -1,0 +1,504 @@
+[0.000000] (-) TimerEvent: {}
+[0.000625] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.000673] (-) JobUnselected: {'identifier': 'data-publisher'}
+[0.000703] (-) JobUnselected: {'identifier': 'map'}
+[0.008088] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.008149] (-) JobUnselected: {'identifier': 'radar-data'}
+[0.008180] (a-loam) JobQueued: {'identifier': 'a-loam', 'dependencies': OrderedDict()}
+[0.008209] (a-loam) JobStarted: {'identifier': 'a-loam'}
+[0.035864] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'cmake'}
+[0.082681] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'build'}
+[0.083935] (a-loam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/a-loam', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/a-loam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2341'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2055,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2055'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45eb1294_9a03_415b_ba0e_2334cedfdce9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OHH061'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.292'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/a-loam'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[0.103125] (-) TimerEvent: {}
+[0.205139] (-) TimerEvent: {}
+[0.305595] (-) TimerEvent: {}
+[0.406176] (-) TimerEvent: {}
+[0.506752] (-) TimerEvent: {}
+[0.607384] (-) TimerEvent: {}
+[0.708374] (-) TimerEvent: {}
+[0.808984] (-) TimerEvent: {}
+[0.909620] (-) TimerEvent: {}
+[1.010217] (-) TimerEvent: {}
+[1.110842] (-) TimerEvent: {}
+[1.211453] (-) TimerEvent: {}
+[1.312116] (-) TimerEvent: {}
+[1.412703] (-) TimerEvent: {}
+[1.513299] (-) TimerEvent: {}
+[1.545697] (a-loam) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.613470] (-) TimerEvent: {}
+[1.714050] (-) TimerEvent: {}
+[1.814555] (-) TimerEvent: {}
+[1.914905] (-) TimerEvent: {}
+[2.015195] (-) TimerEvent: {}
+[2.115550] (-) TimerEvent: {}
+[2.216150] (-) TimerEvent: {}
+[2.264586] (a-loam) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.316297] (-) TimerEvent: {}
+[2.416900] (-) TimerEvent: {}
+[2.517571] (-) TimerEvent: {}
+[2.618180] (-) TimerEvent: {}
+[2.671578] (a-loam) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.709190] (a-loam) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.718345] (-) TimerEvent: {}
+[2.795256] (a-loam) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.818487] (-) TimerEvent: {}
+[2.874863] (a-loam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.918736] (-) TimerEvent: {}
+[3.019419] (-) TimerEvent: {}
+[3.083751] (a-loam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.119817] (-) TimerEvent: {}
+[3.220284] (-) TimerEvent: {}
+[3.320785] (-) TimerEvent: {}
+[3.411422] (a-loam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.420897] (-) TimerEvent: {}
+[3.427843] (a-loam) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.521002] (-) TimerEvent: {}
+[3.621301] (-) TimerEvent: {}
+[3.721603] (-) TimerEvent: {}
+[3.821906] (-) TimerEvent: {}
+[3.910612] (a-loam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.922000] (-) TimerEvent: {}
+[4.022428] (-) TimerEvent: {}
+[4.122812] (-) TimerEvent: {}
+[4.223182] (-) TimerEvent: {}
+[4.323464] (-) TimerEvent: {}
+[4.348717] (a-loam) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[4.423588] (-) TimerEvent: {}
+[4.523862] (-) TimerEvent: {}
+[4.612752] (a-loam) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[4.623983] (-) TimerEvent: {}
+[4.724318] (-) TimerEvent: {}
+[4.764573] (a-loam) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[4.824507] (-) TimerEvent: {}
+[4.925037] (-) TimerEvent: {}
+[4.947953] (a-loam) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[5.025175] (-) TimerEvent: {}
+[5.125688] (-) TimerEvent: {}
+[5.226271] (-) TimerEvent: {}
+[5.327043] (-) TimerEvent: {}
+[5.427572] (-) TimerEvent: {}
+[5.528023] (-) TimerEvent: {}
+[5.628588] (-) TimerEvent: {}
+[5.729157] (-) TimerEvent: {}
+[5.829537] (-) TimerEvent: {}
+[5.930494] (-) TimerEvent: {}
+[6.031109] (-) TimerEvent: {}
+[6.132021] (-) TimerEvent: {}
+[6.232556] (-) TimerEvent: {}
+[6.332872] (-) TimerEvent: {}
+[6.433317] (-) TimerEvent: {}
+[6.533915] (-) TimerEvent: {}
+[6.634537] (-) TimerEvent: {}
+[6.735125] (-) TimerEvent: {}
+[6.835644] (-) TimerEvent: {}
+[6.936063] (-) TimerEvent: {}
+[7.036601] (-) TimerEvent: {}
+[7.136994] (-) TimerEvent: {}
+[7.237331] (-) TimerEvent: {}
+[7.338006] (-) TimerEvent: {}
+[7.395432] (a-loam) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[7.419345] (a-loam) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[7.419949] (a-loam) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[7.438137] (-) TimerEvent: {}
+[7.538553] (-) TimerEvent: {}
+[7.610476] (a-loam) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[7.617305] (a-loam) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[7.624103] (a-loam) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[7.638656] (-) TimerEvent: {}
+[7.738943] (-) TimerEvent: {}
+[7.839342] (-) TimerEvent: {}
+[7.939884] (-) TimerEvent: {}
+[8.040294] (-) TimerEvent: {}
+[8.052046] (a-loam) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[8.140380] (-) TimerEvent: {}
+[8.240664] (-) TimerEvent: {}
+[8.263225] (a-loam) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[8.340836] (-) TimerEvent: {}
+[8.425686] (a-loam) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[8.426219] (a-loam) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[8.426712] (a-loam) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[8.427203] (a-loam) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[8.427644] (a-loam) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[8.428124] (a-loam) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[8.428682] (a-loam) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[8.429140] (a-loam) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[8.429523] (a-loam) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[8.430108] (a-loam) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[8.430640] (a-loam) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[8.431151] (a-loam) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[8.431725] (a-loam) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[8.432538] (a-loam) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[8.433026] (a-loam) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[8.433632] (a-loam) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[8.434135] (a-loam) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[8.434611] (a-loam) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[8.435291] (a-loam) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[8.435775] (a-loam) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[8.436754] (a-loam) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[8.437106] (a-loam) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[8.437465] (a-loam) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[8.437904] (a-loam) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[8.438429] (a-loam) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[8.440983] (-) TimerEvent: {}
+[8.462314] (a-loam) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[8.541109] (-) TimerEvent: {}
+[8.641390] (-) TimerEvent: {}
+[8.741688] (-) TimerEvent: {}
+[8.842085] (-) TimerEvent: {}
+[8.942981] (-) TimerEvent: {}
+[9.043348] (-) TimerEvent: {}
+[9.143644] (-) TimerEvent: {}
+[9.243920] (-) TimerEvent: {}
+[9.344342] (-) TimerEvent: {}
+[9.444653] (-) TimerEvent: {}
+[9.545098] (-) TimerEvent: {}
+[9.645570] (-) TimerEvent: {}
+[9.662993] (a-loam) StdoutLine: {'line': b'-- Found AMD headers in: /usr/include/suitesparse\n'}
+[9.664453] (a-loam) StdoutLine: {'line': b'-- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so\n'}
+[9.665086] (a-loam) StdoutLine: {'line': b'-- Found CAMD headers in: /usr/include/suitesparse\n'}
+[9.666065] (a-loam) StdoutLine: {'line': b'-- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so\n'}
+[9.666667] (a-loam) StdoutLine: {'line': b'-- Found CCOLAMD headers in: /usr/include/suitesparse\n'}
+[9.667803] (a-loam) StdoutLine: {'line': b'-- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so\n'}
+[9.668683] (a-loam) StdoutLine: {'line': b'-- Found CHOLMOD headers in: /usr/include/suitesparse\n'}
+[9.670102] (a-loam) StdoutLine: {'line': b'-- Found CHOLMOD library: /usr/lib/x86_64-linux-gnu/libcholmod.so\n'}
+[9.670849] (a-loam) StdoutLine: {'line': b'-- Found COLAMD headers in: /usr/include/suitesparse\n'}
+[9.672254] (a-loam) StdoutLine: {'line': b'-- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so\n'}
+[9.673011] (a-loam) StdoutLine: {'line': b'-- Found SPQR headers in: /usr/include/suitesparse\n'}
+[9.674437] (a-loam) StdoutLine: {'line': b'-- Found SPQR library: /usr/lib/x86_64-linux-gnu/libspqr.so\n'}
+[9.675088] (a-loam) StdoutLine: {'line': b'-- Found Config headers in: /usr/include/suitesparse\n'}
+[9.677031] (a-loam) StdoutLine: {'line': b'-- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so\n'}
+[9.677628] (a-loam) StdoutLine: {'line': b'-- Found Intel Thread Building Blocks (TBB) library (2021.5 / ) include location: . Assuming SuiteSparseQR was compiled with TBB.\n'}
+[9.677771] (a-loam) StdoutLine: {'line': b'-- Looking for shm_open in rt\n'}
+[9.745756] (-) TimerEvent: {}
+[9.787431] (a-loam) StdoutLine: {'line': b'-- Looking for shm_open in rt - found\n'}
+[9.787684] (a-loam) StdoutLine: {'line': b'-- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).\n'}
+[9.822435] (a-loam) StdoutLine: {'line': b'-- Could NOT find METIS (missing: METIS_INCLUDE_DIR METIS_LIBRARY) \n'}
+[9.823615] (a-loam) StdoutLine: {'line': b'-- Found SuiteSparse: /usr/include/suitesparse (found suitable version "5.10.1", minimum required is "5.10.1") found components: AMD CAMD CCOLAMD CHOLMOD COLAMD SPQR Config \n'}
+[9.845917] (-) TimerEvent: {}
+[9.894262] (a-loam) StdoutLine: {'line': b'-- Found required Ceres dependency: Eigen version 3.4.0 in /usr/share/eigen3/cmake\n'}
+[9.946142] (-) TimerEvent: {}
+[10.002556] (a-loam) StdoutLine: {'line': b'-- Found required Ceres dependency: glog\n'}
+[10.004860] (a-loam) StdoutLine: {'line': b'-- Found required Ceres dependency: gflags\n'}
+[10.006638] (a-loam) StdoutLine: {'line': b'-- Found Ceres version: 2.2.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, SchurSpecializations]\n'}
+[10.046263] (-) TimerEvent: {}
+[10.146517] (-) TimerEvent: {}
+[10.246908] (-) TimerEvent: {}
+[10.347476] (-) TimerEvent: {}
+[10.447989] (-) TimerEvent: {}
+[10.548414] (-) TimerEvent: {}
+[10.578715] (a-loam) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.648500] (-) TimerEvent: {}
+[10.748820] (-) TimerEvent: {}
+[10.849302] (-) TimerEvent: {}
+[10.949678] (-) TimerEvent: {}
+[11.050319] (-) TimerEvent: {}
+[11.150956] (-) TimerEvent: {}
+[11.251542] (-) TimerEvent: {}
+[11.352147] (-) TimerEvent: {}
+[11.452785] (-) TimerEvent: {}
+[11.553371] (-) TimerEvent: {}
+[11.653966] (-) TimerEvent: {}
+[11.754523] (-) TimerEvent: {}
+[11.855152] (-) TimerEvent: {}
+[11.955961] (-) TimerEvent: {}
+[12.056543] (-) TimerEvent: {}
+[12.157085] (-) TimerEvent: {}
+[12.257580] (-) TimerEvent: {}
+[12.358256] (-) TimerEvent: {}
+[12.458922] (-) TimerEvent: {}
+[12.559570] (-) TimerEvent: {}
+[12.660205] (-) TimerEvent: {}
+[12.681159] (a-loam) StdoutLine: {'line': b'-- Generating done\n'}
+[12.691504] (a-loam) StdoutLine: {'line': b'-- Build files have been written to: /home/evan/code/ndt-loc/build/a-loam\n'}
+[12.760369] (-) TimerEvent: {}
+[12.848866] (a-loam) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/laser_odometry_node.dir/src/LaserOdometryNode.cpp.o\x1b[0m\n'}
+[12.850656] (a-loam) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/laser_odometry_node.dir/src/common.cpp.o\x1b[0m\n'}
+[12.860457] (-) TimerEvent: {}
+[12.877672] (a-loam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scan_registration_node\x1b[0m\n'}
+[12.927248] (a-loam) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o\x1b[0m\n'}
+[12.928034] (a-loam) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/scan_registration_node.dir/src/common.cpp.o\x1b[0m\n'}
+[12.960609] (-) TimerEvent: {}
+[13.067471] (-) TimerEvent: {}
+[13.168957] (-) TimerEvent: {}
+[13.269232] (-) TimerEvent: {}
+[13.370381] (-) TimerEvent: {}
+[13.471513] (-) TimerEvent: {}
+[13.572672] (-) TimerEvent: {}
+[13.673914] (-) TimerEvent: {}
+[13.776052] (-) TimerEvent: {}
+[13.877505] (-) TimerEvent: {}
+[13.980241] (-) TimerEvent: {}
+[14.081839] (-) TimerEvent: {}
+[14.183658] (-) TimerEvent: {}
+[14.284279] (-) TimerEvent: {}
+[14.384873] (-) TimerEvent: {}
+[14.485171] (-) TimerEvent: {}
+[14.585548] (-) TimerEvent: {}
+[14.685913] (-) TimerEvent: {}
+[14.786290] (-) TimerEvent: {}
+[14.890277] (-) TimerEvent: {}
+[14.996052] (-) TimerEvent: {}
+[15.096815] (-) TimerEvent: {}
+[15.197202] (-) TimerEvent: {}
+[15.297565] (-) TimerEvent: {}
+[15.398203] (-) TimerEvent: {}
+[15.498568] (-) TimerEvent: {}
+[15.598936] (-) TimerEvent: {}
+[15.699320] (-) TimerEvent: {}
+[15.799811] (-) TimerEvent: {}
+[15.900167] (-) TimerEvent: {}
+[16.000941] (-) TimerEvent: {}
+[16.101382] (-) TimerEvent: {}
+[16.201914] (-) TimerEvent: {}
+[16.304521] (-) TimerEvent: {}
+[16.407261] (-) TimerEvent: {}
+[16.507778] (-) TimerEvent: {}
+[16.608581] (-) TimerEvent: {}
+[16.709299] (-) TimerEvent: {}
+[16.809604] (-) TimerEvent: {}
+[16.909882] (-) TimerEvent: {}
+[17.010159] (-) TimerEvent: {}
+[17.110430] (-) TimerEvent: {}
+[17.210704] (-) TimerEvent: {}
+[17.311007] (-) TimerEvent: {}
+[17.411285] (-) TimerEvent: {}
+[17.511589] (-) TimerEvent: {}
+[17.611890] (-) TimerEvent: {}
+[17.712192] (-) TimerEvent: {}
+[17.812485] (-) TimerEvent: {}
+[17.912782] (-) TimerEvent: {}
+[18.013063] (-) TimerEvent: {}
+[18.113347] (-) TimerEvent: {}
+[18.213626] (-) TimerEvent: {}
+[18.314033] (-) TimerEvent: {}
+[18.414425] (-) TimerEvent: {}
+[18.515441] (-) TimerEvent: {}
+[18.615924] (-) TimerEvent: {}
+[18.716532] (-) TimerEvent: {}
+[18.818499] (-) TimerEvent: {}
+[18.918971] (-) TimerEvent: {}
+[19.019364] (-) TimerEvent: {}
+[19.123442] (-) TimerEvent: {}
+[19.225026] (-) TimerEvent: {}
+[19.327534] (-) TimerEvent: {}
+[19.427891] (-) TimerEvent: {}
+[19.528176] (-) TimerEvent: {}
+[19.628467] (-) TimerEvent: {}
+[19.730425] (-) TimerEvent: {}
+[19.830716] (-) TimerEvent: {}
+[19.932082] (-) TimerEvent: {}
+[20.032458] (-) TimerEvent: {}
+[20.132836] (-) TimerEvent: {}
+[20.233220] (-) TimerEvent: {}
+[20.333608] (-) TimerEvent: {}
+[20.433988] (-) TimerEvent: {}
+[20.534373] (-) TimerEvent: {}
+[20.634869] (-) TimerEvent: {}
+[20.735137] (-) TimerEvent: {}
+[20.835411] (-) TimerEvent: {}
+[20.935787] (-) TimerEvent: {}
+[21.036193] (-) TimerEvent: {}
+[21.136679] (-) TimerEvent: {}
+[21.237057] (-) TimerEvent: {}
+[21.337485] (-) TimerEvent: {}
+[21.438001] (-) TimerEvent: {}
+[21.538523] (-) TimerEvent: {}
+[21.639051] (-) TimerEvent: {}
+[21.739494] (-) TimerEvent: {}
+[21.839991] (-) TimerEvent: {}
+[21.940747] (-) TimerEvent: {}
+[22.041032] (-) TimerEvent: {}
+[22.081244] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:18\x1b[m\x1b[K,\n'}
+[22.083656] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1\x1b[m\x1b[K:\n'}
+[22.083835] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LidarFactor.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KALOAM::LidarPlaneNormFactor::LidarPlaneNormFactor(Eigen::Vector3d, Eigen::Vector3d, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[22.083922] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LidarFactor.hpp:96:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kplane_unit_norm_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[22.084012] (a-loam) StderrLine: {'line': b'   96 |     LidarPlaneNormFactor(Eigen::Vector3d curr_point_, \x1b[01;35m\x1b[KEigen::Vector3d plane_unit_norm_\x1b[m\x1b[K, double negative_OA_dot_norm_)\n'}
+[22.084093] (a-loam) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.141134] (-) TimerEvent: {}
+[22.242386] (-) TimerEvent: {}
+[22.346431] (-) TimerEvent: {}
+[22.446932] (-) TimerEvent: {}
+[22.521670] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KALOAM::LaserOdometryNode::LaserOdometryNode(std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[22.522212] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:26:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[22.522645] (a-loam) StderrLine: {'line': b'   26 |         subReadyToRun = this -> create_sub_node<std_msgs::msg::Bool\x1b[01;31m\x1b[K>\x1b[m\x1b[K(\n'}
+[22.523060] (a-loam) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[22.523566] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:27:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[22.524005] (a-loam) StderrLine: {'line': b'   27 |             \x1b[01;35m\x1b[K"/scan_registration_is_ready"\x1b[m\x1b[K, 1, std::bind(&LaserOdometryNode::Run, this, std::placeholders::_1));\n'}
+[22.524434] (a-loam) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.527088] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:27:109:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[22.527690] (a-loam) StderrLine: {'line': b'   27 |             "/scan_registration_is_ready", 1, std::bind(&LaserOdometryNode::Run, this, std::placeholders::_1\x1b[01;35m\x1b[K)\x1b[m\x1b[K);\n'}
+[22.528207] (a-loam) StderrLine: {'line': b'      |                                                                                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[22.547034] (-) TimerEvent: {}
+[22.648604] (-) TimerEvent: {}
+[22.750144] (-) TimerEvent: {}
+[22.852792] (-) TimerEvent: {}
+[22.957912] (-) TimerEvent: {}
+[23.059570] (-) TimerEvent: {}
+[23.160068] (-) TimerEvent: {}
+[23.260555] (-) TimerEvent: {}
+[23.360881] (-) TimerEvent: {}
+[23.461160] (-) TimerEvent: {}
+[23.561470] (-) TimerEvent: {}
+[23.661783] (-) TimerEvent: {}
+[23.762108] (-) TimerEvent: {}
+[23.862413] (-) TimerEvent: {}
+[23.962720] (-) TimerEvent: {}
+[24.063021] (-) TimerEvent: {}
+[24.163325] (-) TimerEvent: {}
+[24.263658] (-) TimerEvent: {}
+[24.363954] (-) TimerEvent: {}
+[24.464233] (-) TimerEvent: {}
+[24.564555] (-) TimerEvent: {}
+[24.664852] (-) TimerEvent: {}
+[24.765135] (-) TimerEvent: {}
+[24.865416] (-) TimerEvent: {}
+[24.965713] (-) TimerEvent: {}
+[25.066009] (-) TimerEvent: {}
+[25.166277] (-) TimerEvent: {}
+[25.266590] (-) TimerEvent: {}
+[25.367697] (-) TimerEvent: {}
+[25.468007] (-) TimerEvent: {}
+[25.568331] (-) TimerEvent: {}
+[25.668630] (-) TimerEvent: {}
+[25.768911] (-) TimerEvent: {}
+[25.869335] (-) TimerEvent: {}
+[25.970527] (-) TimerEvent: {}
+[26.070804] (-) TimerEvent: {}
+[26.171137] (-) TimerEvent: {}
+[26.271451] (-) TimerEvent: {}
+[26.371763] (-) TimerEvent: {}
+[26.472082] (-) TimerEvent: {}
+[26.572371] (-) TimerEvent: {}
+[26.672646] (-) TimerEvent: {}
+[26.772937] (-) TimerEvent: {}
+[26.873231] (-) TimerEvent: {}
+[26.973513] (-) TimerEvent: {}
+[27.050028] (a-loam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/laser_odometry_node.dir/build.make:76: CMakeFiles/laser_odometry_node.dir/src/LaserOdometryNode.cpp.o] Error 1\n'}
+[27.050223] (a-loam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/laser_odometry_node.dir/all] Error 2\n'}
+[27.050304] (a-loam) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[27.073635] (-) TimerEvent: {}
+[27.173952] (-) TimerEvent: {}
+[27.274371] (-) TimerEvent: {}
+[27.374686] (-) TimerEvent: {}
+[27.475020] (-) TimerEvent: {}
+[27.575330] (-) TimerEvent: {}
+[27.675664] (-) TimerEvent: {}
+[27.775974] (-) TimerEvent: {}
+[27.876287] (-) TimerEvent: {}
+[27.976561] (-) TimerEvent: {}
+[28.076869] (-) TimerEvent: {}
+[28.177180] (-) TimerEvent: {}
+[28.277494] (-) TimerEvent: {}
+[28.377806] (-) TimerEvent: {}
+[28.478168] (-) TimerEvent: {}
+[28.578485] (-) TimerEvent: {}
+[28.678800] (-) TimerEvent: {}
+[28.779124] (-) TimerEvent: {}
+[28.879450] (-) TimerEvent: {}
+[28.979793] (-) TimerEvent: {}
+[29.080073] (-) TimerEvent: {}
+[29.180335] (-) TimerEvent: {}
+[29.280636] (-) TimerEvent: {}
+[29.380939] (-) TimerEvent: {}
+[29.481256] (-) TimerEvent: {}
+[29.581564] (-) TimerEvent: {}
+[29.681851] (-) TimerEvent: {}
+[29.782186] (-) TimerEvent: {}
+[29.882505] (-) TimerEvent: {}
+[29.982798] (-) TimerEvent: {}
+[30.083076] (-) TimerEvent: {}
+[30.183346] (-) TimerEvent: {}
+[30.283631] (-) TimerEvent: {}
+[30.384061] (-) TimerEvent: {}
+[30.484409] (-) TimerEvent: {}
+[30.585004] (-) TimerEvent: {}
+[30.685531] (-) TimerEvent: {}
+[30.785876] (-) TimerEvent: {}
+[30.886225] (-) TimerEvent: {}
+[30.986569] (-) TimerEvent: {}
+[31.086885] (-) TimerEvent: {}
+[31.187253] (-) TimerEvent: {}
+[31.287654] (-) TimerEvent: {}
+[31.388146] (-) TimerEvent: {}
+[31.428345] (a-loam) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable scan_registration_node\x1b[0m\n'}
+[31.488268] (-) TimerEvent: {}
+[31.588715] (-) TimerEvent: {}
+[31.689368] (-) TimerEvent: {}
+[31.790023] (-) TimerEvent: {}
+[31.890739] (-) TimerEvent: {}
+[31.991197] (-) TimerEvent: {}
+[32.091853] (-) TimerEvent: {}
+[32.192270] (-) TimerEvent: {}
+[32.292850] (-) TimerEvent: {}
+[32.393164] (-) TimerEvent: {}
+[32.493567] (-) TimerEvent: {}
+[32.594150] (-) TimerEvent: {}
+[32.694703] (-) TimerEvent: {}
+[32.795305] (-) TimerEvent: {}
+[32.895950] (-) TimerEvent: {}
+[32.996295] (-) TimerEvent: {}
+[33.096858] (-) TimerEvent: {}
+[33.197465] (-) TimerEvent: {}
+[33.298005] (-) TimerEvent: {}
+[33.398505] (-) TimerEvent: {}
+[33.499061] (-) TimerEvent: {}
+[33.599692] (-) TimerEvent: {}
+[33.700284] (-) TimerEvent: {}
+[33.800965] (-) TimerEvent: {}
+[33.901319] (-) TimerEvent: {}
+[34.001775] (-) TimerEvent: {}
+[34.102303] (-) TimerEvent: {}
+[34.202637] (-) TimerEvent: {}
+[34.303030] (-) TimerEvent: {}
+[34.403643] (-) TimerEvent: {}
+[34.504254] (-) TimerEvent: {}
+[34.604807] (-) TimerEvent: {}
+[34.705312] (-) TimerEvent: {}
+[34.805774] (-) TimerEvent: {}
+[34.906343] (-) TimerEvent: {}
+[35.006902] (-) TimerEvent: {}
+[35.107549] (-) TimerEvent: {}
+[35.208243] (-) TimerEvent: {}
+[35.308872] (-) TimerEvent: {}
+[35.409409] (-) TimerEvent: {}
+[35.509944] (-) TimerEvent: {}
+[35.610538] (-) TimerEvent: {}
+[35.711205] (-) TimerEvent: {}
+[35.811915] (-) TimerEvent: {}
+[35.912548] (-) TimerEvent: {}
+[36.013097] (-) TimerEvent: {}
+[36.113670] (-) TimerEvent: {}
+[36.214282] (-) TimerEvent: {}
+[36.314932] (-) TimerEvent: {}
+[36.415497] (-) TimerEvent: {}
+[36.516054] (-) TimerEvent: {}
+[36.616621] (-) TimerEvent: {}
+[36.717229] (-) TimerEvent: {}
+[36.817794] (-) TimerEvent: {}
+[36.918241] (-) TimerEvent: {}
+[37.018649] (-) TimerEvent: {}
+[37.119291] (-) TimerEvent: {}
+[37.219819] (-) TimerEvent: {}
+[37.320224] (-) TimerEvent: {}
+[37.422958] (-) TimerEvent: {}
+[37.523587] (-) TimerEvent: {}
+[37.624272] (-) TimerEvent: {}
+[37.724893] (-) TimerEvent: {}
+[37.825474] (-) TimerEvent: {}
+[37.925926] (-) TimerEvent: {}
+[38.027377] (-) TimerEvent: {}
+[38.127919] (-) TimerEvent: {}
+[38.228261] (-) TimerEvent: {}
+[38.328522] (-) TimerEvent: {}
+[38.428883] (-) TimerEvent: {}
+[38.529486] (-) TimerEvent: {}
+[38.630467] (-) TimerEvent: {}
+[38.730797] (-) TimerEvent: {}
+[38.831130] (-) TimerEvent: {}
+[38.921037] (a-loam) StdoutLine: {'line': b'[ 83%] Built target scan_registration_node\n'}
+[38.922532] (a-loam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[38.925609] (a-loam) CommandEnded: {'returncode': 2}
+[38.931254] (-) TimerEvent: {}
+[39.031569] (-) TimerEvent: {}
+[39.099589] (a-loam) JobEnded: {'identifier': 'a-loam', 'rc': 2}
+[39.100580] (-) EventReactorShutdown: {}

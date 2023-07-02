@@ -1,0 +1,91 @@
+[0.242s] Invoking command in '/home/evan/code/ndt-loc/build/map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4
+[0.285s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.521s] -- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)
+[0.560s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.564s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.571s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.584s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.603s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.670s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.672s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.814s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.023s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.188s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.219s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.539s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.546s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.547s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.709s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.716s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.723s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.879s] -- Found Qhull version 8.0.2
+[2.039s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.197s] -- looking for PCL_COMMON
+[2.198s] -- looking for PCL_KDTREE
+[2.198s] -- looking for PCL_OCTREE
+[2.199s] -- looking for PCL_SEARCH
+[2.199s] -- looking for PCL_SAMPLE_CONSENSUS
+[2.200s] -- looking for PCL_FILTERS
+[2.200s] -- looking for PCL_2D
+[2.201s] -- looking for PCL_GEOMETRY
+[2.201s] -- looking for PCL_IO
+[2.201s] -- looking for PCL_FEATURES
+[2.202s] -- looking for PCL_ML
+[2.202s] -- looking for PCL_SEGMENTATION
+[2.203s] -- looking for PCL_VISUALIZATION
+[2.203s] -- looking for PCL_SURFACE
+[2.204s] -- looking for PCL_REGISTRATION
+[2.204s] -- looking for PCL_KEYPOINTS
+[2.205s] -- looking for PCL_TRACKING
+[2.206s] -- looking for PCL_RECOGNITION
+[2.206s] -- looking for PCL_STEREO
+[2.207s] -- looking for PCL_APPS
+[2.209s] -- looking for PCL_IN_HAND_SCANNER
+[2.209s] -- looking for PCL_MODELER
+[2.209s] -- looking for PCL_POINT_CLOUD_EDITOR
+[2.209s] -- looking for PCL_OUTOFCORE
+[2.209s] -- looking for PCL_PEOPLE
+[2.241s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.597s] -- Configuring done
+[3.059s] -- Generating done
+[3.062s] -- Build files have been written to: /home/evan/code/ndt-loc/build/map
+[3.096s] [35m[1mConsolidate compiler generated dependencies of target LidarData[0m
+[3.122s] [ 50%] [32mBuilding CXX object CMakeFiles/LidarData.dir/src/LidarData.cpp.o[0m
+[8.799s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::LidarData::ReadData()[m[K’:
+[8.799s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:21:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[8.799s]    21 |     while([01;35m[KleftInd < _left.size()[m[K || rightInd < _right.size()){
+[8.800s]       |           [01;35m[K~~~~~~~~^~~~~~~~~~~~~~[m[K
+[8.800s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:21:46:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[8.800s]    21 |     while(leftInd < _left.size() || [01;35m[KrightInd < _right.size()[m[K){
+[8.800s]       |                                     [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[8.800s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:22:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[8.800s]    22 |         if([01;35m[KleftInd >= _left.size()[m[K){
+[8.800s]       |            [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[8.800s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:26:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[8.800s]    26 |         else if([01;35m[KrightInd >= _right.size()[m[K){
+[8.800s]       |                 [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[8.802s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:57:33:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[8.802s]    57 |             for(size_t i = 0; [01;35m[Ki < size[m[K; i++){
+[8.802s]       |                               [01;35m[K~~^~~~~~[m[K
+[11.412s] [100%] [32m[1mLinking CXX executable LidarData[0m
+[14.833s] [100%] Built target LidarData
+[14.846s] Invoked command in '/home/evan/code/ndt-loc/build/map' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4
+[14.878s] Invoking command in '/home/evan/code/ndt-loc/build/map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/evan/code/ndt-loc/build/map
+[14.885s] -- Install configuration: ""
+[14.888s] -- Up-to-date: /home/evan/code/ndt-loc/install/map/share/ament_index/resource_index/package_run_dependencies/map
+[14.888s] -- Installing: /home/evan/code/ndt-loc/install/map/share/ament_index/resource_index/parent_prefix_path/map
+[14.888s] -- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/environment/ament_prefix_path.sh
+[14.888s] -- Installing: /home/evan/code/ndt-loc/install/map/share/map/environment/ament_prefix_path.dsv
+[14.888s] -- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/environment/path.sh
+[14.888s] -- Installing: /home/evan/code/ndt-loc/install/map/share/map/environment/path.dsv
+[14.888s] -- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/local_setup.bash
+[14.888s] -- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/local_setup.sh
+[14.888s] -- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/local_setup.zsh
+[14.888s] -- Installing: /home/evan/code/ndt-loc/install/map/share/map/local_setup.dsv
+[14.888s] -- Installing: /home/evan/code/ndt-loc/install/map/share/map/package.dsv
+[14.888s] -- Up-to-date: /home/evan/code/ndt-loc/install/map/share/ament_index/resource_index/packages/map
+[14.889s] -- Installing: /home/evan/code/ndt-loc/install/map/share/map/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.889s] -- Installing: /home/evan/code/ndt-loc/install/map/share/map/cmake/mapConfig.cmake
+[14.889s] -- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/cmake/mapConfig-version.cmake
+[14.892s] -- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/package.xml
+[14.892s] Invoked command in '/home/evan/code/ndt-loc/build/map' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/evan/code/ndt-loc/build/map

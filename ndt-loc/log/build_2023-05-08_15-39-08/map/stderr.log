@@ -1,0 +1,16 @@
+[01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::LidarData::ReadData(std_msgs::msg::Bool)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:19:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   19 | void LidarData::ReadData([01;35m[Kstd_msgs::msg::Bool message[m[K){
+      |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:[m[K In constructor ‘[01m[Kndtloc::FrontEnd::FrontEnd(const string&)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:16:27:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid ndtloc::FrontEnd::CreateGlobalMap()[m[K’
+   16 |         "/create_map", 1, [01;31m[KCreateGlobalMap[m[K);
+      |                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:1[m[K:
+[01m[K/home/evan/code/ndt-loc/src/map/include/map/FrontEnd.h:18:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   18 |     void [01;36m[KCreateGlobalMap[m[K();
+      |          [01;36m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/front_end_node.dir/build.make:76: CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/front_end_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

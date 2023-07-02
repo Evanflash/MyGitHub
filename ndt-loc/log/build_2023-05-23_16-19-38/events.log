@@ -1,0 +1,498 @@
+[0.000000] (-) TimerEvent: {}
+[0.005524] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.005610] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.005642] (-) JobUnselected: {'identifier': 'radar-data'}
+[0.005669] (map) JobQueued: {'identifier': 'map', 'dependencies': OrderedDict()}
+[0.005696] (map) JobStarted: {'identifier': 'map'}
+[0.096593] (map) JobProgress: {'identifier': 'map', 'progress': 'cmake'}
+[0.099210] (-) TimerEvent: {}
+[0.205505] (-) TimerEvent: {}
+[0.210194] (map) JobProgress: {'identifier': 'map', 'progress': 'build'}
+[0.214025] (map) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/map', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/map', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2236'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/test/install:/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:/usr/lib/java/jdk1.6.0_45/bin'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/1946,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/1946'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cec8f0c2_7853_4a2e_a3ff_57ba75b70f0f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UHK841'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.1194'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/test/install/demo:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/map'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/test/install/demo:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble')]), 'shell': False}
+[0.305601] (-) TimerEvent: {}
+[0.321279] (map) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target show_map_node\x1b[0m\n'}
+[0.335851] (map) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o\x1b[0m\n'}
+[0.349664] (map) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mapping_image\x1b[0m\n'}
+[0.350566] (map) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o\x1b[0m\n'}
+[0.405694] (-) TimerEvent: {}
+[0.506049] (-) TimerEvent: {}
+[0.606737] (-) TimerEvent: {}
+[0.707176] (-) TimerEvent: {}
+[0.807441] (-) TimerEvent: {}
+[0.907715] (-) TimerEvent: {}
+[1.007987] (-) TimerEvent: {}
+[1.108369] (-) TimerEvent: {}
+[1.208636] (-) TimerEvent: {}
+[1.308912] (-) TimerEvent: {}
+[1.409171] (-) TimerEvent: {}
+[1.509998] (-) TimerEvent: {}
+[1.610355] (-) TimerEvent: {}
+[1.710809] (-) TimerEvent: {}
+[1.811092] (-) TimerEvent: {}
+[1.911817] (-) TimerEvent: {}
+[2.012199] (-) TimerEvent: {}
+[2.112470] (-) TimerEvent: {}
+[2.212745] (-) TimerEvent: {}
+[2.313022] (-) TimerEvent: {}
+[2.413288] (-) TimerEvent: {}
+[2.513591] (-) TimerEvent: {}
+[2.613900] (-) TimerEvent: {}
+[2.714187] (-) TimerEvent: {}
+[2.814489] (-) TimerEvent: {}
+[2.867953] (map) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/show_map_node.dir/src/ShowMap.cpp.o\x1b[0m\n'}
+[2.915501] (-) TimerEvent: {}
+[2.948875] (map) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/mapping_image.dir/src/ImageProjection.cpp.o\x1b[0m\n'}
+[3.018108] (-) TimerEvent: {}
+[3.119283] (-) TimerEvent: {}
+[3.220800] (-) TimerEvent: {}
+[3.321076] (-) TimerEvent: {}
+[3.421350] (-) TimerEvent: {}
+[3.523102] (-) TimerEvent: {}
+[3.625020] (-) TimerEvent: {}
+[3.725298] (-) TimerEvent: {}
+[3.826251] (-) TimerEvent: {}
+[3.926567] (-) TimerEvent: {}
+[4.026897] (-) TimerEvent: {}
+[4.127169] (-) TimerEvent: {}
+[4.227436] (-) TimerEvent: {}
+[4.327725] (-) TimerEvent: {}
+[4.428003] (-) TimerEvent: {}
+[4.528288] (-) TimerEvent: {}
+[4.628554] (-) TimerEvent: {}
+[4.728851] (-) TimerEvent: {}
+[4.829127] (-) TimerEvent: {}
+[4.929918] (-) TimerEvent: {}
+[5.031242] (-) TimerEvent: {}
+[5.131522] (-) TimerEvent: {}
+[5.232059] (-) TimerEvent: {}
+[5.334712] (-) TimerEvent: {}
+[5.435789] (-) TimerEvent: {}
+[5.536148] (-) TimerEvent: {}
+[5.636460] (-) TimerEvent: {}
+[5.737394] (-) TimerEvent: {}
+[5.837744] (-) TimerEvent: {}
+[5.939998] (-) TimerEvent: {}
+[6.041636] (-) TimerEvent: {}
+[6.141916] (-) TimerEvent: {}
+[6.242187] (-) TimerEvent: {}
+[6.342456] (-) TimerEvent: {}
+[6.442722] (-) TimerEvent: {}
+[6.543020] (-) TimerEvent: {}
+[6.643285] (-) TimerEvent: {}
+[6.743564] (-) TimerEvent: {}
+[7.041259] (-) TimerEvent: {}
+[7.143381] (-) TimerEvent: {}
+[7.243932] (-) TimerEvent: {}
+[7.344310] (-) TimerEvent: {}
+[7.444705] (-) TimerEvent: {}
+[7.545090] (-) TimerEvent: {}
+[7.738197] (-) TimerEvent: {}
+[7.840903] (-) TimerEvent: {}
+[8.145121] (-) TimerEvent: {}
+[8.245489] (-) TimerEvent: {}
+[8.345868] (-) TimerEvent: {}
+[8.446260] (-) TimerEvent: {}
+[8.546796] (-) TimerEvent: {}
+[8.647172] (-) TimerEvent: {}
+[8.747565] (-) TimerEvent: {}
+[8.848529] (-) TimerEvent: {}
+[8.948910] (-) TimerEvent: {}
+[9.049286] (-) TimerEvent: {}
+[9.149683] (-) TimerEvent: {}
+[9.250146] (-) TimerEvent: {}
+[9.350540] (-) TimerEvent: {}
+[9.450925] (-) TimerEvent: {}
+[9.551351] (-) TimerEvent: {}
+[9.651830] (-) TimerEvent: {}
+[9.752323] (-) TimerEvent: {}
+[9.852730] (-) TimerEvent: {}
+[9.953133] (-) TimerEvent: {}
+[10.172164] (-) TimerEvent: {}
+[10.484758] (-) TimerEvent: {}
+[10.585160] (-) TimerEvent: {}
+[10.685562] (-) TimerEvent: {}
+[10.785965] (-) TimerEvent: {}
+[10.888062] (-) TimerEvent: {}
+[10.988764] (-) TimerEvent: {}
+[11.089185] (-) TimerEvent: {}
+[11.189655] (-) TimerEvent: {}
+[11.290356] (-) TimerEvent: {}
+[11.390755] (-) TimerEvent: {}
+[11.491144] (-) TimerEvent: {}
+[11.591585] (-) TimerEvent: {}
+[11.692116] (-) TimerEvent: {}
+[11.792486] (-) TimerEvent: {}
+[11.912104] (-) TimerEvent: {}
+[12.012496] (-) TimerEvent: {}
+[12.112886] (-) TimerEvent: {}
+[12.213263] (-) TimerEvent: {}
+[12.315987] (-) TimerEvent: {}
+[12.416791] (-) TimerEvent: {}
+[12.517061] (-) TimerEvent: {}
+[12.620781] (-) TimerEvent: {}
+[12.724791] (-) TimerEvent: {}
+[12.825419] (-) TimerEvent: {}
+[12.926987] (-) TimerEvent: {}
+[12.991216] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool ndtloc::FrontEnd::UpdateNewFrame(const ndtloc::Frame&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.024795] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:105:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kstd::deque<ndtloc::Frame>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.025325] (map) StderrLine: {'line': b'  105 |     while(\x1b[01;35m\x1b[Klocal_map_frames.size() > max_local_map_frames\x1b[m\x1b[K){\n'}
+[13.025729] (map) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.026123] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:117:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kstd::deque<ndtloc::Frame>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.026522] (map) StderrLine: {'line': b'  117 |     if(\x1b[01;35m\x1b[Klocal_map_frames.size() < local_map_filter_frames_num\x1b[m\x1b[K){\n'}
+[13.026931] (map) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.027325] (-) TimerEvent: {}
+[13.127618] (-) TimerEvent: {}
+[13.228007] (-) TimerEvent: {}
+[13.332816] (-) TimerEvent: {}
+[13.433078] (-) TimerEvent: {}
+[13.533980] (-) TimerEvent: {}
+[13.634845] (-) TimerEvent: {}
+[13.735859] (-) TimerEvent: {}
+[13.836353] (-) TimerEvent: {}
+[13.941174] (-) TimerEvent: {}
+[14.041447] (-) TimerEvent: {}
+[14.141833] (-) TimerEvent: {}
+[14.242215] (-) TimerEvent: {}
+[14.342604] (-) TimerEvent: {}
+[14.442987] (-) TimerEvent: {}
+[14.543373] (-) TimerEvent: {}
+[14.643777] (-) TimerEvent: {}
+[14.744173] (-) TimerEvent: {}
+[14.844561] (-) TimerEvent: {}
+[14.944954] (-) TimerEvent: {}
+[15.045331] (-) TimerEvent: {}
+[15.145723] (-) TimerEvent: {}
+[15.246130] (-) TimerEvent: {}
+[15.346555] (-) TimerEvent: {}
+[15.446967] (-) TimerEvent: {}
+[15.547493] (-) TimerEvent: {}
+[15.647873] (-) TimerEvent: {}
+[15.748260] (-) TimerEvent: {}
+[15.848641] (-) TimerEvent: {}
+[15.949030] (-) TimerEvent: {}
+[16.049403] (-) TimerEvent: {}
+[16.149789] (-) TimerEvent: {}
+[16.164033] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ndtloc::ImageProjection::LabelComponents(int, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.164640] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:244:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kboost::circular_buffer<Eigen::Matrix<int, 2, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.165079] (map) StderrLine: {'line': b'  244 |     if(\x1b[01;35m\x1b[Kall_pushed.size() > _segment_valid_num\x1b[m\x1b[K){\n'}
+[16.165482] (map) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.166068] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:247:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kboost::circular_buffer<Eigen::Matrix<int, 2, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.166512] (map) StderrLine: {'line': b'  247 |     else if(\x1b[01;35m\x1b[Kall_pushed.size() >= _segment_valid_point_num\x1b[m\x1b[K){\n'}
+[16.166917] (map) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.167485] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:249:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.167930] (map) StderrLine: {'line': b'  249 |         for(size_t i = 0; \x1b[01;35m\x1b[Ki < _vertical_scans\x1b[m\x1b[K; i++){\n'}
+[16.168351] (map) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.249892] (-) TimerEvent: {}
+[16.354964] (-) TimerEvent: {}
+[16.455353] (-) TimerEvent: {}
+[16.555743] (-) TimerEvent: {}
+[16.656125] (-) TimerEvent: {}
+[16.756504] (-) TimerEvent: {}
+[16.856946] (-) TimerEvent: {}
+[17.028119] (-) TimerEvent: {}
+[17.128410] (-) TimerEvent: {}
+[17.228681] (-) TimerEvent: {}
+[17.328959] (-) TimerEvent: {}
+[17.429235] (-) TimerEvent: {}
+[17.529624] (-) TimerEvent: {}
+[17.630014] (-) TimerEvent: {}
+[17.730391] (-) TimerEvent: {}
+[17.830766] (-) TimerEvent: {}
+[17.931152] (-) TimerEvent: {}
+[18.031611] (-) TimerEvent: {}
+[18.132060] (-) TimerEvent: {}
+[18.232649] (-) TimerEvent: {}
+[18.333609] (-) TimerEvent: {}
+[18.442375] (-) TimerEvent: {}
+[18.542731] (-) TimerEvent: {}
+[18.643021] (-) TimerEvent: {}
+[18.743293] (-) TimerEvent: {}
+[18.843721] (-) TimerEvent: {}
+[18.944232] (-) TimerEvent: {}
+[19.044737] (-) TimerEvent: {}
+[19.145026] (-) TimerEvent: {}
+[19.245312] (-) TimerEvent: {}
+[19.345874] (-) TimerEvent: {}
+[19.446139] (-) TimerEvent: {}
+[19.546490] (-) TimerEvent: {}
+[19.646820] (-) TimerEvent: {}
+[19.747270] (-) TimerEvent: {}
+[19.847567] (-) TimerEvent: {}
+[19.947866] (-) TimerEvent: {}
+[20.048638] (-) TimerEvent: {}
+[20.149017] (-) TimerEvent: {}
+[20.249481] (-) TimerEvent: {}
+[20.356268] (-) TimerEvent: {}
+[20.456574] (-) TimerEvent: {}
+[20.556945] (-) TimerEvent: {}
+[20.657200] (-) TimerEvent: {}
+[20.757548] (-) TimerEvent: {}
+[20.857815] (-) TimerEvent: {}
+[20.958133] (-) TimerEvent: {}
+[21.058645] (-) TimerEvent: {}
+[21.159203] (-) TimerEvent: {}
+[21.259523] (-) TimerEvent: {}
+[21.360016] (-) TimerEvent: {}
+[21.460448] (-) TimerEvent: {}
+[21.560717] (-) TimerEvent: {}
+[21.661037] (-) TimerEvent: {}
+[21.761548] (-) TimerEvent: {}
+[21.862002] (-) TimerEvent: {}
+[21.962510] (-) TimerEvent: {}
+[23.200256] (-) TimerEvent: {}
+[23.300684] (-) TimerEvent: {}
+[23.401094] (-) TimerEvent: {}
+[23.501504] (-) TimerEvent: {}
+[23.601874] (-) TimerEvent: {}
+[23.702321] (-) TimerEvent: {}
+[23.802583] (-) TimerEvent: {}
+[23.902875] (-) TimerEvent: {}
+[24.003155] (-) TimerEvent: {}
+[24.103413] (-) TimerEvent: {}
+[24.203659] (-) TimerEvent: {}
+[24.303933] (-) TimerEvent: {}
+[24.404196] (-) TimerEvent: {}
+[24.504554] (-) TimerEvent: {}
+[24.605077] (-) TimerEvent: {}
+[24.705490] (-) TimerEvent: {}
+[24.805758] (-) TimerEvent: {}
+[24.906033] (-) TimerEvent: {}
+[25.007103] (-) TimerEvent: {}
+[25.107384] (-) TimerEvent: {}
+[25.208809] (-) TimerEvent: {}
+[25.316790] (-) TimerEvent: {}
+[25.417387] (-) TimerEvent: {}
+[25.518169] (-) TimerEvent: {}
+[25.618725] (-) TimerEvent: {}
+[25.719147] (-) TimerEvent: {}
+[25.819585] (-) TimerEvent: {}
+[25.920052] (-) TimerEvent: {}
+[26.022101] (-) TimerEvent: {}
+[26.123338] (-) TimerEvent: {}
+[26.223605] (-) TimerEvent: {}
+[26.325036] (-) TimerEvent: {}
+[26.426456] (-) TimerEvent: {}
+[26.526741] (-) TimerEvent: {}
+[26.627556] (-) TimerEvent: {}
+[26.727933] (-) TimerEvent: {}
+[26.828204] (-) TimerEvent: {}
+[26.928615] (-) TimerEvent: {}
+[27.029347] (-) TimerEvent: {}
+[27.457037] (-) TimerEvent: {}
+[27.557406] (-) TimerEvent: {}
+[27.657780] (-) TimerEvent: {}
+[27.758144] (-) TimerEvent: {}
+[27.858421] (-) TimerEvent: {}
+[27.958837] (-) TimerEvent: {}
+[28.059967] (-) TimerEvent: {}
+[28.160359] (-) TimerEvent: {}
+[28.210297] (map) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable show_map_node\x1b[0m\n'}
+[28.317842] (-) TimerEvent: {}
+[28.420758] (-) TimerEvent: {}
+[28.522030] (-) TimerEvent: {}
+[28.623223] (-) TimerEvent: {}
+[28.723714] (-) TimerEvent: {}
+[28.825143] (-) TimerEvent: {}
+[28.926309] (-) TimerEvent: {}
+[29.027277] (-) TimerEvent: {}
+[29.128481] (-) TimerEvent: {}
+[29.229559] (-) TimerEvent: {}
+[29.331124] (-) TimerEvent: {}
+[29.432919] (-) TimerEvent: {}
+[29.534765] (-) TimerEvent: {}
+[29.635831] (-) TimerEvent: {}
+[29.737156] (-) TimerEvent: {}
+[29.837765] (-) TimerEvent: {}
+[29.938018] (-) TimerEvent: {}
+[30.219503] (-) TimerEvent: {}
+[30.322932] (-) TimerEvent: {}
+[30.423348] (-) TimerEvent: {}
+[30.526069] (-) TimerEvent: {}
+[30.628232] (-) TimerEvent: {}
+[30.730248] (-) TimerEvent: {}
+[30.831295] (-) TimerEvent: {}
+[30.850492] (map) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/show_map_node.dir/src/ShowMap.cpp.o: in function `ndtloc::ShowMap::Show()':\n"}
+[30.850667] (map) StderrLine: {'line': b"ShowMap.cpp:(.text+0x84): undefined reference to `ndtloc::map_file_path[abi:cxx11]'\n"}
+[30.892324] (map) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[30.894836] (map) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/show_map_node.dir/build.make:296: show_map_node] Error 1\n'}
+[30.895447] (map) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/show_map_node.dir/all] Error 2\n'}
+[30.895896] (map) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[30.931409] (-) TimerEvent: {}
+[31.031934] (-) TimerEvent: {}
+[31.132199] (-) TimerEvent: {}
+[31.232468] (-) TimerEvent: {}
+[31.332746] (-) TimerEvent: {}
+[31.433787] (-) TimerEvent: {}
+[31.534063] (-) TimerEvent: {}
+[31.592507] (map) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable lidar_data_node\x1b[0m\n'}
+[31.634187] (-) TimerEvent: {}
+[31.734554] (-) TimerEvent: {}
+[31.834902] (-) TimerEvent: {}
+[31.935212] (-) TimerEvent: {}
+[32.035516] (-) TimerEvent: {}
+[32.327885] (-) TimerEvent: {}
+[32.428160] (-) TimerEvent: {}
+[32.528439] (-) TimerEvent: {}
+[32.628763] (-) TimerEvent: {}
+[32.729069] (-) TimerEvent: {}
+[32.829368] (-) TimerEvent: {}
+[32.868332] (map) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX static library libmapping_image.a\x1b[0m\n'}
+[32.932780] (-) TimerEvent: {}
+[33.033042] (-) TimerEvent: {}
+[33.133342] (-) TimerEvent: {}
+[33.233620] (-) TimerEvent: {}
+[33.334112] (-) TimerEvent: {}
+[33.436603] (-) TimerEvent: {}
+[33.537563] (-) TimerEvent: {}
+[33.640529] (-) TimerEvent: {}
+[33.742660] (-) TimerEvent: {}
+[33.842937] (-) TimerEvent: {}
+[33.944795] (-) TimerEvent: {}
+[34.045120] (-) TimerEvent: {}
+[34.145380] (-) TimerEvent: {}
+[34.245637] (-) TimerEvent: {}
+[34.348377] (-) TimerEvent: {}
+[34.402564] (map) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o: in function `ndtloc::LidarData::LidarData(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[34.402733] (map) StderrLine: {'line': b"LidarData.cpp:(.text+0x655): undefined reference to `ndtloc::_left_lidar_time[abi:cxx11]'\n"}
+[34.403565] (map) StderrLine: {'line': b"/usr/bin/ld: LidarData.cpp:(.text+0x6cc): undefined reference to `ndtloc::_right_lidar_time[abi:cxx11]'\n"}
+[34.404582] (map) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o: in function `ndtloc::LidarData::GetNextTimestampingByTime[abi:cxx11]()':\n"}
+[34.404714] (map) StderrLine: {'line': b"LidarData.cpp:(.text+0xc3f): undefined reference to `ndtloc::_left_lidar_path[abi:cxx11]'\n"}
+[34.405592] (map) StderrLine: {'line': b"/usr/bin/ld: LidarData.cpp:(.text+0xc4b): undefined reference to `ndtloc::_right_lidar_path[abi:cxx11]'\n"}
+[34.406592] (map) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o: in function `ndtloc::LidarData::Offset(bool)':\n"}
+[34.406707] (map) StderrLine: {'line': b"LidarData.cpp:(.text+0x17a9): undefined reference to `ndtloc::_x_offset'\n"}
+[34.408548] (map) StderrLine: {'line': b"/usr/bin/ld: LidarData.cpp:(.text+0x1848): undefined reference to `ndtloc::_z_offset'\n"}
+[34.408819] (map) StderrLine: {'line': b"/usr/bin/ld: LidarData.cpp:(.text+0x1897): undefined reference to `ndtloc::_y_offset'\n"}
+[34.409728] (map) StderrLine: {'line': b"/usr/bin/ld: LidarData.cpp:(.text+0x18dc): undefined reference to `ndtloc::_y_offset'\n"}
+[34.448458] (-) TimerEvent: {}
+[34.548714] (-) TimerEvent: {}
+[34.615705] (map) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[34.617637] (map) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lidar_data_node.dir/build.make:296: lidar_data_node] Error 1\n'}
+[34.617930] (map) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/lidar_data_node.dir/all] Error 2\n'}
+[34.648777] (-) TimerEvent: {}
+[34.749252] (-) TimerEvent: {}
+[34.849518] (-) TimerEvent: {}
+[34.949790] (-) TimerEvent: {}
+[35.050064] (-) TimerEvent: {}
+[35.150332] (-) TimerEvent: {}
+[35.250596] (-) TimerEvent: {}
+[35.350901] (-) TimerEvent: {}
+[35.451172] (-) TimerEvent: {}
+[35.551465] (-) TimerEvent: {}
+[35.651714] (-) TimerEvent: {}
+[35.751974] (-) TimerEvent: {}
+[35.852230] (-) TimerEvent: {}
+[35.952485] (-) TimerEvent: {}
+[36.052818] (-) TimerEvent: {}
+[36.061287] (map) StdoutLine: {'line': b'[ 70%] Built target mapping_image\n'}
+[36.152897] (-) TimerEvent: {}
+[36.253197] (-) TimerEvent: {}
+[36.353545] (-) TimerEvent: {}
+[36.453841] (-) TimerEvent: {}
+[36.554106] (-) TimerEvent: {}
+[36.654395] (-) TimerEvent: {}
+[36.754705] (-) TimerEvent: {}
+[36.855000] (-) TimerEvent: {}
+[36.955306] (-) TimerEvent: {}
+[37.055569] (-) TimerEvent: {}
+[37.243189] (-) TimerEvent: {}
+[37.343472] (-) TimerEvent: {}
+[37.443774] (-) TimerEvent: {}
+[37.544044] (-) TimerEvent: {}
+[37.644341] (-) TimerEvent: {}
+[37.744624] (-) TimerEvent: {}
+[37.844972] (-) TimerEvent: {}
+[37.945224] (-) TimerEvent: {}
+[38.045504] (-) TimerEvent: {}
+[38.145798] (-) TimerEvent: {}
+[38.246072] (-) TimerEvent: {}
+[38.346362] (-) TimerEvent: {}
+[38.446674] (-) TimerEvent: {}
+[38.546955] (-) TimerEvent: {}
+[38.647263] (-) TimerEvent: {}
+[38.747566] (-) TimerEvent: {}
+[38.847844] (-) TimerEvent: {}
+[38.948116] (-) TimerEvent: {}
+[39.048421] (-) TimerEvent: {}
+[39.148749] (-) TimerEvent: {}
+[39.249053] (-) TimerEvent: {}
+[39.349325] (-) TimerEvent: {}
+[39.449649] (-) TimerEvent: {}
+[39.549901] (-) TimerEvent: {}
+[39.650173] (-) TimerEvent: {}
+[39.750454] (-) TimerEvent: {}
+[39.850724] (-) TimerEvent: {}
+[39.951024] (-) TimerEvent: {}
+[40.051337] (-) TimerEvent: {}
+[40.151642] (-) TimerEvent: {}
+[40.251934] (-) TimerEvent: {}
+[40.352213] (-) TimerEvent: {}
+[40.452482] (-) TimerEvent: {}
+[40.552786] (-) TimerEvent: {}
+[40.653057] (-) TimerEvent: {}
+[40.753322] (-) TimerEvent: {}
+[40.853616] (-) TimerEvent: {}
+[40.953963] (-) TimerEvent: {}
+[41.054501] (-) TimerEvent: {}
+[41.155039] (-) TimerEvent: {}
+[41.255591] (-) TimerEvent: {}
+[41.356037] (-) TimerEvent: {}
+[41.456625] (-) TimerEvent: {}
+[41.557174] (-) TimerEvent: {}
+[41.657497] (-) TimerEvent: {}
+[41.757800] (-) TimerEvent: {}
+[41.858092] (-) TimerEvent: {}
+[41.958374] (-) TimerEvent: {}
+[42.058660] (-) TimerEvent: {}
+[42.158949] (-) TimerEvent: {}
+[42.259233] (-) TimerEvent: {}
+[42.359522] (-) TimerEvent: {}
+[42.459803] (-) TimerEvent: {}
+[42.560064] (-) TimerEvent: {}
+[42.660356] (-) TimerEvent: {}
+[42.760658] (-) TimerEvent: {}
+[42.861023] (-) TimerEvent: {}
+[42.961272] (-) TimerEvent: {}
+[42.971838] (map) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable front_end_node\x1b[0m\n'}
+[43.061421] (-) TimerEvent: {}
+[43.161957] (-) TimerEvent: {}
+[43.262255] (-) TimerEvent: {}
+[43.362581] (-) TimerEvent: {}
+[43.462926] (-) TimerEvent: {}
+[43.563199] (-) TimerEvent: {}
+[43.663522] (-) TimerEvent: {}
+[43.763870] (-) TimerEvent: {}
+[43.864274] (-) TimerEvent: {}
+[43.964615] (-) TimerEvent: {}
+[44.064948] (-) TimerEvent: {}
+[44.165215] (-) TimerEvent: {}
+[44.265486] (-) TimerEvent: {}
+[44.365840] (-) TimerEvent: {}
+[44.466305] (-) TimerEvent: {}
+[44.566666] (-) TimerEvent: {}
+[44.666948] (-) TimerEvent: {}
+[44.767230] (-) TimerEvent: {}
+[44.868830] (-) TimerEvent: {}
+[44.969141] (-) TimerEvent: {}
+[45.069479] (-) TimerEvent: {}
+[45.169749] (-) TimerEvent: {}
+[45.270017] (-) TimerEvent: {}
+[45.370306] (-) TimerEvent: {}
+[45.381594] (map) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o: in function `ndtloc::FrontEnd::Update(std::shared_ptr<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >)':\n"}
+[45.381778] (map) StderrLine: {'line': b"FrontEnd.cpp:(.text+0x1590): undefined reference to `ndtloc::key_frame_distance'\n"}
+[45.383860] (map) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o: in function `ndtloc::FrontEnd::UpdateNewFrame(ndtloc::Frame const&)':\n"}
+[45.384028] (map) StderrLine: {'line': b"FrontEnd.cpp:(.text+0x199b): undefined reference to `ndtloc::key_frame_path[abi:cxx11]'\n"}
+[45.385873] (map) StderrLine: {'line': b"/usr/bin/ld: FrontEnd.cpp:(.text+0x1b3c): undefined reference to `ndtloc::max_local_map_frames'\n"}
+[45.387865] (map) StderrLine: {'line': b"/usr/bin/ld: FrontEnd.cpp:(.text+0x1c9c): undefined reference to `ndtloc::local_map_filter_frames_num'\n"}
+[45.391224] (map) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o: in function `ndtloc::FrontEnd::CreateGlobalMap(std_msgs::msg::Bool_<std::allocator<void> >)':\n"}
+[45.391480] (map) StderrLine: {'line': b"FrontEnd.cpp:(.text+0x22a1): undefined reference to `ndtloc::key_frame_path[abi:cxx11]'\n"}
+[45.393130] (map) StderrLine: {'line': b"/usr/bin/ld: FrontEnd.cpp:(.text+0x252d): undefined reference to `ndtloc::map_file_path[abi:cxx11]'\n"}
+[45.470407] (-) TimerEvent: {}
+[45.555606] (map) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[45.558040] (map) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/front_end_node.dir/build.make:296: front_end_node] Error 1\n'}
+[45.558200] (map) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/front_end_node.dir/all] Error 2\n'}
+[45.558317] (map) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[45.561864] (map) CommandEnded: {'returncode': 2}
+[45.570681] (-) TimerEvent: {}
+[45.661415] (map) JobEnded: {'identifier': 'map', 'rc': 2}
+[45.670780] (-) TimerEvent: {}
+[45.671927] (-) EventReactorShutdown: {}

@@ -1,0 +1,21 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:18[m[K,
+                 from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1[m[K:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LidarFactor.hpp:[m[K In constructor ‘[01m[KALOAM::LidarPlaneNormFactor::LidarPlaneNormFactor(Eigen::Vector3d, Eigen::Vector3d, double)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LidarFactor.hpp:96:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kplane_unit_norm_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   96 |     LidarPlaneNormFactor(Eigen::Vector3d curr_point_, [01;35m[KEigen::Vector3d plane_unit_norm_[m[K, double negative_OA_dot_norm_)
+      |                                                       [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:[m[K In constructor ‘[01m[KALOAM::LaserOdometryNode::LaserOdometryNode(std::string)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:26:68:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   26 |         subReadyToRun = this -> create_sub_node<std_msgs::msg::Bool[01;31m[K>[m[K(
+      |                                                                    [01;31m[K^[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:27:13:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   27 |             [01;35m[K"/scan_registration_is_ready"[m[K, 1, std::bind(&LaserOdometryNode::Run, this, std::placeholders::_1));
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:27:109:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   27 |             "/scan_registration_is_ready", 1, std::bind(&LaserOdometryNode::Run, this, std::placeholders::_1[01;35m[K)[m[K);
+      |                                                                                                             [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/laser_odometry_node.dir/build.make:76: CMakeFiles/laser_odometry_node.dir/src/LaserOdometryNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/laser_odometry_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

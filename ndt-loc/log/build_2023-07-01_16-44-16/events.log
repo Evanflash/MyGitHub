@@ -1,0 +1,180 @@
+[0.000000] (-) TimerEvent: {}
+[0.000745] (-) JobUnselected: {'identifier': 'a-loam'}
+[0.001556] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.001631] (-) JobUnselected: {'identifier': 'data-publisher'}
+[0.001659] (-) JobUnselected: {'identifier': 'map'}
+[0.001705] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.001732] (radar-odometry) JobQueued: {'identifier': 'radar-odometry', 'dependencies': OrderedDict()}
+[0.002337] (radar-odometry) JobStarted: {'identifier': 'radar-odometry'}
+[0.015638] (radar-odometry) JobProgress: {'identifier': 'radar-odometry', 'progress': 'cmake'}
+[0.015957] (radar-odometry) Command: {'cmd': ['/usr/bin/cmake', '/home/evan/code/ndt-loc/src/radar-odometry', '-DCMAKE_INSTALL_PREFIX=/home/evan/code/ndt-loc/install/radar-odometry'], 'cwd': '/home/evan/code/ndt-loc/build/radar-odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2471'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2254,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2254'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6891e234_375c_48ed_942b_4977adfb4374'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4RSX61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/zsh'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/radar-odometry'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[0.099756] (-) TimerEvent: {}
+[0.200261] (-) TimerEvent: {}
+[0.300942] (-) TimerEvent: {}
+[0.401616] (-) TimerEvent: {}
+[0.502163] (-) TimerEvent: {}
+[0.602585] (-) TimerEvent: {}
+[0.703034] (-) TimerEvent: {}
+[0.803661] (-) TimerEvent: {}
+[0.904273] (-) TimerEvent: {}
+[1.004769] (-) TimerEvent: {}
+[1.105148] (-) TimerEvent: {}
+[1.205457] (-) TimerEvent: {}
+[1.305777] (-) TimerEvent: {}
+[1.406044] (-) TimerEvent: {}
+[1.506316] (-) TimerEvent: {}
+[1.606577] (-) TimerEvent: {}
+[1.706861] (-) TimerEvent: {}
+[1.807160] (-) TimerEvent: {}
+[1.907442] (-) TimerEvent: {}
+[2.007719] (-) TimerEvent: {}
+[2.108042] (-) TimerEvent: {}
+[2.208367] (-) TimerEvent: {}
+[2.308648] (-) TimerEvent: {}
+[2.408945] (-) TimerEvent: {}
+[2.509245] (-) TimerEvent: {}
+[2.609519] (-) TimerEvent: {}
+[2.709777] (-) TimerEvent: {}
+[2.810047] (-) TimerEvent: {}
+[2.910354] (-) TimerEvent: {}
+[3.010628] (-) TimerEvent: {}
+[3.110928] (-) TimerEvent: {}
+[3.211222] (-) TimerEvent: {}
+[3.311492] (-) TimerEvent: {}
+[3.411763] (-) TimerEvent: {}
+[3.512078] (-) TimerEvent: {}
+[3.612370] (-) TimerEvent: {}
+[3.712636] (-) TimerEvent: {}
+[3.812935] (-) TimerEvent: {}
+[3.913231] (-) TimerEvent: {}
+[4.013492] (-) TimerEvent: {}
+[4.113770] (-) TimerEvent: {}
+[4.214049] (-) TimerEvent: {}
+[4.314346] (-) TimerEvent: {}
+[4.414725] (-) TimerEvent: {}
+[4.515043] (-) TimerEvent: {}
+[4.615425] (-) TimerEvent: {}
+[4.715782] (-) TimerEvent: {}
+[4.816110] (-) TimerEvent: {}
+[4.916501] (-) TimerEvent: {}
+[5.016859] (-) TimerEvent: {}
+[5.117215] (-) TimerEvent: {}
+[5.217548] (-) TimerEvent: {}
+[5.317809] (-) TimerEvent: {}
+[5.418113] (-) TimerEvent: {}
+[5.518402] (-) TimerEvent: {}
+[5.618709] (-) TimerEvent: {}
+[5.719057] (-) TimerEvent: {}
+[5.819412] (-) TimerEvent: {}
+[5.919757] (-) TimerEvent: {}
+[6.020069] (-) TimerEvent: {}
+[6.120406] (-) TimerEvent: {}
+[6.220760] (-) TimerEvent: {}
+[6.321177] (-) TimerEvent: {}
+[6.421566] (-) TimerEvent: {}
+[6.521831] (-) TimerEvent: {}
+[6.622121] (-) TimerEvent: {}
+[6.722414] (-) TimerEvent: {}
+[6.822700] (-) TimerEvent: {}
+[6.922984] (-) TimerEvent: {}
+[7.023283] (-) TimerEvent: {}
+[7.123602] (-) TimerEvent: {}
+[7.223901] (-) TimerEvent: {}
+[7.324212] (-) TimerEvent: {}
+[7.424522] (-) TimerEvent: {}
+[7.524796] (-) TimerEvent: {}
+[7.625106] (-) TimerEvent: {}
+[7.725393] (-) TimerEvent: {}
+[7.825680] (-) TimerEvent: {}
+[7.926037] (-) TimerEvent: {}
+[8.026477] (-) TimerEvent: {}
+[8.126935] (-) TimerEvent: {}
+[8.227328] (-) TimerEvent: {}
+[8.327614] (-) TimerEvent: {}
+[8.427935] (-) TimerEvent: {}
+[8.528219] (-) TimerEvent: {}
+[8.628483] (-) TimerEvent: {}
+[8.728804] (-) TimerEvent: {}
+[8.829093] (-) TimerEvent: {}
+[8.929382] (-) TimerEvent: {}
+[9.029700] (-) TimerEvent: {}
+[9.130104] (-) TimerEvent: {}
+[9.230434] (-) TimerEvent: {}
+[9.330717] (-) TimerEvent: {}
+[9.382958] (radar-odometry) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[9.430841] (-) TimerEvent: {}
+[9.482568] (radar-odometry) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[9.491592] (radar-odometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[9.530971] (-) TimerEvent: {}
+[9.632295] (-) TimerEvent: {}
+[9.651668] (radar-odometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[9.662872] (radar-odometry) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[9.663118] (radar-odometry) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[9.687285] (radar-odometry) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[9.704186] (radar-odometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[9.732395] (-) TimerEvent: {}
+[9.832713] (-) TimerEvent: {}
+[9.851515] (radar-odometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.860682] (radar-odometry) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[9.860998] (radar-odometry) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.861646] (radar-odometry) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.932828] (-) TimerEvent: {}
+[9.961909] (radar-odometry) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[10.032947] (-) TimerEvent: {}
+[10.162475] (-) TimerEvent: {}
+[10.206754] (radar-odometry) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[10.262591] (-) TimerEvent: {}
+[10.362847] (-) TimerEvent: {}
+[10.416900] (radar-odometry) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[10.462933] (-) TimerEvent: {}
+[10.563208] (-) TimerEvent: {}
+[10.570787] (radar-odometry) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[10.586866] (radar-odometry) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[10.598836] (radar-odometry) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[10.618090] (radar-odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.663343] (-) TimerEvent: {}
+[10.667928] (radar-odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.760287] (radar-odometry) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[10.763460] (-) TimerEvent: {}
+[10.763958] (radar-odometry) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[10.863570] (-) TimerEvent: {}
+[10.963868] (-) TimerEvent: {}
+[11.010482] (radar-odometry) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[11.042176] (radar-odometry) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[11.063971] (-) TimerEvent: {}
+[11.100207] (radar-odometry) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[11.113248] (radar-odometry) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[11.164090] (-) TimerEvent: {}
+[11.241512] (radar-odometry) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[11.242128] (radar-odometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[11.264182] (-) TimerEvent: {}
+[11.325184] (radar-odometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[11.326476] (radar-odometry) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[11.364300] (-) TimerEvent: {}
+[11.464598] (-) TimerEvent: {}
+[11.564230] (radar-odometry) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[11.564694] (-) TimerEvent: {}
+[11.664939] (-) TimerEvent: {}
+[11.739018] (radar-odometry) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:13 (find_package):\n'}
+[11.739194] (radar-odometry) StderrLine: {'line': b'  By not providing "Findpcl_conversion.cmake" in CMAKE_MODULE_PATH this\n'}
+[11.739272] (radar-odometry) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[11.739342] (radar-odometry) StderrLine: {'line': b'  "pcl_conversion", but CMake did not find one.\n'}
+[11.739409] (radar-odometry) StderrLine: {'line': b'\n'}
+[11.739477] (radar-odometry) StderrLine: {'line': b'  Could not find a package configuration file provided by "pcl_conversion"\n'}
+[11.739543] (radar-odometry) StderrLine: {'line': b'  with any of the following names:\n'}
+[11.739609] (radar-odometry) StderrLine: {'line': b'\n'}
+[11.739673] (radar-odometry) StderrLine: {'line': b'    pcl_conversionConfig.cmake\n'}
+[11.739737] (radar-odometry) StderrLine: {'line': b'    pcl_conversion-config.cmake\n'}
+[11.739802] (radar-odometry) StderrLine: {'line': b'\n'}
+[11.739868] (radar-odometry) StderrLine: {'line': b'  Add the installation prefix of "pcl_conversion" to CMAKE_PREFIX_PATH or set\n'}
+[11.739934] (radar-odometry) StderrLine: {'line': b'  "pcl_conversion_DIR" to a directory containing one of the above files.  If\n'}
+[11.739998] (radar-odometry) StderrLine: {'line': b'  "pcl_conversion" provides a separate development package or SDK, be sure it\n'}
+[11.740062] (radar-odometry) StderrLine: {'line': b'  has been installed.\n'}
+[11.740132] (radar-odometry) StderrLine: {'line': b'\n'}
+[11.740196] (radar-odometry) StderrLine: {'line': b'\x1b[0m\n'}
+[11.740368] (radar-odometry) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[11.740469] (radar-odometry) StdoutLine: {'line': b'See also "/home/evan/code/ndt-loc/build/radar-odometry/CMakeFiles/CMakeOutput.log".\n'}
+[11.748235] (radar-odometry) CommandEnded: {'returncode': 1}
+[11.765696] (-) TimerEvent: {}
+[11.773769] (radar-odometry) JobEnded: {'identifier': 'radar-odometry', 'rc': 1}
+[11.784378] (-) EventReactorShutdown: {}

@@ -1,0 +1,23 @@
+[0.022s] Invoking command in '/home/evan/code/ndt-loc/build/map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target LidarData[0m
+[0.154s] [ 50%] [32mBuilding CXX object CMakeFiles/LidarData.dir/src/LidarData.cpp.o[0m
+[5.491s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.491s] [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:114:17:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin()[m[K’
+[5.492s]   114 |     [01;31m[Krclcpp::spin()[m[K;
+[5.492s]       |     [01;31m[K~~~~~~~~~~~~^~[m[K
+[5.492s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[5.492s]                  from [01m[K/home/evan/code/ndt-loc/src/map/include/map/utilty.h:4[m[K,
+[5.492s]                  from [01m[K/home/evan/code/ndt-loc/src/map/include/map/LidarData.h:4[m[K,
+[5.492s]                  from [01m[K/home/evan/code/ndt-loc/src/map/src/LidarData.cpp:1[m[K:
+[5.492s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr)[m[K’
+[5.492s]    45 | [01;36m[Kspin[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+[5.492s]       | [01;36m[K^~~~[m[K
+[5.508s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[5.508s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::Node::SharedPtr)[m[K’
+[5.508s]    49 | [01;36m[Kspin[m[K(rclcpp::Node::SharedPtr node_ptr);
+[5.508s]       | [01;36m[K^~~~[m[K
+[5.508s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[6.562s] gmake[2]: *** [CMakeFiles/LidarData.dir/build.make:76: CMakeFiles/LidarData.dir/src/LidarData.cpp.o] Error 1
+[6.563s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/LidarData.dir/all] Error 2
+[6.563s] gmake: *** [Makefile:146: all] Error 2
+[6.566s] Invoked command in '/home/evan/code/ndt-loc/build/map' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4

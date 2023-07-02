@@ -1,0 +1,16 @@
+[01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::ImageProjection::LabelComponents(int, int)[m[K’:
+[01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:244:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kboost::circular_buffer<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kconst int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  244 |     if([01;35m[Kall_pushed.size() > _segment_valid_num[m[K){
+      |        [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:247:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kboost::circular_buffer<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kconst int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  247 |     else if([01;35m[Kall_pushed.size() >= _segment_valid_point_num[m[K){
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:249:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kconst int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  249 |         for(size_t i = 0; [01;35m[Ki < _vertical_scans[m[K; i++){
+      |                           [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+/usr/bin/ld: CMakeFiles/show_map_node.dir/src/ShowMap.cpp.o: in function `ndtloc::ShowMap::Show()':
+ShowMap.cpp:(.text+0x84): undefined reference to `ndtloc::map_file_path[abi:cxx11]'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/show_map_node.dir/build.make:296: show_map_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/show_map_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

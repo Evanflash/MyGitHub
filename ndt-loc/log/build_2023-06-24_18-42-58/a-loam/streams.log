@@ -1,0 +1,520 @@
+[0.033s] Invoking command in '/home/evan/code/ndt-loc/build/a-loam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/a-loam -- -j4 -l4
+[0.091s] [35m[1mConsolidate compiler generated dependencies of target scan_registration_node[0m
+[0.149s] [ 50%] [32mBuilding CXX object CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o[0m
+[6.354s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.354s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:[m[K In lambda function:
+[6.354s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:153:20:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudCurvature[m[K’ is not captured
+[6.354s]   153 |             return [01;31m[KcloudCurvature[m[K[i] < cloudCurvature[j];
+[6.354s]       |                    [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.354s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:152:22:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[6.354s]   152 |         auto comp = [[01;36m[K][m[K(const int i, const int j){
+[6.354s]       |                      [01;36m[K^[m[K
+[6.355s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:148:28:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<float> cloudCurvature[m[K’ declared here
+[6.355s]   148 |         std::vector<float> [01;36m[KcloudCurvature[m[K(400000);
+[6.355s]       |                            [01;36m[K^~~~~~~~~~~~~~[m[K
+[6.355s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:153:40:[m[K [01;31m[Kerror: [m[K‘[01m[KcloudCurvature[m[K’ is not captured
+[6.356s]   153 |             return cloudCurvature[i] < [01;31m[KcloudCurvature[m[K[j];
+[6.356s]       |                                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[6.357s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:152:22:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[6.357s]   152 |         auto comp = [[01;36m[K][m[K(const int i, const int j){
+[6.357s]       |                      [01;36m[K^[m[K
+[6.357s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:148:28:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<float> cloudCurvature[m[K’ declared here
+[6.357s]   148 |         std::vector<float> [01;36m[KcloudCurvature[m[K(400000);
+[6.357s]       |                            [01;36m[K^~~~~~~~~~~~~~[m[K
+[6.357s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:[m[K In member function ‘[01m[Kvoid ALOAM::ScanRegistration<PointT>::extractFeatureFromPointCloud(ALOAM::ScanRegistration<PointT>::CLOUDPTR)[m[K’:
+[6.357s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:40:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+[m[K’ (operand types are ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ and ‘[01m[Kint[m[K’)
+[6.357s]   208 |                 std::sort([32m[KcloudSortInd[m[K [01;31m[K+[m[K [34m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.358s]       |                           [32m[K~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~[m[K
+[6.358s]       |                           [32m[K|[m[K              [34m[K|[m[K
+[6.358s]       |                           [32m[K|[m[K              [34m[Kint[m[K
+[6.358s]       |                           [32m[Kstd::vector<int, std::allocator<int> >[m[K
+[6.358s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[6.358s]                  from [01m[K/usr/include/c++/11/bits/specfun.h:45[m[K,
+[6.358s]                  from [01m[K/usr/include/c++/11/cmath:1935[m[K,
+[6.358s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4[m[K,
+[6.358s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.358s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1242:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)[m[K’
+[6.358s]  1242 |     [01;36m[Koperator[m[K+(typename __normal_iterator<_Iterator, _Container>::difference_type
+[6.358s]       |     [01;36m[K^~~~~~~~[m[K
+[6.358s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1242:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.359s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.359s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>[m[K’ and ‘[01m[Kint[m[K’
+[6.359s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.359s]       |                                          [01;36m[K^~[m[K
+[6.359s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[6.359s]                  from [01m[K/usr/include/c++/11/bits/specfun.h:45[m[K,
+[6.359s]                  from [01m[K/usr/include/c++/11/cmath:1935[m[K,
+[6.360s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4[m[K,
+[6.360s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.360s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:568:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)[m[K’
+[6.360s]   568 |     [01;36m[Koperator[m[K+(typename reverse_iterator<_Iterator>::difference_type __n,
+[6.360s]       |     [01;36m[K^~~~~~~~[m[K
+[6.360s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:568:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.360s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.360s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’ and ‘[01m[Kint[m[K’
+[6.360s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.360s]       |                                          [01;36m[K^~[m[K
+[6.360s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[6.360s]                  from [01m[K/usr/include/c++/11/bits/specfun.h:45[m[K,
+[6.360s]                  from [01m[K/usr/include/c++/11/cmath:1935[m[K,
+[6.361s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4[m[K,
+[6.361s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.361s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1646:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)[m[K’
+[6.361s]  1646 |     [01;36m[Koperator[m[K+(typename move_iterator<_Iterator>::difference_type __n,
+[6.361s]       |     [01;36m[K^~~~~~~~[m[K
+[6.361s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1646:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.361s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.361s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’ and ‘[01m[Kint[m[K’
+[6.361s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.361s]       |                                          [01;36m[K^~[m[K
+[6.361s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.361s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.361s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.362s] [01m[K/usr/include/c++/11/bits/basic_string.h:6095:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[6.362s]  6095 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[6.362s]       |     [01;36m[K^~~~~~~~[m[K
+[6.362s] [01m[K/usr/include/c++/11/bits/basic_string.h:6095:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.362s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.362s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.362s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.362s]       |                                          [01;36m[K^~[m[K
+[6.362s] In file included from [01m[K/usr/include/c++/11/string:56[m[K,
+[6.362s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.362s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.362s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[6.362s]  1169 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+[6.362s]       |     [01;36m[K^~~~~~~~[m[K
+[6.362s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.363s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.363s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’
+[6.363s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.363s]       |                                          [01;36m[K^~[m[K
+[6.363s] In file included from [01m[K/usr/include/c++/11/string:56[m[K,
+[6.363s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.363s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.363s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[6.363s]  1189 |     [01;36m[Koperator[m[K+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+[6.363s]       |     [01;36m[K^~~~~~~~[m[K
+[6.363s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.363s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.363s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kint[m[K’
+[6.363s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.364s]       |                                          [01;36m[K^~[m[K
+[6.364s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.364s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.364s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.364s] [01m[K/usr/include/c++/11/bits/basic_string.h:6132:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+[6.364s]  6132 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[6.364s]       |     [01;36m[K^~~~~~~~[m[K
+[6.364s] [01m[K/usr/include/c++/11/bits/basic_string.h:6132:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.364s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.364s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.364s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.364s]       |                                          [01;36m[K^~[m[K
+[6.364s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.364s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.364s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.365s] [01m[K/usr/include/c++/11/bits/basic_string.h:6148:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)[m[K’
+[6.365s]  6148 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+[6.365s]       |     [01;36m[K^~~~~~~~[m[K
+[6.365s] [01m[K/usr/include/c++/11/bits/basic_string.h:6148:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.365s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.365s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.365s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.365s]       |                                          [01;36m[K^~[m[K
+[6.365s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.365s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.365s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.365s] [01m[K/usr/include/c++/11/bits/basic_string.h:6160:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[6.365s]  6160 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[6.365s]       |     [01;36m[K^~~~~~~~[m[K
+[6.365s] [01m[K/usr/include/c++/11/bits/basic_string.h:6160:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.366s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.366s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.366s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.366s]       |                                          [01;36m[K^~[m[K
+[6.366s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.366s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.366s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.366s] [01m[K/usr/include/c++/11/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[6.366s]  6166 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[6.366s]       |     [01;36m[K^~~~~~~~[m[K
+[6.366s] [01m[K/usr/include/c++/11/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.366s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.366s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.366s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.366s]       |                                          [01;36m[K^~[m[K
+[6.367s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.367s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.367s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.367s] [01m[K/usr/include/c++/11/bits/basic_string.h:6172:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[6.367s]  6172 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[6.367s]       |     [01;36m[K^~~~~~~~[m[K
+[6.367s] [01m[K/usr/include/c++/11/bits/basic_string.h:6172:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.368s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.368s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.368s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.368s]       |                                          [01;36m[K^~[m[K
+[6.368s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.368s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.368s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.368s] [01m[K/usr/include/c++/11/bits/basic_string.h:6194:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[6.368s]  6194 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+[6.368s]       |     [01;36m[K^~~~~~~~[m[K
+[6.368s] [01m[K/usr/include/c++/11/bits/basic_string.h:6194:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.368s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.369s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’
+[6.369s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.369s]       |                                          [01;36m[K^~[m[K
+[6.369s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.369s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.369s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.369s] [01m[K/usr/include/c++/11/bits/basic_string.h:6200:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[6.369s]  6200 |     [01;36m[Koperator[m[K+(_CharT __lhs,
+[6.369s]       |     [01;36m[K^~~~~~~~[m[K
+[6.369s] [01m[K/usr/include/c++/11/bits/basic_string.h:6200:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.369s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.369s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kint[m[K’
+[6.369s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.371s]       |                                          [01;36m[K^~[m[K
+[6.371s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.371s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.371s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.371s] [01m[K/usr/include/c++/11/bits/basic_string.h:6206:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const _CharT*)[m[K’
+[6.371s]  6206 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[6.371s]       |     [01;36m[K^~~~~~~~[m[K
+[6.371s] [01m[K/usr/include/c++/11/bits/basic_string.h:6206:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.371s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.371s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.371s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.371s]       |                                          [01;36m[K^~[m[K
+[6.372s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.372s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.372s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.372s] [01m[K/usr/include/c++/11/bits/basic_string.h:6212:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, _CharT)[m[K’
+[6.372s]  6212 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[6.372s]       |     [01;36m[K^~~~~~~~[m[K
+[6.372s] [01m[K/usr/include/c++/11/bits/basic_string.h:6212:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.372s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.372s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.372s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.372s]       |                                          [01;36m[K^~[m[K
+[6.372s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+[6.372s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[6.372s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[6.373s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+[6.373s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.373s] [01m[K/usr/include/c++/11/complex:332:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const std::complex<_Tp>&)[m[K’
+[6.373s]   332 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x, const complex<_Tp>& __y)
+[6.373s]       |     [01;36m[K^~~~~~~~[m[K
+[6.373s] [01m[K/usr/include/c++/11/complex:332:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.373s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.373s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+[6.373s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.373s]       |                                          [01;36m[K^~[m[K
+[6.373s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+[6.373s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[6.374s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[6.374s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+[6.374s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.374s] [01m[K/usr/include/c++/11/complex:341:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const _Tp&)[m[K’
+[6.374s]   341 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x, const _Tp& __y)
+[6.374s]       |     [01;36m[K^~~~~~~~[m[K
+[6.374s] [01m[K/usr/include/c++/11/complex:341:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.374s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.374s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+[6.374s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.374s]       |                                          [01;36m[K^~[m[K
+[6.374s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+[6.375s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[6.375s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[6.375s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+[6.375s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.375s] [01m[K/usr/include/c++/11/complex:350:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const _Tp&, const std::complex<_Tp>&)[m[K’
+[6.375s]   350 |     [01;36m[Koperator[m[K+(const _Tp& __x, const complex<_Tp>& __y)
+[6.375s]       |     [01;36m[K^~~~~~~~[m[K
+[6.375s] [01m[K/usr/include/c++/11/complex:350:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.376s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.376s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::complex<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[6.376s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.376s]       |                                          [01;36m[K^~[m[K
+[6.376s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+[6.376s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[6.376s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[6.376s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+[6.376s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.376s] [01m[K/usr/include/c++/11/complex:451:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&)[m[K’
+[6.376s]   451 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x)
+[6.376s]       |     [01;36m[K^~~~~~~~[m[K
+[6.376s] [01m[K/usr/include/c++/11/complex:451:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.376s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.377s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+[6.377s]   208 |                 std::sort(cloudSortInd + [01;36m[Ksp[m[K, cloudSortInd + ep + 1, comp);
+[6.377s]       |                                          [01;36m[K^~[m[K
+[6.377s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:59:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+[m[K’ (operand types are ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ and ‘[01m[Kint[m[K’)
+[6.377s]   208 |                 std::sort(cloudSortInd + sp, [32m[KcloudSortInd[m[K [01;31m[K+[m[K [34m[Kep[m[K + 1, comp);
+[6.377s]       |                                              [32m[K~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~[m[K
+[6.377s]       |                                              [32m[K|[m[K              [34m[K|[m[K
+[6.377s]       |                                              [32m[K|[m[K              [34m[Kint[m[K
+[6.377s]       |                                              [32m[Kstd::vector<int, std::allocator<int> >[m[K
+[6.377s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[6.378s]                  from [01m[K/usr/include/c++/11/bits/specfun.h:45[m[K,
+[6.378s]                  from [01m[K/usr/include/c++/11/cmath:1935[m[K,
+[6.378s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4[m[K,
+[6.378s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.378s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1242:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)[m[K’
+[6.378s]  1242 |     [01;36m[Koperator[m[K+(typename __normal_iterator<_Iterator, _Container>::difference_type
+[6.378s]       |     [01;36m[K^~~~~~~~[m[K
+[6.378s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1242:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.378s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.378s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>[m[K’ and ‘[01m[Kint[m[K’
+[6.378s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.378s]       |                                                             [01;36m[K^~[m[K
+[6.378s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[6.378s]                  from [01m[K/usr/include/c++/11/bits/specfun.h:45[m[K,
+[6.378s]                  from [01m[K/usr/include/c++/11/cmath:1935[m[K,
+[6.379s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4[m[K,
+[6.379s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.379s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:568:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)[m[K’
+[6.379s]   568 |     [01;36m[Koperator[m[K+(typename reverse_iterator<_Iterator>::difference_type __n,
+[6.379s]       |     [01;36m[K^~~~~~~~[m[K
+[6.379s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:568:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.379s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.379s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’ and ‘[01m[Kint[m[K’
+[6.379s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.379s]       |                                                             [01;36m[K^~[m[K
+[6.379s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[6.379s]                  from [01m[K/usr/include/c++/11/bits/specfun.h:45[m[K,
+[6.379s]                  from [01m[K/usr/include/c++/11/cmath:1935[m[K,
+[6.379s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:4[m[K,
+[6.380s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.380s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1646:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)[m[K’
+[6.380s]  1646 |     [01;36m[Koperator[m[K+(typename move_iterator<_Iterator>::difference_type __n,
+[6.380s]       |     [01;36m[K^~~~~~~~[m[K
+[6.380s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1646:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.380s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.380s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’ and ‘[01m[Kint[m[K’
+[6.380s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.380s]       |                                                             [01;36m[K^~[m[K
+[6.380s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.380s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.380s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.380s] [01m[K/usr/include/c++/11/bits/basic_string.h:6095:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[6.381s]  6095 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[6.381s]       |     [01;36m[K^~~~~~~~[m[K
+[6.381s] [01m[K/usr/include/c++/11/bits/basic_string.h:6095:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.381s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.381s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.381s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.381s]       |                                                             [01;36m[K^~[m[K
+[6.381s] In file included from [01m[K/usr/include/c++/11/string:56[m[K,
+[6.381s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.381s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.381s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[6.381s]  1169 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+[6.381s]       |     [01;36m[K^~~~~~~~[m[K
+[6.381s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.382s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.382s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’
+[6.382s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.382s]       |                                                             [01;36m[K^~[m[K
+[6.382s] In file included from [01m[K/usr/include/c++/11/string:56[m[K,
+[6.382s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.382s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.382s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[6.382s]  1189 |     [01;36m[Koperator[m[K+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+[6.382s]       |     [01;36m[K^~~~~~~~[m[K
+[6.382s] [01m[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.382s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.382s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kint[m[K’
+[6.382s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.382s]       |                                                             [01;36m[K^~[m[K
+[6.383s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.383s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.383s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.383s] [01m[K/usr/include/c++/11/bits/basic_string.h:6132:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+[6.383s]  6132 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[6.383s]       |     [01;36m[K^~~~~~~~[m[K
+[6.383s] [01m[K/usr/include/c++/11/bits/basic_string.h:6132:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.383s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.383s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.383s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.383s]       |                                                             [01;36m[K^~[m[K
+[6.383s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.383s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.383s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.384s] [01m[K/usr/include/c++/11/bits/basic_string.h:6148:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)[m[K’
+[6.384s]  6148 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+[6.384s]       |     [01;36m[K^~~~~~~~[m[K
+[6.384s] [01m[K/usr/include/c++/11/bits/basic_string.h:6148:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.384s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.384s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.384s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.384s]       |                                                             [01;36m[K^~[m[K
+[6.384s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.384s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.384s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.384s] [01m[K/usr/include/c++/11/bits/basic_string.h:6160:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[6.384s]  6160 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[6.384s]       |     [01;36m[K^~~~~~~~[m[K
+[6.384s] [01m[K/usr/include/c++/11/bits/basic_string.h:6160:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.385s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.385s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.385s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.385s]       |                                                             [01;36m[K^~[m[K
+[6.385s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.385s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.385s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.385s] [01m[K/usr/include/c++/11/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[6.385s]  6166 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[6.385s]       |     [01;36m[K^~~~~~~~[m[K
+[6.385s] [01m[K/usr/include/c++/11/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.385s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.385s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.385s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.385s]       |                                                             [01;36m[K^~[m[K
+[6.386s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.386s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.386s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.386s] [01m[K/usr/include/c++/11/bits/basic_string.h:6172:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[6.386s]  6172 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[6.386s]       |     [01;36m[K^~~~~~~~[m[K
+[6.386s] [01m[K/usr/include/c++/11/bits/basic_string.h:6172:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.386s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.386s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.386s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.386s]       |                                                             [01;36m[K^~[m[K
+[6.386s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.387s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.387s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.387s] [01m[K/usr/include/c++/11/bits/basic_string.h:6194:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[6.387s]  6194 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+[6.387s]       |     [01;36m[K^~~~~~~~[m[K
+[6.387s] [01m[K/usr/include/c++/11/bits/basic_string.h:6194:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.387s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.388s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’
+[6.388s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.388s]       |                                                             [01;36m[K^~[m[K
+[6.388s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.388s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.388s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.388s] [01m[K/usr/include/c++/11/bits/basic_string.h:6200:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+[6.388s]  6200 |     [01;36m[Koperator[m[K+(_CharT __lhs,
+[6.388s]       |     [01;36m[K^~~~~~~~[m[K
+[6.388s] [01m[K/usr/include/c++/11/bits/basic_string.h:6200:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.388s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.388s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kint[m[K’
+[6.388s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.389s]       |                                                             [01;36m[K^~[m[K
+[6.389s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.389s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.389s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.389s] [01m[K/usr/include/c++/11/bits/basic_string.h:6206:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const _CharT*)[m[K’
+[6.389s]  6206 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[6.389s]       |     [01;36m[K^~~~~~~~[m[K
+[6.389s] [01m[K/usr/include/c++/11/bits/basic_string.h:6206:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.389s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.389s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.389s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.389s]       |                                                             [01;36m[K^~[m[K
+[6.389s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[6.389s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:6[m[K,
+[6.389s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.390s] [01m[K/usr/include/c++/11/bits/basic_string.h:6212:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, _CharT)[m[K’
+[6.390s]  6212 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+[6.390s]       |     [01;36m[K^~~~~~~~[m[K
+[6.390s] [01m[K/usr/include/c++/11/bits/basic_string.h:6212:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.390s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.390s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[6.390s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.390s]       |                                                             [01;36m[K^~[m[K
+[6.390s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+[6.390s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[6.390s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[6.390s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+[6.390s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.390s] [01m[K/usr/include/c++/11/complex:332:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const std::complex<_Tp>&)[m[K’
+[6.390s]   332 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x, const complex<_Tp>& __y)
+[6.390s]       |     [01;36m[K^~~~~~~~[m[K
+[6.392s] [01m[K/usr/include/c++/11/complex:332:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.392s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.392s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+[6.392s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.392s]       |                                                             [01;36m[K^~[m[K
+[6.392s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+[6.392s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[6.392s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[6.392s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+[6.393s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.393s] [01m[K/usr/include/c++/11/complex:341:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&, const _Tp&)[m[K’
+[6.393s]   341 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x, const _Tp& __y)
+[6.393s]       |     [01;36m[K^~~~~~~~[m[K
+[6.393s] [01m[K/usr/include/c++/11/complex:341:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.393s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.393s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+[6.393s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.393s]       |                                                             [01;36m[K^~[m[K
+[6.393s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+[6.393s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[6.393s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[6.393s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+[6.393s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.394s] [01m[K/usr/include/c++/11/complex:350:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const _Tp&, const std::complex<_Tp>&)[m[K’
+[6.394s]   350 |     [01;36m[Koperator[m[K+(const _Tp& __x, const complex<_Tp>& __y)
+[6.394s]       |     [01;36m[K^~~~~~~~[m[K
+[6.394s] [01m[K/usr/include/c++/11/complex:350:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.394s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.394s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::complex<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[6.394s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.394s]       |                                                             [01;36m[K^~[m[K
+[6.394s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+[6.394s]                  from [01m[K/usr/include/eigen3/Eigen/StdVector:14[m[K,
+[6.394s]                  from [01m[K/usr/include/pcl-1.12/pcl/point_cloud.h:45[m[K,
+[6.394s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:9[m[K,
+[6.394s]                  from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.394s] [01m[K/usr/include/c++/11/complex:451:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator+(const std::complex<_Tp>&)[m[K’
+[6.395s]   451 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x)
+[6.395s]       |     [01;36m[K^~~~~~~~[m[K
+[6.395s] [01m[K/usr/include/c++/11/complex:451:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.395s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[6.395s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:208:61:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<int, std::allocator<int> >[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+[6.395s]   208 |                 std::sort(cloudSortInd + sp, cloudSortInd + [01;36m[Kep[m[K + 1, comp);
+[6.395s]       |                                                             [01;36m[K^~[m[K
+[7.244s] /home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp: In instantiation of ‘[01m[KALOAM::ScanRegistrationNode<PointT>::ScanRegistrationNode(std::string) [with PointT = pcl::PointXYZ; std::string = std::__cxx11::basic_string<char>][m[K’:
+[7.244s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:4:[m[K   required from ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>][m[K’
+[7.244s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >][m[K’
+[7.244s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.244s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.244s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.244s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>][m[K’
+[7.244s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}][m[K’
+[7.245s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}][m[K’
+[7.245s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:94:52:[m[K   required from here
+[7.245s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:31:36:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&) [with PointT = pcl::PointXYZ; sensor_msgs::msg::PointCloud2 = sensor_msgs::msg::PointCloud2_<std::allocator<void> >][m[K’
+[7.245s]    31 |             "/laser_cloud_ori", 1, [01;31m[KRun[m[K);
+[7.245s]       |                                    [01;31m[K^~~[m[K
+[7.245s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:61:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[7.245s]    61 |     void [01;36m[KRun[m[K(const sensor_msgs::msg::PointCloud2 &laserCloudMsg){
+[7.245s]       |          [01;36m[K^~~[m[K
+[7.257s] /home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp: In instantiation of ‘[01m[Kvoid ALOAM::ScanRegistrationNode<PointT>::Run(const PointCloud2&) [with PointT = pcl::PointXYZ; sensor_msgs::msg::PointCloud2 = sensor_msgs::msg::PointCloud2_<std::allocator<void> >][m[K’:
+[7.258s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:31:36:[m[K   required from ‘[01m[KALOAM::ScanRegistrationNode<PointT>::ScanRegistrationNode(std::string) [with PointT = pcl::PointXYZ; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.258s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:4:[m[K   required from ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>][m[K’
+[7.258s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >][m[K’
+[7.258s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.258s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.258s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[7.258s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}; _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>][m[K’
+[7.258s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Alloc = std::allocator<ALOAM::ScanRegistrationNode<pcl::PointXYZ> >; _Args = {const char (&)[18]}][m[K’
+[7.258s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ALOAM::ScanRegistrationNode<pcl::PointXYZ>; _Args = {const char (&)[18]}][m[K’
+[7.258s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:94:52:[m[K   required from here
+[7.258s] [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:67:34:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::__shared_ptr_access<pcl::PointCloud<pcl::PointXYZ>, __gnu_cxx::_S_atomic, false, false>::element_type[m[K’ {aka ‘[01m[Kpcl::PointCloud<pcl::PointXYZ>[m[K’} to ‘[01m[KALOAM::ScanRegistration<pcl::PointXYZ>::CLOUDPTR[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >[m[K’}
+[7.258s]    67 |         [01;31m[Ksr.removeClosedPointCloud(*laserCloudIn, *laserCloudIn, MINMUM_RANGE)[m[K;
+[7.258s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.259s] In file included from [01m[K/home/evan/code/ndt-loc/src/a-loam/src/ScanRegistrationNode.cpp:1[m[K:
+[7.259s] [01m[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/ScanRegistration.hpp:45:42:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid ALOAM::ScanRegistration<PointT>::removeClosedPointCloud(ALOAM::ScanRegistration<PointT>::CLOUDPTR, ALOAM::ScanRegistration<PointT>::CLOUDPTR, float) [with PointT = pcl::PointXYZ; ALOAM::ScanRegistration<PointT>::CLOUDPTR = std::shared_ptr<pcl::PointCloud<pcl::PointXYZ> >][m[K’
+[7.259s]    45 |     void removeClosedPointCloud([01;36m[KCLOUDPTR cloud_in[m[K, CLOUDPTR cloud_out, float thres){
+[7.259s]       |                                 [01;36m[K~~~~~~~~~^~~~~~~~[m[K
+[7.783s] gmake[2]: *** [CMakeFiles/scan_registration_node.dir/build.make:76: CMakeFiles/scan_registration_node.dir/src/ScanRegistrationNode.cpp.o] Error 1
+[7.784s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scan_registration_node.dir/all] Error 2
+[7.784s] gmake: *** [Makefile:146: all] Error 2
+[7.786s] Invoked command in '/home/evan/code/ndt-loc/build/a-loam' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/a-loam -- -j4 -l4

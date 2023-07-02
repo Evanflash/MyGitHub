@@ -1,0 +1,68 @@
+[0.017s] Invoking command in '/home/evan/code/ndt-loc/build/map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target mapping_image[0m
+[0.127s] [ 10%] [32mBuilding CXX object CMakeFiles/mapping_image.dir/src/ImageProjection.cpp.o[0m
+[10.508s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::ImageProjection::LabelComponents(int, int)[m[K’:
+[10.508s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:244:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kboost::circular_buffer<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[10.508s]   244 |     if([01;35m[Kall_pushed.size() > _segment_valid_num[m[K){
+[10.508s]       |        [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[10.508s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:247:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kboost::circular_buffer<Eigen::Matrix<int, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[10.508s]   247 |     else if([01;35m[Kall_pushed.size() >= _segment_valid_point_num[m[K){
+[10.508s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.508s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:249:29:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[10.508s]   249 |         for(size_t i = 0; [01;35m[Ki < _vertical_scans[m[K; i++){
+[10.508s]       |                           [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[20.300s] [ 20%] [32m[1mLinking CXX static library libmapping_image.a[0m
+[20.692s] [ 20%] Built target mapping_image
+[20.720s] [35m[1mConsolidate compiler generated dependencies of target show_map_node[0m
+[20.764s] [ 30%] [32mBuilding CXX object CMakeFiles/show_map_node.dir/src/ShowMap.cpp.o[0m
+[32.685s] [ 40%] [32m[1mLinking CXX executable show_map_node[0m
+[33.443s] [ 40%] Built target show_map_node
+[33.464s] [35m[1mConsolidate compiler generated dependencies of target front_end_node[0m
+[33.465s] [35m[1mConsolidate compiler generated dependencies of target lidar_data_node[0m
+[33.521s] [35m[1mConsolidate compiler generated dependencies of target mapping_node[0m
+[33.557s] [ 50%] [32mBuilding CXX object CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o[0m
+[33.574s] [ 60%] [32mBuilding CXX object CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o[0m
+[33.594s] [ 70%] [32mBuilding CXX object CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o[0m
+[33.611s] [01m[K/home/evan/code/ndt-loc/src/map/src/GroundTruth.cpp:1:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[33.611s]     1 | #pragma [01;35m[Konce[m[K
+[33.611s]       |         [01;35m[K^~~~[m[K
+[44.066s] [01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:[m[K In member function ‘[01m[Kbool ndtloc::FrontEnd::UpdateNewFrame(const ndtloc::Frame&)[m[K’:
+[44.066s] [01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:105:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::deque<ndtloc::Frame>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[44.066s]   105 |     while([01;35m[Klocal_map_frames.size() > max_local_map_frames[m[K){
+[44.066s]       |           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[44.067s] [01m[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:117:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::deque<ndtloc::Frame>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[44.067s]   117 |     if([01;35m[Klocal_map_frames.size() < local_map_filter_frames_num[m[K){
+[44.067s]       |        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[49.809s] [ 80%] [32m[1mLinking CXX executable mapping_node[0m
+[49.896s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0x0): multiple definition of `ndtloc::_left_lidar_path[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0x0): first defined here
+[49.898s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0x20): multiple definition of `ndtloc::_right_lidar_path[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0x20): first defined here
+[49.900s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0x40): multiple definition of `ndtloc::_left_lidar_time[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0x40): first defined here
+[49.900s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0x60): multiple definition of `ndtloc::_right_lidar_time[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0x60): first defined here
+[49.902s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x0): multiple definition of `ndtloc::_x_offset'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x0): first defined here
+[49.903s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x4): multiple definition of `ndtloc::_y_offset'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x4): first defined here
+[49.905s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x8): multiple definition of `ndtloc::_z_offset'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x8): first defined here
+[49.906s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0x80): multiple definition of `ndtloc::key_frame_path[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0x80): first defined here
+[49.908s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0xa0): multiple definition of `ndtloc::map_file_path[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0xa0): first defined here
+[49.909s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0xc): multiple definition of `ndtloc::max_local_map_frames'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0xc): first defined here
+[49.911s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x10): multiple definition of `ndtloc::local_map_filter_frames_num'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x10): first defined here
+[49.912s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x14): multiple definition of `ndtloc::key_frame_distance'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x14): first defined here
+[49.914s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x18): multiple definition of `ndtloc::_vertical_scans'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x18): first defined here
+[49.916s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x1c): multiple definition of `ndtloc::_horizontal_scans'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x1c): first defined here
+[49.917s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x20): multiple definition of `ndtloc::_vertical_ang_start'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x20): first defined here
+[49.919s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x24): multiple definition of `ndtloc::_vertical_ang_end'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x24): first defined here
+[49.920s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x28): multiple definition of `ndtloc::_segment_valid_num'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x28): first defined here
+[49.922s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x2c): multiple definition of `ndtloc::_segment_valid_point_num'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x2c): first defined here
+[49.923s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x30): multiple definition of `ndtloc::_segment_valid_line_num'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x30): first defined here
+[49.924s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x34): multiple definition of `ndtloc::_ground_scan_index'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x34): first defined here
+[49.926s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.data+0x38): multiple definition of `ndtloc::_segment_theta'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.data+0x38): first defined here
+[49.927s] /usr/bin/ld: libmapping_image.a(ImageProjection.cpp.o):(.bss+0xc0): multiple definition of `ndtloc::radar_timestamping[abi:cxx11]'; CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o:(.bss+0xc0): first defined here
+[51.443s] collect2: error: ld returned 1 exit status
+[51.445s] gmake[2]: *** [CMakeFiles/mapping_node.dir/build.make:297: mapping_node] Error 1
+[51.445s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/mapping_node.dir/all] Error 2
+[51.445s] gmake[1]: *** Waiting for unfinished jobs....
+[54.688s] [ 90%] [32m[1mLinking CXX executable lidar_data_node[0m
+[57.310s] [ 90%] Built target lidar_data_node
+[66.756s] [100%] [32m[1mLinking CXX executable front_end_node[0m
+[69.259s] [100%] Built target front_end_node
+[69.261s] gmake: *** [Makefile:146: all] Error 2
+[69.263s] Invoked command in '/home/evan/code/ndt-loc/build/map' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4

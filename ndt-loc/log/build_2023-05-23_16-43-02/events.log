@@ -1,0 +1,618 @@
+[0.000000] (-) TimerEvent: {}
+[0.000302] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.000390] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.000415] (-) JobUnselected: {'identifier': 'radar-data'}
+[0.000442] (map) JobQueued: {'identifier': 'map', 'dependencies': OrderedDict()}
+[0.000988] (map) JobStarted: {'identifier': 'map'}
+[0.015353] (map) JobProgress: {'identifier': 'map', 'progress': 'cmake'}
+[0.033644] (map) JobProgress: {'identifier': 'map', 'progress': 'build'}
+[0.034570] (map) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/map', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/map', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2236'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/test/install:/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:/usr/lib/java/jdk1.6.0_45/bin'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/1946,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/1946'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cec8f0c2_7853_4a2e_a3ff_57ba75b70f0f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UHK841'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.1194'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/test/install/demo:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/map'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/test/install/demo:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble')]), 'shell': False}
+[0.097406] (map) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target front_end_node\x1b[0m\n'}
+[0.098135] (-) TimerEvent: {}
+[0.098842] (map) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lidar_data_node\x1b[0m\n'}
+[0.108740] (map) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target show_map_node\x1b[0m\n'}
+[0.123564] (map) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mapping_image\x1b[0m\n'}
+[0.168356] (map) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/show_map_node.dir/src/ShowMap.cpp.o\x1b[0m\n'}
+[0.168546] (map) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/lidar_data_node.dir/src/LidarData.cpp.o\x1b[0m\n'}
+[0.178663] (map) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/front_end_node.dir/src/FrontEnd.cpp.o\x1b[0m\n'}
+[0.191155] (map) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/mapping_image.dir/src/ImageProjection.cpp.o\x1b[0m\n'}
+[0.198239] (-) TimerEvent: {}
+[0.299402] (-) TimerEvent: {}
+[0.400760] (-) TimerEvent: {}
+[0.503677] (-) TimerEvent: {}
+[0.603947] (-) TimerEvent: {}
+[0.704202] (-) TimerEvent: {}
+[0.804469] (-) TimerEvent: {}
+[0.904762] (-) TimerEvent: {}
+[1.005785] (-) TimerEvent: {}
+[1.106988] (-) TimerEvent: {}
+[1.207799] (-) TimerEvent: {}
+[1.308635] (-) TimerEvent: {}
+[1.409898] (-) TimerEvent: {}
+[1.510173] (-) TimerEvent: {}
+[1.611426] (-) TimerEvent: {}
+[1.711720] (-) TimerEvent: {}
+[1.813074] (-) TimerEvent: {}
+[1.914292] (-) TimerEvent: {}
+[2.015551] (-) TimerEvent: {}
+[2.116394] (-) TimerEvent: {}
+[2.217345] (-) TimerEvent: {}
+[2.318331] (-) TimerEvent: {}
+[2.418613] (-) TimerEvent: {}
+[2.518885] (-) TimerEvent: {}
+[2.619169] (-) TimerEvent: {}
+[2.719447] (-) TimerEvent: {}
+[2.819721] (-) TimerEvent: {}
+[2.920647] (-) TimerEvent: {}
+[3.021683] (-) TimerEvent: {}
+[3.122719] (-) TimerEvent: {}
+[3.223753] (-) TimerEvent: {}
+[3.324143] (-) TimerEvent: {}
+[3.424528] (-) TimerEvent: {}
+[3.524927] (-) TimerEvent: {}
+[3.625391] (-) TimerEvent: {}
+[3.726794] (-) TimerEvent: {}
+[4.011075] (-) TimerEvent: {}
+[4.111463] (-) TimerEvent: {}
+[4.212441] (-) TimerEvent: {}
+[4.313448] (-) TimerEvent: {}
+[4.421872] (-) TimerEvent: {}
+[4.522148] (-) TimerEvent: {}
+[4.623157] (-) TimerEvent: {}
+[4.724584] (-) TimerEvent: {}
+[4.826086] (-) TimerEvent: {}
+[4.927097] (-) TimerEvent: {}
+[5.028127] (-) TimerEvent: {}
+[5.129120] (-) TimerEvent: {}
+[5.230110] (-) TimerEvent: {}
+[5.331112] (-) TimerEvent: {}
+[5.432117] (-) TimerEvent: {}
+[5.533139] (-) TimerEvent: {}
+[5.634295] (-) TimerEvent: {}
+[5.735289] (-) TimerEvent: {}
+[5.836329] (-) TimerEvent: {}
+[5.937323] (-) TimerEvent: {}
+[6.038332] (-) TimerEvent: {}
+[6.139388] (-) TimerEvent: {}
+[6.241688] (-) TimerEvent: {}
+[6.343105] (-) TimerEvent: {}
+[6.444353] (-) TimerEvent: {}
+[6.545603] (-) TimerEvent: {}
+[6.647119] (-) TimerEvent: {}
+[6.748467] (-) TimerEvent: {}
+[6.849476] (-) TimerEvent: {}
+[6.950578] (-) TimerEvent: {}
+[7.051578] (-) TimerEvent: {}
+[7.152551] (-) TimerEvent: {}
+[7.253721] (-) TimerEvent: {}
+[7.354874] (-) TimerEvent: {}
+[7.456155] (-) TimerEvent: {}
+[7.557249] (-) TimerEvent: {}
+[7.657662] (-) TimerEvent: {}
+[7.758065] (-) TimerEvent: {}
+[7.858466] (-) TimerEvent: {}
+[7.958874] (-) TimerEvent: {}
+[8.059287] (-) TimerEvent: {}
+[8.159672] (-) TimerEvent: {}
+[8.260188] (-) TimerEvent: {}
+[8.360595] (-) TimerEvent: {}
+[8.461002] (-) TimerEvent: {}
+[8.561402] (-) TimerEvent: {}
+[8.661845] (-) TimerEvent: {}
+[8.762289] (-) TimerEvent: {}
+[9.482266] (-) TimerEvent: {}
+[9.582871] (-) TimerEvent: {}
+[9.683259] (-) TimerEvent: {}
+[9.783658] (-) TimerEvent: {}
+[9.884518] (-) TimerEvent: {}
+[9.984812] (-) TimerEvent: {}
+[10.085222] (-) TimerEvent: {}
+[10.185615] (-) TimerEvent: {}
+[10.286038] (-) TimerEvent: {}
+[10.386481] (-) TimerEvent: {}
+[10.486894] (-) TimerEvent: {}
+[10.587277] (-) TimerEvent: {}
+[10.687667] (-) TimerEvent: {}
+[10.788073] (-) TimerEvent: {}
+[10.888470] (-) TimerEvent: {}
+[10.988880] (-) TimerEvent: {}
+[11.089278] (-) TimerEvent: {}
+[11.189679] (-) TimerEvent: {}
+[11.290089] (-) TimerEvent: {}
+[11.390522] (-) TimerEvent: {}
+[11.497905] (-) TimerEvent: {}
+[11.602656] (-) TimerEvent: {}
+[11.704072] (-) TimerEvent: {}
+[11.804438] (-) TimerEvent: {}
+[11.906778] (-) TimerEvent: {}
+[12.008205] (-) TimerEvent: {}
+[12.109607] (-) TimerEvent: {}
+[12.209855] (-) TimerEvent: {}
+[12.310245] (-) TimerEvent: {}
+[12.411479] (-) TimerEvent: {}
+[12.512084] (-) TimerEvent: {}
+[12.612712] (-) TimerEvent: {}
+[12.714104] (-) TimerEvent: {}
+[12.815125] (-) TimerEvent: {}
+[12.916114] (-) TimerEvent: {}
+[13.017500] (-) TimerEvent: {}
+[13.118981] (-) TimerEvent: {}
+[13.220877] (-) TimerEvent: {}
+[13.323494] (-) TimerEvent: {}
+[13.426645] (-) TimerEvent: {}
+[13.460291] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool ndtloc::FrontEnd::UpdateNewFrame(const ndtloc::Frame&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.460999] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:105:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kstd::deque<ndtloc::Frame>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.461467] (map) StderrLine: {'line': b'  105 |     while(\x1b[01;35m\x1b[Klocal_map_frames.size() > max_local_map_frames\x1b[m\x1b[K){\n'}
+[13.461907] (map) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.462329] (map) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/map/src/FrontEnd.cpp:117:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kstd::deque<ndtloc::Frame>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.462767] (map) StderrLine: {'line': b'  117 |     if(\x1b[01;35m\x1b[Klocal_map_frames.size() < local_map_filter_frames_num\x1b[m\x1b[K){\n'}
+[13.463185] (map) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.526744] (-) TimerEvent: {}
+[13.627978] (-) TimerEvent: {}
+[13.729106] (-) TimerEvent: {}
+[13.830948] (-) TimerEvent: {}
+[13.932313] (-) TimerEvent: {}
+[14.034522] (-) TimerEvent: {}
+[14.135425] (-) TimerEvent: {}
+[14.235915] (-) TimerEvent: {}
+[14.336515] (-) TimerEvent: {}
+[14.436927] (-) TimerEvent: {}
+[14.537343] (-) TimerEvent: {}
+[14.638941] (-) TimerEvent: {}
+[14.739393] (-) TimerEvent: {}
+[14.839802] (-) TimerEvent: {}
+[14.940264] (-) TimerEvent: {}
+[15.040655] (-) TimerEvent: {}
+[15.141044] (-) TimerEvent: {}
+[15.241459] (-) TimerEvent: {}
+[15.341859] (-) TimerEvent: {}
+[15.442287] (-) TimerEvent: {}
+[15.543274] (-) TimerEvent: {}
+[15.644131] (-) TimerEvent: {}
+[15.745042] (-) TimerEvent: {}
+[15.845336] (-) TimerEvent: {}
+[15.864303] (map) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/show_map_node.dir/src/utilty.cpp.o\x1b[0m\n'}
+[15.945438] (-) TimerEvent: {}
+[16.046401] (-) TimerEvent: {}
+[16.147674] (-) TimerEvent: {}
+[16.257173] (-) TimerEvent: {}
+[16.357476] (-) TimerEvent: {}
+[16.459177] (-) TimerEvent: {}
+[16.560659] (-) TimerEvent: {}
+[16.661690] (-) TimerEvent: {}
+[16.763291] (-) TimerEvent: {}
+[16.864410] (-) TimerEvent: {}
+[16.965509] (-) TimerEvent: {}
+[17.066806] (-) TimerEvent: {}
+[17.168413] (-) TimerEvent: {}
+[17.269414] (-) TimerEvent: {}
+[17.370794] (-) TimerEvent: {}
+[17.472036] (-) TimerEvent: {}
+[17.573437] (-) TimerEvent: {}
+[17.674943] (-) TimerEvent: {}
+[17.776368] (-) TimerEvent: {}
+[17.877746] (-) TimerEvent: {}
+[17.978794] (-) TimerEvent: {}
+[18.081872] (-) TimerEvent: {}
+[18.182141] (-) TimerEvent: {}
+[18.282406] (-) TimerEvent: {}
+[18.382665] (-) TimerEvent: {}
+[18.482925] (-) TimerEvent: {}
+[18.583189] (-) TimerEvent: {}
+[18.683454] (-) TimerEvent: {}
+[18.783720] (-) TimerEvent: {}
+[18.883992] (-) TimerEvent: {}
+[18.984267] (-) TimerEvent: {}
+[19.084662] (-) TimerEvent: {}
+[19.313307] (-) TimerEvent: {}
+[19.413690] (-) TimerEvent: {}
+[19.514085] (-) TimerEvent: {}
+[19.614462] (-) TimerEvent: {}
+[19.714852] (-) TimerEvent: {}
+[19.815237] (-) TimerEvent: {}
+[19.915622] (-) TimerEvent: {}
+[20.016000] (-) TimerEvent: {}
+[20.116382] (-) TimerEvent: {}
+[20.216770] (-) TimerEvent: {}
+[20.317151] (-) TimerEvent: {}
+[20.417521] (-) TimerEvent: {}
+[20.517923] (-) TimerEvent: {}
+[20.618305] (-) TimerEvent: {}
+[20.718701] (-) TimerEvent: {}
+[20.819066] (-) TimerEvent: {}
+[20.919445] (-) TimerEvent: {}
+[21.019822] (-) TimerEvent: {}
+[21.120190] (-) TimerEvent: {}
+[21.220570] (-) TimerEvent: {}
+[21.320947] (-) TimerEvent: {}
+[21.421322] (-) TimerEvent: {}
+[21.521698] (-) TimerEvent: {}
+[21.622088] (-) TimerEvent: {}
+[21.722461] (-) TimerEvent: {}
+[21.822834] (-) TimerEvent: {}
+[21.923205] (-) TimerEvent: {}
+[22.023587] (-) TimerEvent: {}
+[22.123958] (-) TimerEvent: {}
+[22.224342] (-) TimerEvent: {}
+[22.324731] (-) TimerEvent: {}
+[22.425116] (-) TimerEvent: {}
+[22.525500] (-) TimerEvent: {}
+[22.625873] (-) TimerEvent: {}
+[22.726253] (-) TimerEvent: {}
+[22.826629] (-) TimerEvent: {}
+[22.927001] (-) TimerEvent: {}
+[23.027383] (-) TimerEvent: {}
+[23.127769] (-) TimerEvent: {}
+[23.228153] (-) TimerEvent: {}
+[23.328563] (-) TimerEvent: {}
+[23.428851] (-) TimerEvent: {}
+[23.529156] (-) TimerEvent: {}
+[23.629465] (-) TimerEvent: {}
+[23.729844] (-) TimerEvent: {}
+[23.830207] (-) TimerEvent: {}
+[23.930588] (-) TimerEvent: {}
+[24.031269] (-) TimerEvent: {}
+[24.131545] (-) TimerEvent: {}
+[24.478333] (map) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/lidar_data_node.dir/src/utilty.cpp.o\x1b[0m\n'}
+[24.478522] (-) TimerEvent: {}
+[24.579361] (-) TimerEvent: {}
+[24.679650] (-) TimerEvent: {}
+[24.779932] (-) TimerEvent: {}
+[24.880240] (-) TimerEvent: {}
+[24.980576] (-) TimerEvent: {}
+[25.080839] (-) TimerEvent: {}
+[25.181220] (-) TimerEvent: {}
+[25.281652] (-) TimerEvent: {}
+[25.382123] (-) TimerEvent: {}
+[25.482588] (-) TimerEvent: {}
+[25.582965] (-) TimerEvent: {}
+[25.684248] (-) TimerEvent: {}
+[25.785552] (-) TimerEvent: {}
+[25.886645] (-) TimerEvent: {}
+[25.990316] (-) TimerEvent: {}
+[26.090636] (-) TimerEvent: {}
+[26.191072] (-) TimerEvent: {}
+[26.291440] (-) TimerEvent: {}
+[26.391865] (-) TimerEvent: {}
+[26.492297] (-) TimerEvent: {}
+[26.525660] (map) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/mapping_image.dir/src/utilty.cpp.o\x1b[0m\n'}
+[26.592865] (-) TimerEvent: {}
+[26.694464] (-) TimerEvent: {}
+[26.795626] (-) TimerEvent: {}
+[26.897853] (-) TimerEvent: {}
+[26.999540] (-) TimerEvent: {}
+[27.100625] (-) TimerEvent: {}
+[27.201832] (-) TimerEvent: {}
+[27.303597] (-) TimerEvent: {}
+[27.404858] (-) TimerEvent: {}
+[27.506781] (-) TimerEvent: {}
+[27.609869] (-) TimerEvent: {}
+[27.711385] (-) TimerEvent: {}
+[27.812837] (-) TimerEvent: {}
+[27.913982] (-) TimerEvent: {}
+[28.015153] (-) TimerEvent: {}
+[28.116251] (-) TimerEvent: {}
+[28.217409] (-) TimerEvent: {}
+[28.318579] (-) TimerEvent: {}
+[28.420228] (-) TimerEvent: {}
+[28.521333] (-) TimerEvent: {}
+[28.622594] (-) TimerEvent: {}
+[28.724068] (-) TimerEvent: {}
+[28.727157] (map) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX executable show_map_node\x1b[0m\n'}
+[28.824183] (-) TimerEvent: {}
+[28.925635] (-) TimerEvent: {}
+[29.027104] (-) TimerEvent: {}
+[29.132490] (-) TimerEvent: {}
+[29.235037] (-) TimerEvent: {}
+[29.336879] (-) TimerEvent: {}
+[29.439103] (-) TimerEvent: {}
+[29.543181] (-) TimerEvent: {}
+[29.632775] (map) StdoutLine: {'line': b'[ 53%] Built target show_map_node\n'}
+[29.643302] (-) TimerEvent: {}
+[29.743671] (-) TimerEvent: {}
+[29.844139] (-) TimerEvent: {}
+[29.944499] (-) TimerEvent: {}
+[30.045053] (-) TimerEvent: {}
+[30.145977] (-) TimerEvent: {}
+[30.246274] (-) TimerEvent: {}
+[30.346695] (-) TimerEvent: {}
+[30.447036] (-) TimerEvent: {}
+[30.547377] (-) TimerEvent: {}
+[30.648131] (-) TimerEvent: {}
+[30.750296] (-) TimerEvent: {}
+[30.850715] (-) TimerEvent: {}
+[30.951042] (-) TimerEvent: {}
+[31.051427] (-) TimerEvent: {}
+[31.152886] (-) TimerEvent: {}
+[31.253183] (-) TimerEvent: {}
+[31.353472] (-) TimerEvent: {}
+[31.453727] (-) TimerEvent: {}
+[31.553993] (-) TimerEvent: {}
+[31.654276] (-) TimerEvent: {}
+[31.754565] (-) TimerEvent: {}
+[31.854820] (-) TimerEvent: {}
+[31.955110] (-) TimerEvent: {}
+[32.055399] (-) TimerEvent: {}
+[32.155662] (-) TimerEvent: {}
+[32.256194] (-) TimerEvent: {}
+[32.356494] (-) TimerEvent: {}
+[32.456803] (-) TimerEvent: {}
+[32.557045] (-) TimerEvent: {}
+[32.657338] (-) TimerEvent: {}
+[32.757615] (-) TimerEvent: {}
+[32.857885] (-) TimerEvent: {}
+[32.958143] (-) TimerEvent: {}
+[33.058427] (-) TimerEvent: {}
+[33.158721] (-) TimerEvent: {}
+[33.259010] (-) TimerEvent: {}
+[33.359303] (-) TimerEvent: {}
+[33.459602] (-) TimerEvent: {}
+[33.559889] (-) TimerEvent: {}
+[33.660181] (-) TimerEvent: {}
+[33.760472] (-) TimerEvent: {}
+[33.860759] (-) TimerEvent: {}
+[33.961050] (-) TimerEvent: {}
+[34.061343] (-) TimerEvent: {}
+[34.161638] (-) TimerEvent: {}
+[34.262689] (-) TimerEvent: {}
+[34.364073] (-) TimerEvent: {}
+[34.465566] (-) TimerEvent: {}
+[34.565865] (-) TimerEvent: {}
+[34.666146] (-) TimerEvent: {}
+[34.766432] (-) TimerEvent: {}
+[34.866720] (-) TimerEvent: {}
+[34.967006] (-) TimerEvent: {}
+[35.068112] (-) TimerEvent: {}
+[35.168405] (-) TimerEvent: {}
+[35.268665] (-) TimerEvent: {}
+[35.368976] (-) TimerEvent: {}
+[35.469295] (-) TimerEvent: {}
+[35.569604] (-) TimerEvent: {}
+[35.669909] (-) TimerEvent: {}
+[35.770184] (-) TimerEvent: {}
+[35.870461] (-) TimerEvent: {}
+[35.970775] (-) TimerEvent: {}
+[36.071085] (-) TimerEvent: {}
+[36.172598] (-) TimerEvent: {}
+[36.272899] (-) TimerEvent: {}
+[36.374370] (-) TimerEvent: {}
+[36.474679] (-) TimerEvent: {}
+[36.576519] (-) TimerEvent: {}
+[36.676815] (-) TimerEvent: {}
+[36.777114] (-) TimerEvent: {}
+[36.877414] (-) TimerEvent: {}
+[36.977723] (-) TimerEvent: {}
+[37.078015] (-) TimerEvent: {}
+[37.178310] (-) TimerEvent: {}
+[37.279778] (-) TimerEvent: {}
+[37.381858] (-) TimerEvent: {}
+[37.482136] (-) TimerEvent: {}
+[37.523973] (map) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/front_end_node.dir/src/utilty.cpp.o\x1b[0m\n'}
+[37.582234] (-) TimerEvent: {}
+[37.682628] (-) TimerEvent: {}
+[37.783012] (-) TimerEvent: {}
+[37.807312] (map) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable lidar_data_node\x1b[0m\n'}
+[37.883090] (-) TimerEvent: {}
+[37.984552] (-) TimerEvent: {}
+[38.084959] (-) TimerEvent: {}
+[38.185338] (-) TimerEvent: {}
+[38.285748] (-) TimerEvent: {}
+[38.387903] (-) TimerEvent: {}
+[38.488203] (-) TimerEvent: {}
+[38.588470] (-) TimerEvent: {}
+[38.690583] (-) TimerEvent: {}
+[38.791024] (-) TimerEvent: {}
+[38.892588] (-) TimerEvent: {}
+[38.993121] (-) TimerEvent: {}
+[39.093450] (-) TimerEvent: {}
+[39.193881] (-) TimerEvent: {}
+[39.294804] (-) TimerEvent: {}
+[39.395268] (-) TimerEvent: {}
+[39.495546] (-) TimerEvent: {}
+[39.595982] (-) TimerEvent: {}
+[39.696939] (-) TimerEvent: {}
+[39.797881] (-) TimerEvent: {}
+[39.898302] (-) TimerEvent: {}
+[39.998631] (map) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX static library libmapping_image.a\x1b[0m\n'}
+[39.998831] (-) TimerEvent: {}
+[40.100273] (-) TimerEvent: {}
+[40.200576] (-) TimerEvent: {}
+[40.305849] (-) TimerEvent: {}
+[40.406511] (-) TimerEvent: {}
+[40.415164] (map) StdoutLine: {'line': b'[ 73%] Built target mapping_image\n'}
+[40.443136] (map) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mapping_node\x1b[0m\n'}
+[40.506604] (-) TimerEvent: {}
+[40.507422] (map) StdoutLine: {'line': b'[ 73%] Built target lidar_data_node\n'}
+[40.525222] (map) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/mapping_node.dir/src/GroundTruth.cpp.o\x1b[0m\n'}
+[40.531370] (map) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/mapping_node.dir/src/utilty.cpp.o\x1b[0m\n'}
+[40.606894] (-) TimerEvent: {}
+[40.707205] (-) TimerEvent: {}
+[40.807497] (-) TimerEvent: {}
+[40.907789] (-) TimerEvent: {}
+[41.011542] (-) TimerEvent: {}
+[41.112072] (-) TimerEvent: {}
+[41.212521] (-) TimerEvent: {}
+[41.312918] (-) TimerEvent: {}
+[41.413341] (-) TimerEvent: {}
+[41.513703] (-) TimerEvent: {}
+[41.614104] (-) TimerEvent: {}
+[41.714604] (-) TimerEvent: {}
+[41.815044] (-) TimerEvent: {}
+[41.915407] (-) TimerEvent: {}
+[42.015805] (-) TimerEvent: {}
+[42.116095] (-) TimerEvent: {}
+[42.216385] (-) TimerEvent: {}
+[42.316681] (-) TimerEvent: {}
+[42.416973] (-) TimerEvent: {}
+[42.517267] (-) TimerEvent: {}
+[42.617574] (-) TimerEvent: {}
+[42.717885] (-) TimerEvent: {}
+[42.818153] (-) TimerEvent: {}
+[42.918511] (-) TimerEvent: {}
+[43.018922] (-) TimerEvent: {}
+[43.120342] (-) TimerEvent: {}
+[43.220652] (-) TimerEvent: {}
+[43.320942] (-) TimerEvent: {}
+[43.421164] (-) TimerEvent: {}
+[43.521460] (-) TimerEvent: {}
+[43.621697] (-) TimerEvent: {}
+[43.721969] (-) TimerEvent: {}
+[43.822264] (-) TimerEvent: {}
+[43.922553] (-) TimerEvent: {}
+[44.023272] (-) TimerEvent: {}
+[44.123563] (-) TimerEvent: {}
+[44.225013] (-) TimerEvent: {}
+[44.326554] (-) TimerEvent: {}
+[44.427586] (-) TimerEvent: {}
+[44.528593] (-) TimerEvent: {}
+[44.630009] (-) TimerEvent: {}
+[44.731420] (-) TimerEvent: {}
+[44.831749] (-) TimerEvent: {}
+[44.932058] (-) TimerEvent: {}
+[45.033111] (-) TimerEvent: {}
+[45.133893] (-) TimerEvent: {}
+[45.234190] (-) TimerEvent: {}
+[45.335588] (-) TimerEvent: {}
+[45.436990] (-) TimerEvent: {}
+[45.541321] (-) TimerEvent: {}
+[45.641632] (-) TimerEvent: {}
+[45.741883] (-) TimerEvent: {}
+[45.842162] (-) TimerEvent: {}
+[45.943363] (-) TimerEvent: {}
+[46.044379] (-) TimerEvent: {}
+[46.144661] (-) TimerEvent: {}
+[46.245621] (-) TimerEvent: {}
+[46.346621] (-) TimerEvent: {}
+[46.447608] (-) TimerEvent: {}
+[46.547997] (-) TimerEvent: {}
+[46.648419] (-) TimerEvent: {}
+[46.749808] (-) TimerEvent: {}
+[46.851205] (-) TimerEvent: {}
+[46.952713] (-) TimerEvent: {}
+[47.054174] (-) TimerEvent: {}
+[47.155647] (-) TimerEvent: {}
+[47.257426] (-) TimerEvent: {}
+[47.357688] (-) TimerEvent: {}
+[47.457958] (-) TimerEvent: {}
+[47.558921] (-) TimerEvent: {}
+[47.659323] (-) TimerEvent: {}
+[47.759708] (-) TimerEvent: {}
+[47.860512] (-) TimerEvent: {}
+[47.960921] (-) TimerEvent: {}
+[48.061313] (-) TimerEvent: {}
+[48.161693] (-) TimerEvent: {}
+[48.262119] (-) TimerEvent: {}
+[48.362535] (-) TimerEvent: {}
+[48.462922] (-) TimerEvent: {}
+[48.563301] (-) TimerEvent: {}
+[48.663677] (-) TimerEvent: {}
+[48.764059] (-) TimerEvent: {}
+[48.864446] (-) TimerEvent: {}
+[48.964833] (-) TimerEvent: {}
+[49.065213] (-) TimerEvent: {}
+[49.165590] (-) TimerEvent: {}
+[49.266707] (-) TimerEvent: {}
+[49.367112] (-) TimerEvent: {}
+[49.467502] (-) TimerEvent: {}
+[49.567889] (-) TimerEvent: {}
+[49.668275] (-) TimerEvent: {}
+[49.720903] (map) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable front_end_node\x1b[0m\n'}
+[49.768371] (-) TimerEvent: {}
+[49.868672] (-) TimerEvent: {}
+[49.969700] (-) TimerEvent: {}
+[50.070747] (-) TimerEvent: {}
+[50.172878] (-) TimerEvent: {}
+[50.274478] (-) TimerEvent: {}
+[50.376110] (-) TimerEvent: {}
+[50.477541] (-) TimerEvent: {}
+[50.578352] (-) TimerEvent: {}
+[50.678720] (-) TimerEvent: {}
+[50.780570] (-) TimerEvent: {}
+[50.880926] (-) TimerEvent: {}
+[50.982564] (-) TimerEvent: {}
+[51.082886] (-) TimerEvent: {}
+[51.183201] (-) TimerEvent: {}
+[51.283530] (-) TimerEvent: {}
+[51.383834] (-) TimerEvent: {}
+[51.484416] (-) TimerEvent: {}
+[51.584924] (-) TimerEvent: {}
+[51.685213] (-) TimerEvent: {}
+[51.785483] (-) TimerEvent: {}
+[51.885758] (-) TimerEvent: {}
+[51.987238] (-) TimerEvent: {}
+[52.089918] (-) TimerEvent: {}
+[52.191282] (-) TimerEvent: {}
+[52.292786] (-) TimerEvent: {}
+[52.393179] (-) TimerEvent: {}
+[52.486485] (map) StdoutLine: {'line': b'[ 93%] Built target front_end_node\n'}
+[52.493301] (-) TimerEvent: {}
+[52.593891] (-) TimerEvent: {}
+[52.694205] (-) TimerEvent: {}
+[52.794516] (-) TimerEvent: {}
+[52.894824] (-) TimerEvent: {}
+[52.995126] (-) TimerEvent: {}
+[53.095399] (-) TimerEvent: {}
+[53.195693] (-) TimerEvent: {}
+[53.295999] (-) TimerEvent: {}
+[53.396319] (-) TimerEvent: {}
+[53.496631] (-) TimerEvent: {}
+[53.596953] (-) TimerEvent: {}
+[53.697268] (-) TimerEvent: {}
+[53.797586] (-) TimerEvent: {}
+[53.897924] (-) TimerEvent: {}
+[53.998229] (-) TimerEvent: {}
+[54.098537] (-) TimerEvent: {}
+[54.198855] (-) TimerEvent: {}
+[54.299165] (-) TimerEvent: {}
+[54.399471] (-) TimerEvent: {}
+[54.499776] (-) TimerEvent: {}
+[54.600078] (-) TimerEvent: {}
+[54.700398] (-) TimerEvent: {}
+[54.800716] (-) TimerEvent: {}
+[54.806140] (map) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mapping_node\x1b[0m\n'}
+[54.900889] (-) TimerEvent: {}
+[55.001196] (-) TimerEvent: {}
+[55.101586] (-) TimerEvent: {}
+[55.201942] (-) TimerEvent: {}
+[55.302296] (-) TimerEvent: {}
+[55.402638] (-) TimerEvent: {}
+[55.502982] (-) TimerEvent: {}
+[55.603356] (-) TimerEvent: {}
+[55.703684] (-) TimerEvent: {}
+[55.804006] (-) TimerEvent: {}
+[55.904351] (-) TimerEvent: {}
+[56.004710] (-) TimerEvent: {}
+[56.105048] (-) TimerEvent: {}
+[56.111654] (map) StdoutLine: {'line': b'[100%] Built target mapping_node\n'}
+[56.124950] (map) CommandEnded: {'returncode': 0}
+[56.169665] (map) JobProgress: {'identifier': 'map', 'progress': 'install'}
+[56.178923] (map) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/evan/code/ndt-loc/build/map'], 'cwd': '/home/evan/code/ndt-loc/build/map', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2236'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/test/install:/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:/usr/lib/java/jdk1.6.0_45/bin'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/1946,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/1946'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cec8f0c2_7853_4a2e_a3ff_57ba75b70f0f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UHK841'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.1194'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/test/install/demo:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/map'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/test/install/demo:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/cloud_msgs:/opt/ros/humble')]), 'shell': False}
+[56.186342] (map) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[56.186589] (map) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/map/lib/map/lidar_data_node\n'}
+[56.192668] (map) StdoutLine: {'line': b'-- Set runtime path of "/home/evan/code/ndt-loc/install/map/lib/map/lidar_data_node" to ""\n'}
+[56.192914] (map) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/map/lib/map/front_end_node\n'}
+[56.204959] (map) StdoutLine: {'line': b'-- Set runtime path of "/home/evan/code/ndt-loc/install/map/lib/map/front_end_node" to ""\n'}
+[56.205183] (-) TimerEvent: {}
+[56.205680] (map) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/map/lib/map/show_map_node\n'}
+[56.206290] (map) StdoutLine: {'line': b'-- Set runtime path of "/home/evan/code/ndt-loc/install/map/lib/map/show_map_node" to ""\n'}
+[56.206604] (map) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/map/lib/map/mapping_node\n'}
+[56.216164] (map) StdoutLine: {'line': b'-- Set runtime path of "/home/evan/code/ndt-loc/install/map/lib/map/mapping_node" to ""\n'}
+[56.216329] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/ament_index/resource_index/package_run_dependencies/map\n'}
+[56.216422] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/ament_index/resource_index/parent_prefix_path/map\n'}
+[56.216494] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/environment/ament_prefix_path.sh\n'}
+[56.216563] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/environment/ament_prefix_path.dsv\n'}
+[56.216640] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/environment/path.sh\n'}
+[56.216706] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/environment/path.dsv\n'}
+[56.216772] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/local_setup.bash\n'}
+[56.216837] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/local_setup.sh\n'}
+[56.216902] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/local_setup.zsh\n'}
+[56.216966] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/local_setup.dsv\n'}
+[56.217030] (map) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/map/share/map/package.dsv\n'}
+[56.217094] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/ament_index/resource_index/packages/map\n'}
+[56.217191] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[56.217549] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/cmake/mapConfig.cmake\n'}
+[56.218756] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/cmake/mapConfig-version.cmake\n'}
+[56.219160] (map) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/map/share/map/package.xml\n'}
+[56.219768] (map) CommandEnded: {'returncode': 0}
+[56.292416] (map) JobEnded: {'identifier': 'map', 'rc': 0}
+[56.293237] (-) EventReactorShutdown: {}

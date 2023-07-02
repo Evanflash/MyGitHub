@@ -1,0 +1,44 @@
+[0.024s] Invoking command in '/home/evan/code/ndt-loc/build/map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4
+[0.130s] [35m[1mConsolidate compiler generated dependencies of target image_projection_node[0m
+[0.145s] [ 25%] Built target lidar_data_node
+[0.184s] [ 50%] Built target show_map_node
+[0.194s] [ 75%] Built target front_end_node
+[0.234s] [ 87%] [32mBuilding CXX object CMakeFiles/image_projection_node.dir/src/ImageProjection.cpp.o[0m
+[9.957s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::ImageProjection::ProjectPointCloud()[m[K’:
+[9.957s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:79:33:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[9.958s]    79 |         if(rowInd < 0 || [01;35m[KrowInd >= _vertical_scans[m[K){
+[9.958s]       |                          [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[9.958s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:86:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[9.958s]    86 |         if([01;35m[KcolInd >= _horizontal_scans[m[K){
+[9.958s]       |            [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[9.958s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:90:33:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[9.958s]    90 |         if(colInd < 0 || [01;35m[KcolInd >= _horizontal_scans[m[K){
+[9.958s]       |                          [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[9.959s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::ImageProjection::GroundRemoval()[m[K’:
+[9.959s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:107:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[9.959s]   107 |    for(int j = 0; [01;35m[Kj < _horizontal_scans[m[K; j++){
+[9.959s]       |                   [01;35m[K~~^~~~~~~~~~~~~~~~~~~[m[K
+[9.959s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:108:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[9.959s]   108 |         for(int i = 0; [01;35m[Ki < _ground_scan_index[m[K; i++){
+[9.960s]       |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[9.976s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:127:39:[m[K [01;31m[Kerror: [m[K‘[01m[K_DEG_TO_RAD[m[K’ was not declared in this scope
+[9.976s]   127 |             if(vertical_angle <= 10 * [01;31m[K_DEG_TO_RAD[m[K){
+[9.976s]       |                                       [01;31m[K^~~~~~~~~~~[m[K
+[9.995s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::ImageProjection::LabelComponents(int, int)[m[K’:
+[9.995s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:201:41:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kconst size_t[m[K’ {aka ‘[01m[Kconst long unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[9.995s]   201 |             if(thisIndX < 0 || [01;35m[KthisIndX >= _vertical_scans[m[K){
+[9.995s]       |                                [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[9.995s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:213:19:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kfloat d1[m[K’
+[9.995s]   213 |             float [01;31m[Kd1[m[K = std::min(range_mat(fromInd.x(), fromInd.y()),
+[9.995s]       |                   [01;31m[K^~[m[K
+[9.995s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:211:19:[m[K [01;36m[Knote: [m[K‘[01m[Kfloat d1[m[K’ previously declared here
+[9.995s]   211 |             float [01;36m[Kd1[m[K = std::max(range_mat(fromInd.x(), fromInd.y()),
+[9.996s]       |                   [01;36m[K^~[m[K
+[10.003s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:217:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kd2[m[K’ was not declared in this scope; did you mean ‘[01m[Kd1[m[K’?
+[10.003s]   217 |             float tang = ([01;31m[Kd2[m[K * sin(alpha)) / (d1 - d2 * cos(alpha));
+[10.003s]       |                           [01;31m[K^~[m[K
+[10.003s]       |                           [32m[Kd1[m[K
+[13.794s] gmake[2]: *** [CMakeFiles/image_projection_node.dir/build.make:76: CMakeFiles/image_projection_node.dir/src/ImageProjection.cpp.o] Error 1
+[13.794s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/image_projection_node.dir/all] Error 2
+[13.794s] gmake: *** [Makefile:146: all] Error 2
+[13.797s] Invoked command in '/home/evan/code/ndt-loc/build/map' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4

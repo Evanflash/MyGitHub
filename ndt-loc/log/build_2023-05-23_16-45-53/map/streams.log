@@ -1,0 +1,18 @@
+[0.020s] Invoking command in '/home/evan/code/ndt-loc/build/map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4
+[0.090s] [35m[1mConsolidate compiler generated dependencies of target lidar_data_node[0m
+[0.100s] [35m[1mConsolidate compiler generated dependencies of target front_end_node[0m
+[0.109s] [35m[1mConsolidate compiler generated dependencies of target show_map_node[0m
+[0.132s] [35m[1mConsolidate compiler generated dependencies of target mapping_image[0m
+[0.184s] [ 20%] Built target front_end_node
+[0.192s] [ 40%] Built target show_map_node
+[0.216s] [ 60%] Built target lidar_data_node
+[0.218s] [ 66%] [32mBuilding CXX object CMakeFiles/mapping_image.dir/src/ImageProjection.cpp.o[0m
+[10.631s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:[m[K In member function ‘[01m[Kvoid ndtloc::ImageProjection::SetLaserCloudIn(ndtloc::CLOUDPTR)[m[K’:
+[10.631s] [01m[K/home/evan/code/ndt-loc/src/map/src/ImageProjection.cpp:285:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kout[m[K’ was not declared in this scope; did you mean ‘[01m[Kcout[m[K’?
+[10.631s]   285 |         cout << "111" << [01;31m[Kout[m[K;
+[10.631s]       |                          [01;31m[K^~~[m[K
+[10.631s]       |                          [32m[Kcout[m[K
+[11.700s] gmake[2]: *** [CMakeFiles/mapping_image.dir/build.make:76: CMakeFiles/mapping_image.dir/src/ImageProjection.cpp.o] Interrupt
+[11.705s] gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/mapping_image.dir/all] Interrupt
+[11.706s] gmake: *** [Makefile:146: all] Interrupt
+[11.784s] Invoked command in '/home/evan/code/ndt-loc/build/map' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/evan/code/ndt-loc/build/map -- -j4 -l4

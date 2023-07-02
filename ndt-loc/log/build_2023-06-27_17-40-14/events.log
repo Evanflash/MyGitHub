@@ -1,0 +1,241 @@
+[0.000000] (-) TimerEvent: {}
+[0.000952] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.001510] (-) JobUnselected: {'identifier': 'data-publisher'}
+[0.001642] (-) JobUnselected: {'identifier': 'map'}
+[0.001669] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.001708] (-) JobUnselected: {'identifier': 'radar-data'}
+[0.001736] (a-loam) JobQueued: {'identifier': 'a-loam', 'dependencies': OrderedDict()}
+[0.001761] (a-loam) JobStarted: {'identifier': 'a-loam'}
+[0.015614] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'cmake'}
+[0.017824] (a-loam) JobProgress: {'identifier': 'a-loam', 'progress': 'build'}
+[0.018118] (a-loam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/a-loam', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/a-loam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2341'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2055,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2055'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45eb1294_9a03_415b_ba0e_2334cedfdce9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OHH061'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.292'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/a-loam'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[0.087188] (a-loam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target laser_odometry_node\x1b[0m\n'}
+[0.099657] (-) TimerEvent: {}
+[0.108419] (a-loam) StdoutLine: {'line': b'[ 50%] Built target scan_registration_node\n'}
+[0.134068] (a-loam) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/laser_odometry_node.dir/src/LaserOdometryNode.cpp.o\x1b[0m\n'}
+[0.199784] (-) TimerEvent: {}
+[0.300082] (-) TimerEvent: {}
+[0.400444] (-) TimerEvent: {}
+[0.500744] (-) TimerEvent: {}
+[0.601072] (-) TimerEvent: {}
+[0.701432] (-) TimerEvent: {}
+[0.801754] (-) TimerEvent: {}
+[0.902046] (-) TimerEvent: {}
+[1.002381] (-) TimerEvent: {}
+[1.102687] (-) TimerEvent: {}
+[1.203009] (-) TimerEvent: {}
+[1.303325] (-) TimerEvent: {}
+[1.403658] (-) TimerEvent: {}
+[1.503972] (-) TimerEvent: {}
+[1.604306] (-) TimerEvent: {}
+[1.704670] (-) TimerEvent: {}
+[1.804986] (-) TimerEvent: {}
+[1.905272] (-) TimerEvent: {}
+[2.005583] (-) TimerEvent: {}
+[2.105959] (-) TimerEvent: {}
+[2.206366] (-) TimerEvent: {}
+[2.306704] (-) TimerEvent: {}
+[2.407031] (-) TimerEvent: {}
+[2.507362] (-) TimerEvent: {}
+[2.607681] (-) TimerEvent: {}
+[2.707982] (-) TimerEvent: {}
+[2.808474] (-) TimerEvent: {}
+[2.908817] (-) TimerEvent: {}
+[3.009114] (-) TimerEvent: {}
+[3.109484] (-) TimerEvent: {}
+[3.210318] (-) TimerEvent: {}
+[3.310623] (-) TimerEvent: {}
+[3.410904] (-) TimerEvent: {}
+[3.511175] (-) TimerEvent: {}
+[3.611495] (-) TimerEvent: {}
+[3.711807] (-) TimerEvent: {}
+[3.812098] (-) TimerEvent: {}
+[3.912457] (-) TimerEvent: {}
+[4.012796] (-) TimerEvent: {}
+[4.113170] (-) TimerEvent: {}
+[4.213507] (-) TimerEvent: {}
+[4.313845] (-) TimerEvent: {}
+[4.414230] (-) TimerEvent: {}
+[4.514535] (-) TimerEvent: {}
+[4.614868] (-) TimerEvent: {}
+[4.715242] (-) TimerEvent: {}
+[4.815576] (-) TimerEvent: {}
+[4.915845] (-) TimerEvent: {}
+[5.016136] (-) TimerEvent: {}
+[5.116535] (-) TimerEvent: {}
+[5.216920] (-) TimerEvent: {}
+[5.317271] (-) TimerEvent: {}
+[5.417627] (-) TimerEvent: {}
+[5.518004] (-) TimerEvent: {}
+[5.618326] (-) TimerEvent: {}
+[5.718626] (-) TimerEvent: {}
+[5.818976] (-) TimerEvent: {}
+[5.919306] (-) TimerEvent: {}
+[6.019610] (-) TimerEvent: {}
+[6.119945] (-) TimerEvent: {}
+[6.220291] (-) TimerEvent: {}
+[6.320613] (-) TimerEvent: {}
+[6.421042] (-) TimerEvent: {}
+[6.521325] (-) TimerEvent: {}
+[6.621638] (-) TimerEvent: {}
+[6.721918] (-) TimerEvent: {}
+[6.822189] (-) TimerEvent: {}
+[6.856777] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ALOAM::LaserOdometryNode::publishOdometry() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.856978] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:97:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kpassing \xe2\x80\x98\x1b[01m\x1b[Kconst _poses_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<geometry_msgs::msg::PoseStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.857066] (a-loam) StderrLine: {'line': b'   97 |         \x1b[01;31m\x1b[KlaserPath.poses.push_back(laserPose)\x1b[m\x1b[K;\n'}
+[6.857137] (a-loam) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.857308] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[6.857390] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[6.857461] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[6.857530] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[6.857596] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[6.857663] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.857730] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.857798] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.857863] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/common.h:4\x1b[m\x1b[K,\n'}
+[6.857931] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:5\x1b[m\x1b[K,\n'}
+[6.857996] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.858062] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1187:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  in call to \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = geometry_msgs::msg::PoseStamped_<std::allocator<void> >; _Alloc = std::allocator<geometry_msgs::msg::PoseStamped_<std::allocator<void> > >; std::vector<_Tp, _Alloc>::value_type = geometry_msgs::msg::PoseStamped_<std::allocator<void> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.858135] (a-loam) StderrLine: {'line': b' 1187 |       \x1b[01;36m\x1b[Kpush_back\x1b[m\x1b[K(const value_type& __x)\n'}
+[6.858203] (a-loam) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.858635] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:98:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kconst _frame_id_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kconst char [6]\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[6.858739] (a-loam) StderrLine: {'line': b'   98 |         laserPath.header.frame_id = \x1b[01;31m\x1b[K"lidar"\x1b[m\x1b[K;\n'}
+[6.858813] (a-loam) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.858885] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.858956] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[6.859027] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[6.859097] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[6.859166] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[6.859234] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[6.859315] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.859381] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/common.h:4\x1b[m\x1b[K,\n'}
+[6.859457] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:5\x1b[m\x1b[K,\n'}
+[6.859522] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.859610] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:799:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv<_Tp, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _Tp&) [with _Tp = _Tp; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.859701] (a-loam) StderrLine: {'line': b'  799 |        \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const _Tp& __svt)\n'}
+[6.859773] (a-loam) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.859837] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:799:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.859926] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/move.h:57\x1b[m\x1b[K,\n'}
+[6.860007] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:59\x1b[m\x1b[K,\n'}
+[6.860088] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[6.860151] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[6.860215] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[6.860279] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/common.h:4\x1b[m\x1b[K,\n'}
+[6.860344] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:5\x1b[m\x1b[K,\n'}
+[6.860414] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.860477] (a-loam) StderrLine: {'line': b'/usr/include/c++/11/type_traits: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<bool _Cond, class _Tp> using enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = std::__cxx11::basic_string<char>&]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.860544] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:125:8:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> template<class _Tp, class _Res> using _If_sv = std::enable_if_t<std::__and_<std::is_convertible<const _Tp&, std::basic_string_view<_CharT, _Traits> >, std::__not_<std::is_convertible<const _Tp*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>*> >, std::__not_<std::is_convertible<const _Tp&, const _CharT*> > >::value, _Res> [with _Tp = char [6]; _Res = std::__cxx11::basic_string<char>&; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.860614] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:799:8:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::__cxx11::basic_string<char>::_If_sv<_Tp, std::__cxx11::basic_string<char>&> std::__cxx11::basic_string<char>::operator=<_Tp>(const _Tp&) [with _Tp = char [6]]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.860681] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:98:37:\x1b[m\x1b[K   required from here\n'}
+[6.860745] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/type_traits:2585:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::__cxx11::basic_string<char>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.860811] (a-loam) StderrLine: {'line': b' 2585 |     using \x1b[01;31m\x1b[Kenable_if_t\x1b[m\x1b[K = typename enable_if<_Cond, _Tp>::type;\n'}
+[6.860875] (a-loam) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.860939] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.861002] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[6.861065] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[6.861129] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[6.861193] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[6.861256] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[6.861319] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.861382] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/common.h:4\x1b[m\x1b[K,\n'}
+[6.861445] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:5\x1b[m\x1b[K,\n'}
+[6.861516] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.861580] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:679:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[6.861681] (a-loam) StderrLine: {'line': b'  679 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const basic_string& __str)\n'}
+[6.861749] (a-loam) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.861816] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:679:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  passing \xe2\x80\x98\x1b[01m\x1b[Kconst _frame_id_type*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>*\x1b[m\x1b[K\xe2\x80\x99} as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers\n'}
+[6.861892] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:689:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[6.861967] (a-loam) StderrLine: {'line': b'  689 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const _CharT* __s)\n'}
+[6.862048] (a-loam) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.862111] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:689:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  passing \xe2\x80\x98\x1b[01m\x1b[Kconst _frame_id_type*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>*\x1b[m\x1b[K\xe2\x80\x99} as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers\n'}
+[6.862178] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:700:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[6.862244] (a-loam) StderrLine: {'line': b'  700 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(_CharT __c)\n'}
+[6.862307] (a-loam) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.862370] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:700:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  conversion of argument 1 would be ill-formed:\n'}
+[6.862435] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:98:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.862501] (a-loam) StderrLine: {'line': b'   98 |         laserPath.header.frame_id = \x1b[01;31m\x1b[K"lidar"\x1b[m\x1b[K;\n'}
+[6.862567] (a-loam) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.862630] (a-loam) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[6.862693] (a-loam) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[Kconst char*\x1b[m\x1b[K\n'}
+[6.862760] (a-loam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[6.862825] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[6.862889] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[6.862958] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[6.863022] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[6.863086] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[6.863150] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.863214] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/common.h:4\x1b[m\x1b[K,\n'}
+[6.863278] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/include/a-loam/LaserOdometry.hpp:5\x1b[m\x1b[K,\n'}
+[6.863343] (a-loam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/evan/code/ndt-loc/src/a-loam/src/LaserOdometryNode.cpp:1\x1b[m\x1b[K:\n'}
+[6.863406] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:717:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\x1b[m\x1b[K\xe2\x80\x99 (near match)\n'}
+[6.863478] (a-loam) StderrLine: {'line': b'  717 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(basic_string&& __str)\n'}
+[6.863543] (a-loam) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.863608] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:717:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  passing \xe2\x80\x98\x1b[01m\x1b[Kconst _frame_id_type*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>*\x1b[m\x1b[K\xe2\x80\x99} as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers\n'}
+[6.863695] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:785:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.863774] (a-loam) StderrLine: {'line': b'  785 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(initializer_list<_CharT> __l)\n'}
+[6.863839] (a-loam) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.863927] (a-loam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:785:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [6]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<char>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.864016] (a-loam) StderrLine: {'line': b'  785 |       operator=(\x1b[01;36m\x1b[Kinitializer_list<_CharT> __l\x1b[m\x1b[K)\n'}
+[6.864085] (a-loam) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[6.922321] (-) TimerEvent: {}
+[7.022640] (-) TimerEvent: {}
+[7.122964] (-) TimerEvent: {}
+[7.223326] (-) TimerEvent: {}
+[7.323628] (-) TimerEvent: {}
+[7.423992] (-) TimerEvent: {}
+[7.524303] (-) TimerEvent: {}
+[7.624630] (-) TimerEvent: {}
+[7.724938] (-) TimerEvent: {}
+[7.825263] (-) TimerEvent: {}
+[7.925550] (-) TimerEvent: {}
+[8.025876] (-) TimerEvent: {}
+[8.126198] (-) TimerEvent: {}
+[8.226521] (-) TimerEvent: {}
+[8.326846] (-) TimerEvent: {}
+[8.427158] (-) TimerEvent: {}
+[8.527425] (-) TimerEvent: {}
+[8.627733] (-) TimerEvent: {}
+[8.728015] (-) TimerEvent: {}
+[8.828314] (-) TimerEvent: {}
+[8.928660] (-) TimerEvent: {}
+[9.028984] (-) TimerEvent: {}
+[9.129308] (-) TimerEvent: {}
+[9.229636] (-) TimerEvent: {}
+[9.329994] (-) TimerEvent: {}
+[9.430332] (-) TimerEvent: {}
+[9.530666] (-) TimerEvent: {}
+[9.630995] (-) TimerEvent: {}
+[9.731335] (-) TimerEvent: {}
+[9.831673] (-) TimerEvent: {}
+[9.932020] (-) TimerEvent: {}
+[10.032344] (-) TimerEvent: {}
+[10.132674] (-) TimerEvent: {}
+[10.232990] (-) TimerEvent: {}
+[10.333299] (-) TimerEvent: {}
+[10.433613] (-) TimerEvent: {}
+[10.533909] (-) TimerEvent: {}
+[10.634230] (-) TimerEvent: {}
+[10.734583] (-) TimerEvent: {}
+[10.834916] (-) TimerEvent: {}
+[10.935277] (-) TimerEvent: {}
+[11.035587] (-) TimerEvent: {}
+[11.135950] (-) TimerEvent: {}
+[11.236262] (-) TimerEvent: {}
+[11.336611] (-) TimerEvent: {}
+[11.436900] (-) TimerEvent: {}
+[11.537229] (-) TimerEvent: {}
+[11.637524] (-) TimerEvent: {}
+[11.737828] (-) TimerEvent: {}
+[11.838107] (-) TimerEvent: {}
+[11.938450] (-) TimerEvent: {}
+[12.038728] (-) TimerEvent: {}
+[12.139024] (-) TimerEvent: {}
+[12.239348] (-) TimerEvent: {}
+[12.339651] (-) TimerEvent: {}
+[12.401292] (a-loam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/laser_odometry_node.dir/build.make:76: CMakeFiles/laser_odometry_node.dir/src/LaserOdometryNode.cpp.o] Error 1\n'}
+[12.401518] (a-loam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/laser_odometry_node.dir/all] Error 2\n'}
+[12.401776] (a-loam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[12.404167] (a-loam) CommandEnded: {'returncode': 2}
+[12.440956] (-) TimerEvent: {}
+[12.458603] (a-loam) JobEnded: {'identifier': 'a-loam', 'rc': 2}
+[12.469199] (-) EventReactorShutdown: {}

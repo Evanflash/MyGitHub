@@ -1,0 +1,127 @@
+[0.000000] (-) TimerEvent: {}
+[0.000319] (-) JobUnselected: {'identifier': 'a-loam'}
+[0.002240] (-) JobUnselected: {'identifier': 'cloud_msgs'}
+[0.002296] (-) JobUnselected: {'identifier': 'data-publisher'}
+[0.002322] (-) JobUnselected: {'identifier': 'map'}
+[0.002374] (-) JobUnselected: {'identifier': 'ndt-lidar-radar'}
+[0.002398] (radar-odometry) JobQueued: {'identifier': 'radar-odometry', 'dependencies': OrderedDict()}
+[0.002454] (radar-odometry) JobStarted: {'identifier': 'radar-odometry'}
+[0.018514] (radar-odometry) JobProgress: {'identifier': 'radar-odometry', 'progress': 'cmake'}
+[0.019954] (radar-odometry) JobProgress: {'identifier': 'radar-odometry', 'progress': 'build'}
+[0.021240] (radar-odometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/evan/code/ndt-loc/build/radar-odometry', '--', '-j4', '-l4'], 'cwd': '/home/evan/code/ndt-loc/build/radar-odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2471'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2254,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2254'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6891e234_375c_48ed_942b_4977adfb4374'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4RSX61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-odometry:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/zsh'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/radar-odometry'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-odometry:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[0.082910] (radar-odometry) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target radar_feature_node\x1b[0m\n'}
+[0.100419] (-) TimerEvent: {}
+[0.124747] (radar-odometry) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/radar_feature_node.dir/src/RadarFeaturesNode.cpp.o\x1b[0m\n'}
+[0.200609] (-) TimerEvent: {}
+[0.301075] (-) TimerEvent: {}
+[0.401401] (-) TimerEvent: {}
+[0.501715] (-) TimerEvent: {}
+[0.602072] (-) TimerEvent: {}
+[0.702358] (-) TimerEvent: {}
+[0.802674] (-) TimerEvent: {}
+[0.902960] (-) TimerEvent: {}
+[1.003264] (-) TimerEvent: {}
+[1.103562] (-) TimerEvent: {}
+[1.203958] (-) TimerEvent: {}
+[1.304281] (-) TimerEvent: {}
+[1.404722] (-) TimerEvent: {}
+[1.505013] (-) TimerEvent: {}
+[1.605286] (-) TimerEvent: {}
+[1.705625] (-) TimerEvent: {}
+[1.805955] (-) TimerEvent: {}
+[1.906289] (-) TimerEvent: {}
+[2.006511] (-) TimerEvent: {}
+[2.106816] (-) TimerEvent: {}
+[2.207076] (-) TimerEvent: {}
+[2.307407] (-) TimerEvent: {}
+[2.407714] (-) TimerEvent: {}
+[2.508017] (-) TimerEvent: {}
+[2.608323] (-) TimerEvent: {}
+[2.708640] (-) TimerEvent: {}
+[2.809024] (-) TimerEvent: {}
+[2.909251] (-) TimerEvent: {}
+[3.009541] (-) TimerEvent: {}
+[3.109815] (-) TimerEvent: {}
+[3.210107] (-) TimerEvent: {}
+[3.310383] (-) TimerEvent: {}
+[3.410661] (-) TimerEvent: {}
+[3.510961] (-) TimerEvent: {}
+[3.611234] (-) TimerEvent: {}
+[3.711554] (-) TimerEvent: {}
+[3.811863] (-) TimerEvent: {}
+[3.912255] (-) TimerEvent: {}
+[4.012566] (-) TimerEvent: {}
+[4.112891] (-) TimerEvent: {}
+[4.213265] (-) TimerEvent: {}
+[4.313601] (-) TimerEvent: {}
+[4.413894] (-) TimerEvent: {}
+[4.514189] (-) TimerEvent: {}
+[4.615041] (-) TimerEvent: {}
+[4.715325] (-) TimerEvent: {}
+[4.815595] (-) TimerEvent: {}
+[4.915888] (-) TimerEvent: {}
+[5.016165] (-) TimerEvent: {}
+[5.116441] (-) TimerEvent: {}
+[5.216716] (-) TimerEvent: {}
+[5.317004] (-) TimerEvent: {}
+[5.417311] (-) TimerEvent: {}
+[5.517634] (-) TimerEvent: {}
+[13.711879] (-) TimerEvent: {}
+[13.812165] (-) TimerEvent: {}
+[13.912447] (-) TimerEvent: {}
+[14.012734] (-) TimerEvent: {}
+[14.113045] (-) TimerEvent: {}
+[14.213400] (-) TimerEvent: {}
+[14.313864] (-) TimerEvent: {}
+[14.414406] (-) TimerEvent: {}
+[14.515025] (-) TimerEvent: {}
+[14.615623] (-) TimerEvent: {}
+[14.716151] (-) TimerEvent: {}
+[14.816465] (-) TimerEvent: {}
+[14.916782] (-) TimerEvent: {}
+[15.017101] (-) TimerEvent: {}
+[15.117382] (-) TimerEvent: {}
+[15.217721] (-) TimerEvent: {}
+[15.318037] (-) TimerEvent: {}
+[15.389209] (radar-odometry) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable radar_feature_node\x1b[0m\n'}
+[15.418185] (-) TimerEvent: {}
+[15.518552] (-) TimerEvent: {}
+[15.618891] (-) TimerEvent: {}
+[15.719251] (-) TimerEvent: {}
+[15.819557] (-) TimerEvent: {}
+[15.919884] (-) TimerEvent: {}
+[16.020237] (-) TimerEvent: {}
+[16.120527] (-) TimerEvent: {}
+[16.220913] (-) TimerEvent: {}
+[16.321265] (-) TimerEvent: {}
+[16.421590] (-) TimerEvent: {}
+[16.521914] (-) TimerEvent: {}
+[16.622256] (-) TimerEvent: {}
+[16.722565] (-) TimerEvent: {}
+[16.755754] (radar-odometry) StdoutLine: {'line': b'[100%] Built target radar_feature_node\n'}
+[16.769636] (radar-odometry) CommandEnded: {'returncode': 0}
+[16.799917] (radar-odometry) JobProgress: {'identifier': 'radar-odometry', 'progress': 'install'}
+[16.809701] (radar-odometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/evan/code/ndt-loc/build/radar-odometry'], 'cwd': '/home/evan/code/ndt-loc/build/radar-odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'evan'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/evan/code/ndt-loc/install/cloud_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/evan'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/evan/code'), ('TERM_PROGRAM_VERSION', '1.77.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2471'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/evan/code/ndt-loc/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'evan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'evan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd:/usr/lib/java/jdk1.6.0_45/bin:~/mycomd'), ('SESSION_MANAGER', 'local/evan-RESCUER-R720-15IKBN:@/tmp/.ICE-unix/2254,unix/evan-RESCUER-R720-15IKBN:/tmp/.ICE-unix/2254'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6891e234_375c_48ed_942b_4977adfb4374'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4RSX61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-96766feb37.sock'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-odometry:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/zsh'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/java/jdk1.6.0_45'), ('PWD', '/home/evan/code/ndt-loc/build/radar-odometry'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/evan/code/ndt-loc/install/cloud_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/evan/code/ndt-loc/install/radar-odometry:/home/evan/code/ndt-loc/install/radar-data:/home/evan/code/ndt-loc/install/ndt-lidar-radar:/home/evan/code/ndt-loc/install/map:/home/evan/code/ndt-loc/install/data-publisher:/home/evan/code/ndt-loc/install/cloud_msgs:/home/evan/code/ndt-loc/install/a-loam:/opt/ros/humble')]), 'shell': False}
+[16.819511] (radar-odometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.819816] (radar-odometry) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/radar-odometry/lib/radar-odometry/radar_feature_node\n'}
+[16.822641] (-) TimerEvent: {}
+[16.825381] (radar-odometry) StdoutLine: {'line': b'-- Set runtime path of "/home/evan/code/ndt-loc/install/radar-odometry/lib/radar-odometry/radar_feature_node" to ""\n'}
+[16.825687] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/ament_index/resource_index/package_run_dependencies/radar-odometry\n'}
+[16.825842] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/ament_index/resource_index/parent_prefix_path/radar-odometry\n'}
+[16.825995] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/environment/ament_prefix_path.sh\n'}
+[16.826085] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/environment/ament_prefix_path.dsv\n'}
+[16.826364] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/environment/path.sh\n'}
+[16.826457] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/environment/path.dsv\n'}
+[16.826532] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/local_setup.bash\n'}
+[16.826602] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/local_setup.sh\n'}
+[16.826698] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/local_setup.zsh\n'}
+[16.826764] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/local_setup.dsv\n'}
+[16.826829] (radar-odometry) StdoutLine: {'line': b'-- Installing: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/package.dsv\n'}
+[16.826894] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/ament_index/resource_index/packages/radar-odometry\n'}
+[16.826958] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.827023] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/cmake/radar-odometryConfig.cmake\n'}
+[16.827112] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/cmake/radar-odometryConfig-version.cmake\n'}
+[16.827179] (radar-odometry) StdoutLine: {'line': b'-- Up-to-date: /home/evan/code/ndt-loc/install/radar-odometry/share/radar-odometry/package.xml\n'}
+[16.828336] (radar-odometry) CommandEnded: {'returncode': 0}
+[16.886320] (radar-odometry) JobEnded: {'identifier': 'radar-odometry', 'rc': 0}
+[16.887070] (-) EventReactorShutdown: {}
